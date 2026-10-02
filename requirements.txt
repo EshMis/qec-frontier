@@ -1,0 +1,11 @@
+qldpc==0.4.0
+numpy>=2.0
+scipy>=1.11
+jsonschema>=4.0
+stim==1.16.0
+ldpc>=2.0
+pybind11
+setuptools
+pytest
+sympy
+python-sat>=1.8.dev1

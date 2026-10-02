@@ -1,0 +1,9 @@
+external/
+.venv/
+__pycache__/
+*.pyc
+logs/
+*.o[0-9]*
+*.e[0-9]*
+*.so
+scratch/
