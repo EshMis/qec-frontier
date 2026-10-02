@@ -9,3 +9,4 @@ setuptools
 pytest
 sympy
 python-sat>=1.8.dev1
+pycryptosat>=5.11
