@@ -1,0 +1,65 @@
+{
+  "d_upper": 11,
+  "id": "13a9490e0994f6901732",
+  "k": 24,
+  "n": 178,
+  "needed_d": 14,
+  "rungs": [
+    {
+      "candidate": "results/profile-bb/bb-20261002/13a9490e0994f6901732/candidate-rung-0.json",
+      "d_upper": 11,
+      "pair_depth": 24,
+      "seconds": 0.028749991208314896,
+      "seed": 1116998196,
+      "trials": 300
+    }
+  ],
+  "seconds": 0.08661129884421825,
+  "seed": 1115998193,
+  "spec": {
+    "expected_k": 24,
+    "expected_n": 178,
+    "expected_w": 8,
+    "family": "generalized-bicycle",
+    "frobenius_ell": 7,
+    "id": "bb-ub-local-445ad48bafbf915c",
+    "mode": "ub-local",
+    "parameters": {
+      "a": [
+        [
+          0
+        ],
+        [
+          23
+        ],
+        [
+          60
+        ],
+        [
+          69
+        ]
+      ],
+      "b": [
+        [
+          0
+        ],
+        [
+          7
+        ],
+        [
+          21
+        ],
+        [
+          26
+        ]
+      ],
+      "orders": [
+        89
+      ]
+    },
+    "seed_reference": "codes/178-24-13.json",
+    "target_d_snapshot": 14
+  },
+  "status": "below_board_bar",
+  "w": 8
+}

@@ -1,0 +1,44 @@
+{
+  "expected_k": 26,
+  "expected_n": 312,
+  "expected_w": 6,
+  "family": "bivariate-bicycle",
+  "id": "bb-paired-binomial-6a50df676555ab6e",
+  "mode": "paired-binomial",
+  "parameters": {
+    "a": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        7
+      ]
+    ],
+    "b": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "orders": [
+      13,
+      12
+    ]
+  },
+  "seed_reference": "codes/700-50-8.json",
+  "target_d_snapshot": 8
+}

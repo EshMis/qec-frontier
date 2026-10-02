@@ -1,0 +1,44 @@
+{
+  "expected_k": 24,
+  "expected_n": 178,
+  "expected_w": 8,
+  "family": "generalized-bicycle",
+  "frobenius_ell": 7,
+  "id": "bb-ub-local-445ad48bafbf915c",
+  "mode": "ub-local",
+  "parameters": {
+    "a": [
+      [
+        0
+      ],
+      [
+        23
+      ],
+      [
+        60
+      ],
+      [
+        69
+      ]
+    ],
+    "b": [
+      [
+        0
+      ],
+      [
+        7
+      ],
+      [
+        21
+      ],
+      [
+        26
+      ]
+    ],
+    "orders": [
+      89
+    ]
+  },
+  "seed_reference": "codes/178-24-13.json",
+  "target_d_snapshot": 14
+}

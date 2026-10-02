@@ -1,0 +1,22 @@
+{
+  "observed_date": "2026-10-02",
+  "source": "qacct -j JOB_ID",
+  "jobs": {
+    "129129633": {
+      "candidate": "455-39-6",
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 106.622,
+      "cpu": 91.466,
+      "maxvmem": "914.512M"
+    },
+    "129129631": {
+      "candidate": "468-40-4",
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 96.864,
+      "cpu": 91.704,
+      "maxvmem": "860.488M"
+    }
+  }
+}

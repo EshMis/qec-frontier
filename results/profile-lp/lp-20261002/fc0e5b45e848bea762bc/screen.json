@@ -1,0 +1,86 @@
+{
+  "d_upper": 6,
+  "id": "fc0e5b45e848bea762bc",
+  "k": 43,
+  "n": 507,
+  "needed_d": 4,
+  "rungs": [
+    {
+      "candidate": "results/profile-lp/lp-20261002/fc0e5b45e848bea762bc/candidate-rung-0.json",
+      "d_upper": 6,
+      "pair_depth": 24,
+      "seconds": 0.09203406237065792,
+      "seed": 1116998193,
+      "trials": 300
+    },
+    {
+      "candidate": "results/profile-lp/lp-20261002/fc0e5b45e848bea762bc/candidate-rung-1.json",
+      "d_upper": 6,
+      "pair_depth": 24,
+      "seconds": 1.315926931798458,
+      "seed": 1117998196,
+      "trials": 5000
+    },
+    {
+      "candidate": "results/profile-lp/lp-20261002/fc0e5b45e848bea762bc/candidate-rung-2.json",
+      "d_upper": 6,
+      "pair_depth": 24,
+      "seconds": 12.929064523428679,
+      "seed": 1118998199,
+      "trials": 50000
+    }
+  ],
+  "seconds": 14.664218448102474,
+  "seed": 1115998190,
+  "spec": {
+    "entry_type": "group-element-index (one monomial per entry)",
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "group": {
+      "action": 3,
+      "element_index": "u*l2+v represents a^u b^v",
+      "kind": "metacyclic",
+      "l1": 13,
+      "l2": 3,
+      "order": 39
+    },
+    "index": 4,
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        12,
+        26
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        26,
+        32
+      ]
+    ],
+    "qldpc_version": "0.4.0",
+    "schema_version": 1,
+    "seed": 20261002,
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "d_min": 4,
+      "k": 43,
+      "n": 507,
+      "status": "search_target_not_measurement",
+      "w_max": 5
+    }
+  },
+  "status": "needs_official_validation",
+  "w": 5
+}

@@ -1,0 +1,49 @@
+{
+  "entry_type": "group-element-index (one monomial per entry)",
+  "family": "lifted-product",
+  "generator": "monomial-2x3-v1",
+  "group": {
+    "action": 1,
+    "element_index": "u*l2+v represents a^u b^v",
+    "kind": "metacyclic",
+    "l1": 35,
+    "l2": 1,
+    "order": 35
+  },
+  "index": 0,
+  "matrix_a": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      10,
+      11
+    ]
+  ],
+  "matrix_b": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      24,
+      26
+    ]
+  ],
+  "qldpc_version": "0.4.0",
+  "schema_version": 1,
+  "seed": 20261002,
+  "target": {
+    "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+    "d_min": 4,
+    "k": 39,
+    "n": 455,
+    "status": "search_target_not_measurement",
+    "w_max": 5
+  }
+}

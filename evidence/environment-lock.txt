@@ -30,6 +30,7 @@ platformdirs==4.12.2
 pluggy==1.6.0
 pybind11==3.1.0
 pycparser==3.0
+pycryptosat==5.14.3
 Pygments==2.21.0
 PyMatching==2.4.0
 pyparsing==3.3.3

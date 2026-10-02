@@ -8,7 +8,9 @@ The target is an undominated, nonduplicate, connected code under the official `(
 
 Initial upstream snapshot: `c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23` (1,815 entries, retrieved 2026-10-02). Refresh the board before declaring a frontier advance and before submitting.
 
-No frontier point has yet been established. Search failures, seeds, candidate recipes, witnesses, validation receipts, dependency versions, and scheduler completion evidence will be retained.
+**Result, 2026-10-02:** `[[455,39,6]]`, maximum check weight **5**, extends the challenge's CSS `weight-6 × unrestricted` frontier at the snapshot above. The unmodified official validator returned `passed: true`, `board_advancing: true`, and no exact-fingerprint or WL-signature duplicate. The upstream SAT certifier proved both logical distances equal to 6: it returned UNSAT below 6 on each side, and both weight-6 witnesses are supplied. This is a local solver certificate; the leaderboard's exact badge requires maintainer confirmation. See [RESULT.md](RESULT.md).
+
+A second local point, `[[468,40,4]]` with weight 5, passed the same validator and exact SAT certification. Public submission focuses on the first result. Wider literature novelty is unverified; these are new points relative to the challenge board, using an established construction family.
 
 ## Reproduction
 

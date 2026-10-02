@@ -1,0 +1,46 @@
+{
+  "expected_n": 324,
+  "expected_w": 7,
+  "family": "bivariate-bicycle",
+  "id": "bb-asymmetric-transfer-ca1029ac3ab45219",
+  "mode": "asymmetric-transfer",
+  "parameters": {
+    "a": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        17,
+        5
+      ]
+    ],
+    "b": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        11,
+        5
+      ],
+      [
+        17,
+        4
+      ]
+    ],
+    "orders": [
+      27,
+      6
+    ]
+  },
+  "seed_reference": "codes/360-12-25.json"
+}

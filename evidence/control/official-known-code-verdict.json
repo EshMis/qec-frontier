@@ -1,0 +1,55 @@
+{
+  "passed": false,
+  "candidate": {
+    "n": 72,
+    "k": 12,
+    "d": 6,
+    "family": "bivariate-bicycle",
+    "weight_class": "weight-6",
+    "locality_class": "unrestricted",
+    "fingerprint": "8791bd68ecfa34e8",
+    "signature": "39746c0d629be925"
+  },
+  "gates": {
+    "verify": {
+      "ok": true,
+      "failed_checks": [],
+      "weight_class": "weight-6",
+      "locality_class": "unrestricted"
+    },
+    "refute": {
+      "refuted": false,
+      "seed": 20261002,
+      "detail": "no lighter logical in 5380 RIS trials (seed 20261002)"
+    },
+    "dedup": {
+      "exact_duplicate_of": "72-12-6.json",
+      "wl_equivalent_of": null
+    },
+    "novelty": {
+      "cell": [
+        "weight-6",
+        "unrestricted"
+      ],
+      "board": "CSS",
+      "board_advancing": null,
+      "dominated_by": [],
+      "advances_by": [
+        "k",
+        "n"
+      ],
+      "d_only_gain": false,
+      "d_only_peers": [],
+      "literature_novelty": "unverified"
+    }
+  },
+  "labels": [
+    "duplicate: identical to board entry 72-12-6.json",
+    "novelty not assessed: this code is already on the board as 72-12-6.json",
+    "literature novelty UNVERIFIED"
+  ],
+  "validator": {
+    "source_sha256": "d186fd6008cd7a33695fa5eec2ddc144bd1c1043f73b713de775e011cb238807",
+    "seed": 20261002
+  }
+}

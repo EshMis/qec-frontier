@@ -25,6 +25,7 @@ import gf2_fast
 from css import verify_css
 from surrogate import distance_rand_witness, validate_logical
 from submit import make_submission, save_submission
+from qldpc_verify import _tanner_component_count, admissible
 
 
 def atomic_json(path, data):
@@ -85,8 +86,14 @@ def screen_one(spec, construct, board, outdir, seed, stages):
     record = {"id": ident, "spec": spec, "n": n, "k": k, "w": w,
               "needed_d": target, "seed": seed, "rungs": [], "status": "screening"}
     atomic_json(dest / "screen.json", record)
+    supports = {"X": [np.flatnonzero(row).tolist() for row in hx],
+                "Z": [np.flatnonzero(row).tolist() for row in hz]}
     if k <= 0:
         record["status"] = "no_logical_qubits"
+    elif not admissible(n, w, target) or w > 32:
+        record["status"] = "outside_challenge_caps"
+    elif _tanner_component_count(supports, n) != 1:
+        record["status"] = "disconnected"
     else:
         # The trusted kit packages both sides and independently checks witnesses.
         # One initial trial suffices here: the accelerated ladder tightens them.
@@ -122,7 +129,9 @@ def screen_one(spec, construct, board, outdir, seed, stages):
                 break
         else:
             record["status"] = "needs_official_validation"
-            save_submission(doc, dest / "candidate.json")
+            errs = save_submission(doc, dest / "candidate.json")
+            if errs:
+                raise RuntimeError(errs)
     record["seconds"] = time.monotonic() - started
     atomic_json(dest / "screen.json", record)
     print(json.dumps({key: record[key] for key in
@@ -148,7 +157,9 @@ def control():
                           authors=["@EshMis"], family="bivariate-bicycle", trials=1,
                           seed=20261002, date="2026-10-02")
     tighten(doc, hx, hz, found)
-    save_submission(doc, out / "candidate.json")
+    errs = save_submission(doc, out / "candidate.json")
+    if errs:
+        raise RuntimeError(errs)
     atomic_json(out / "witness.json", found._asdict())
     rows = board_rows()
     assert required_distance(rows, 72, 12, 6) > 6, "Known control incorrectly screened as a new point"
