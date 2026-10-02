@@ -1,0 +1,10 @@
+{
+  "upstream_commit": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+  "validator_source_sha256": "d186fd6008cd7a33695fa5eec2ddc144bd1c1043f73b713de775e011cb238807",
+  "sat_certifier_source_sha256": "d1cfeeb7808a818963436c42f901ec6424169a38049ee96a6a587edad8fb2ab8",
+  "pycryptosat_package_version": "5.14.3",
+  "sat_certifier_display_label": "CryptoMiniSat 5.14 SAT",
+  "certification_level": "solver",
+  "certificate_scope": "Raw local solver result. Not a standalone proof object or maintainer-confirmed certificate under upstream certs/.",
+  "submitted_code_sha256": "a0d5094357b32b5a76bf315d90ced030155f9dd72a3a9165fecad8e919992471"
+}
