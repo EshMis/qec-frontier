@@ -1,0 +1,87 @@
+{
+  "receipt_version": "1",
+  "submission": {
+    "path": "codes/455-39-6.json",
+    "sha256": "a0d5094357b32b5a76bf315d90ced030155f9dd72a3a9165fecad8e919992471",
+    "pull_request": null,
+    "pr_author": null,
+    "base_sha": "b237d1300e872ef9d125a06ba14b68546a0c73c3",
+    "head_sha": "e55f5da5d4a92969c495364d82fd90ba47297324"
+  },
+  "trusted_validation": {
+    "verifier_commit": "b237d1300e872ef9d125a06ba14b68546a0c73c3",
+    "validator_source_sha256": "d186fd6008cd7a33695fa5eec2ddc144bd1c1043f73b713de775e011cb238807",
+    "validator_seed": 847392151,
+    "structural_result": "passed",
+    "distance_gate": {
+      "refuted": false,
+      "seed": 847392151,
+      "seeds": [
+        847392151
+      ],
+      "trials": 79600,
+      "budget_seconds": 240.0,
+      "deep": true,
+      "fast_trials": 8000000,
+      "fast_target": 8000000,
+      "fast_seconds": 5400.0,
+      "structural_trials": 0,
+      "short_circuited_by": null,
+      "methods": [
+        "RIS#0",
+        "RIS-fast"
+      ],
+      "diff_class": "new",
+      "diff_reason": "no base counterpart"
+    }
+  },
+  "computed": {
+    "n": 455,
+    "k": 39,
+    "d": 6,
+    "family": "lifted-product",
+    "weight_class": "weight-6",
+    "locality_class": "unrestricted",
+    "fingerprint": "71c165bcacd07d82",
+    "signature": "f778d5efdbbfb774"
+  },
+  "deduplication": {
+    "exact_duplicate_of": null,
+    "wl_equivalent_of": null
+  },
+  "frontier": {
+    "board_advancing": true,
+    "cell": [
+      "weight-6",
+      "unrestricted"
+    ],
+    "dominated_by": []
+  },
+  "provenance": {
+    "authors": {
+      "value": [
+        "@EshMis"
+      ],
+      "status": "self_reported"
+    },
+    "contributors": {
+      "value": [],
+      "status": "self_reported"
+    },
+    "model": {
+      "value": "GPT-6",
+      "status": "self_reported"
+    },
+    "novelty": {
+      "value": "unknown",
+      "status": "self_reported"
+    }
+  },
+  "routing": {
+    "status": "eligible_under_current_checks",
+    "reasons": [
+      "advances the weight-6 x unrestricted board",
+      "literature novelty UNVERIFIED"
+    ]
+  }
+}

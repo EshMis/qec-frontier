@@ -12,6 +12,10 @@ Initial upstream snapshot: `c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23` (1,815 ent
 
 A second local point, `[[468,40,4]]` with weight 5, passed the same validator and exact SAT certification. Public submission focuses on the first result. Wider literature novelty is unverified; these are new points relative to the challenge board, using an established construction family.
 
+The selected code is submitted in [challenge PR #2674](https://github.com/unitaryfoundation/qldpc-challenge/pull/2674). Upstream workflow execution currently awaits maintainer approval; submission is not leaderboard acceptance. The [status snapshot](evidence/submission-status.json) records the exact submitted revision and workflow runs.
+
+See [FRONTIER.md](FRONTIER.md) for a plain-English comparison of every verified discovery. The third discovery, `[[312,26,8]]` with check weight 6, is also officially validated and exact-certified. The search continues during upstream review.
+
 ## Reproduction
 
 Clone the upstream repository into `external/qldpc-challenge` and check out the pinned snapshot above. `jobs/setup.sh` builds an isolated environment and compiles the upstream accelerated verifier. Search and validation jobs must limit their thread count to the scheduler allocation and write completion records only after success.

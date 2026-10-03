@@ -1,0 +1,24 @@
+{
+  "observed_at": "2026-10-02T23:52:21.828135+00:00",
+  "upstream_repository": "https://github.com/unitaryfoundation/qldpc-challenge",
+  "upstream_main_sha": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+  "pull_request": "https://github.com/unitaryfoundation/qldpc-challenge/pull/2674",
+  "pull_request_state": "OPEN",
+  "submitted_head_sha": "e81369a9799f740799cf58b2788351e69d5f2914",
+  "submitted_code_sha256": "a0d5094357b32b5a76bf315d90ced030155f9dd72a3a9165fecad8e919992471",
+  "upstream_workflows": [
+    {
+      "name": "verify",
+      "run_id": 37079105648,
+      "conclusion": "action_required"
+    },
+    {
+      "name": "Prose gate",
+      "run_id": 37079105671,
+      "conclusion": "action_required"
+    }
+  ],
+  "workflow_page_message": "This workflow is awaiting approval from a maintainer in #2674",
+  "local_verification": "Solver-certified exact distance 6, official board-advancing verdict, exact reconstruction, and full deep gate passed with all 8,000,000 accelerated trials completed.",
+  "leaderboard_acceptance": "pending; no upstream merge or exact badge claimed"
+}

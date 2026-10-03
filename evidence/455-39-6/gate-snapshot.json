@@ -1,0 +1,6 @@
+{
+  "snapshot_base": "b237d1300e872ef9d125a06ba14b68546a0c73c3",
+  "snapshot_head": "e55f5da5d4a92969c495364d82fd90ba47297324",
+  "upstream_source": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+  "note": "Local git fixture contains the exact upstream code files plus the candidate; verifier source stays in the unchanged upstream snapshot."
+}

@@ -13,6 +13,8 @@ The unmodified challenge validator at commit `c2ebca1713c89277dbd6ddf3ee587cbf7f
 
 The upstream SAT certifier returned **UNSAT for weight ≤5 on both sides**, establishing dX=dZ=6 together with the supplied witnesses. The certificate is a solver verdict, not a standalone proof object. Local certification is distinct from the leaderboard's maintainer-confirmed exact badge.
 
+The code and construction note are public in [challenge PR #2674](https://github.com/unitaryfoundation/qldpc-challenge/pull/2674), at submitted revision `e81369a9799f740799cf58b2788351e69d5f2914`. Both upstream workflows await maintainer approval. No upstream acceptance or exact badge is claimed; see the [submission status snapshot](evidence/submission-status.json).
+
 ## Evidence
 
 - [Final code](submission/455-39-6.json), including both witnesses.
@@ -20,7 +22,8 @@ The upstream SAT certifier returned **UNSAT for weight ≤5 on both sides**, est
 - [Search ladder](results/profile-lp/lp-20261002/5f3a6a45fb0e94615da1/screen.json): fresh seeds at 300, 5,000 and 50,000 accelerated trials, pair depth 24; all retained d≤6. Trial counts are the accelerator's overall API budgets, not per-side counts.
 - [Official validation](evidence/455-39-6/validation.json): accepted, frontier-advancing, no duplicate; fresh 8,000-trial refutation found nothing lighter.
 - [SAT certificate](evidence/455-39-6/sat-certificate.json): both sides UNSAT, 39 logical classes checked, no symmetry pruning, 300-second per-side cap; measured solves 5.8 and 5.5 seconds.
-- [Terminal scheduler accounting](evidence/accounting.json): validation and certification job exited 0 with failed=0.
+- [Full deep-gate receipt](evidence/455-39-6/deep-gate/455-39-6.json): the official frontier gate completed all 8,000,000 accelerated trials, plus the Python RIS pass (79,600-trial target, 240-second cap), without refutation. The [fixture mapping](evidence/455-39-6/gate-snapshot.json) distinguishes local fixture SHAs from the actual upstream verifier snapshot.
+- [Terminal scheduler accounting](evidence/accounting.json): validation and certification job exited 0 with failed=0. The separate deep-gate job also exited 0 with failed=0.
 - [Environment](evidence/environment-lock.txt), [known-code positive control](evidence/control/COMPLETE.json), and [official known-code comparison](evidence/control/official-known-code-verdict.json). All 11 upstream SAT regression tests passed, including overclaim-refutation and missing-logical-class controls.
 
 The publication JSON replaces the provisional name/provenance and changes the two confidence labels from upper_bound to exact. Matrices, n, k, d and witnesses are unchanged from the audited candidate. The separate reproduction job rebuilds both matrices from the saved recipe and verifies the final JSON.

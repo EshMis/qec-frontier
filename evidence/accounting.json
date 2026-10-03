@@ -17,6 +17,30 @@
       "ru_wallclock": 96.864,
       "cpu": 91.704,
       "maxvmem": "860.488M"
+    },
+    "129130131": {
+      "candidate": "455-39-6",
+      "stage": "full_deep_gate",
+      "failed": 0,
+      "exit_status": 0,
+      "slots": 4,
+      "ru_wallclock": 802.684,
+      "cpu": 2022.178,
+      "maxvmem": "1.028G",
+      "start_time_jst": "2026-10-03 08:44:04.217",
+      "end_time_jst": "2026-10-03 08:57:26.901"
+    },
+    "129132763": {
+      "candidate": "312-26-8",
+      "stage": "official_validation_and_exact_sat",
+      "failed": 0,
+      "exit_status": 0,
+      "slots": 1,
+      "ru_wallclock": 37.428,
+      "cpu": 28.916,
+      "maxvmem": "836.703M",
+      "start_time_jst": "2026-10-03 08:55:28.268",
+      "end_time_jst": "2026-10-03 08:56:05.696"
     }
   }
 }

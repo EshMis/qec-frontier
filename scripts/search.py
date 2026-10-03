@@ -48,6 +48,22 @@ def board_rows():
                      "d": doc["distance"]["d"], "w": w, "file": path.name})
     if len(rows) < 1000:
         raise RuntimeError("Board snapshot missing or unexpectedly incomplete")
+    # Certified local discoveries also set the next search's bar while their
+    # upstream PRs await review. A repeated or inferior point is not progress.
+    registry = ROOT / "evidence/frontier-points.json"
+    if registry.exists():
+        for point in json.loads(registry.read_text())["points"]:
+            candidate = ROOT / point["candidate"]
+            raw = candidate.read_bytes()
+            receipt = json.loads((ROOT / point["evidence"] / "COMPLETE.json").read_text())
+            if not (receipt["validated_frontier"] and receipt["exact"]
+                    and receipt["candidate_sha256"] == hashlib.sha256(raw).hexdigest()):
+                raise RuntimeError(f"Local frontier evidence is incomplete: {point['id']}")
+            doc = json.loads(raw)
+            w = max(map(len, doc["checks"]["X"] + doc["checks"]["Z"]))
+            actual = {"n": doc["n"], "k": doc["k"], "d": doc["distance"]["d"], "w": w}
+            assert all(actual[key] == point[key] for key in actual), point["id"]
+            rows.append(actual | {"file": point["candidate"], "source": "local-certified"})
     return rows
 
 
@@ -74,6 +90,8 @@ def screen_one(spec, construct, board, outdir, seed, stages):
     started = time.monotonic()
     ident = hashlib.sha256(json.dumps(spec, sort_keys=True).encode()).hexdigest()[:20]
     dest = outdir / ident
+    if (dest / "screen.json").exists():
+        raise FileExistsError(f"Refusing to overwrite a measured candidate: {dest}")
     dest.mkdir(parents=True, exist_ok=True)
     atomic_json(dest / "recipe.json", spec)
     hx, hz = construct(spec)
@@ -176,6 +194,9 @@ def main():
     ap.add_argument("--count", type=int, default=20)
     ap.add_argument("--stages", default="300,5000,50000")
     ap.add_argument("--run", default="initial")
+    ap.add_argument("--campaign", choices=["initial", "improve"], default="initial")
+    ap.add_argument("--specs", type=Path, help="Optional predeclared JSON list of specifications")
+    ap.add_argument("--offset", type=int, default=0)
     args = ap.parse_args()
     assert importlib.metadata.version("qldpc") == "0.4.0"
     if args.lane == "control":
@@ -186,9 +207,14 @@ def main():
     outdir.mkdir(parents=True, exist_ok=True)
     rows = board_rows()
     records = []
-    for i, spec in enumerate(module.candidates(args.seed, args.count)):
+    if args.specs:
+        specifications = json.loads(args.specs.read_text())[args.offset:args.offset + args.count]
+    else:
+        generator = module.candidates if args.campaign == "initial" else module.next_candidates
+        specifications = generator(args.seed, args.count)
+    for i, spec in enumerate(specifications):
         record = screen_one(spec, module.construct, rows, outdir,
-                            (args.seed * 1009 + i) % (2**31),
+                            (args.seed * 1009 + args.offset + i) % (2**31),
                             [int(x) for x in args.stages.split(",")])
         records.append(record)
     assert len(records) == args.count, (len(records), args.count)

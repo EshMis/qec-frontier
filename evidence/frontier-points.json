@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "scope": "Locally exact-certified, official-validator frontier points; upstream acceptance is tracked separately.",
+  "points": [
+    {
+      "id": "455-39-6-w5",
+      "n": 455,
+      "k": 39,
+      "d": 6,
+      "w": 5,
+      "candidate": "results/profile-lp/lp-20261002/5f3a6a45fb0e94615da1/candidate.json",
+      "evidence": "evidence/455-39-6",
+      "pull_request": "https://github.com/unitaryfoundation/qldpc-challenge/pull/2674"
+    },
+    {
+      "id": "468-40-4-w5",
+      "n": 468,
+      "k": 40,
+      "d": 4,
+      "w": 5,
+      "candidate": "results/profile-lp/lp-20261002/4c44f80f40f86046e696/candidate.json",
+      "evidence": "evidence/468-40-4",
+      "pull_request": null
+    },
+    {
+      "id": "312-26-8-w6",
+      "n": 312,
+      "k": 26,
+      "d": 8,
+      "w": 6,
+      "candidate": "results/profile-bb/bb-20261002/b04f3fb55828b690c522/candidate.json",
+      "evidence": "evidence/312-26-8",
+      "pull_request": null
+    }
+  ]
+}
