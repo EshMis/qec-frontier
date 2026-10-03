@@ -1,5 +1,6 @@
 {
-  "points": [
+  "count": 8,
+  "exact_points": [
     {
       "aspirational_goal_met": true,
       "candidate": "results/wide-v1-c/lp-20261002/0fcfe2748c3bb5704329/candidate.json",
@@ -88,5 +89,17 @@
       "n": 520,
       "w": 6
     }
-  ]
+  ],
+  "finished_unix": 1790990056.544677,
+  "screened": {
+    "0fcfe2748c3bb5704329": "needs_official_validation",
+    "164b051a0df2a94606de": "needs_official_validation",
+    "3218c377eb62a5cd3605": "needs_official_validation",
+    "4ff65ae327f172620efd": "needs_official_validation",
+    "627f69a8bb524525638c": "needs_official_validation",
+    "7dd6898b5b1a300b88e6": "needs_official_validation",
+    "a633f3867b5b1ed27182": "needs_official_validation",
+    "e512367262d1d6033fa2": "needs_official_validation"
+  },
+  "status": "complete"
 }

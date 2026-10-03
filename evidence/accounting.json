@@ -155,6 +155,78 @@
       "ru_wallclock": 410.677,
       "cpu": 909.041,
       "maxvmem": "1.140G"
+    },
+    "129139567": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 120.952,
+      "cpu": 83.137,
+      "maxvmem": "1.282G"
+    },
+    "129139572": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 141.564,
+      "cpu": 135.852,
+      "maxvmem": "1.290G"
+    },
+    "129140881": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 741.272,
+      "cpu": 702.555,
+      "maxvmem": "1.333G"
+    },
+    "129140887": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 867.149,
+      "cpu": 818.176,
+      "maxvmem": "1.343G"
+    },
+    "129140895": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 78.306,
+      "cpu": 50.02,
+      "maxvmem": "1.284G"
+    },
+    "129140900": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 74.997,
+      "cpu": 46.06,
+      "maxvmem": "1.282G"
+    },
+    "129136119": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 81.727,
+      "cpu": 42.707,
+      "maxvmem": "1.301G"
+    },
+    "129136125": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 169.417,
+      "cpu": 125.526,
+      "maxvmem": "1.283G"
+    },
+    "129137113": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 77.565,
+      "cpu": 42.474,
+      "maxvmem": "1.287G"
     }
   }
 }

@@ -1,0 +1,381 @@
+{
+  "observed_at": "2026-10-03T01:19:07.404773+00:00",
+  "upstream_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+  "upstream_css_entries": 1680,
+  "exact_discoveries": 53,
+  "currently_nondominated": 50,
+  "points": [
+    {
+      "id": "455-39-6-w5",
+      "sha256": "ca4ade3b851308ca019a83a87292902b3023ee5c293973656918ae9fb46e8434",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": false
+    },
+    {
+      "id": "468-40-4-w5",
+      "sha256": "cced2aacfdae93085d06dd0fbff4687d12e0517577a01ef4c679398797c0fb69",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": false
+    },
+    {
+      "id": "312-26-8-w6",
+      "sha256": "ea2120939d40452f1e2e8feeeb493959d1887c9f9247357462995fbe198d27d5",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "264-22-8-w6",
+      "sha256": "8009b17e271991e695c81e1a315df2f8dd19ccdff826263a294843a40bb9f6b3",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "288-24-8-w6",
+      "sha256": "0580de579d4dc08362603f82a1f2c7f38da463a7e67150f5d8ff87cea362c6e9",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "416-39-6-w5",
+      "sha256": "2d45bc80969cb268b225f62266951c3580e9958e05a8c1f0293c04f011b6b4ba",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "455-43-6-w5",
+      "sha256": "2f2c0b4f8e0d6c816c9ed7a44c047a5595fbd518943f592956a6ea8c43f23e83",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "468-45-6-w5",
+      "sha256": "2cb62a911b81e1550f3bbcaf2f224916515351cd807e806f29137e7e04828c8d",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "390-43-4-w5",
+      "sha256": "d62029c707f2bc080f253166c77ac04b116e623bdbdc5a084c94ec49c0b744de",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": false
+    },
+    {
+      "id": "364-41-4-w5",
+      "sha256": "34990ca7d1d99e753bee88231585db1a9e0c1b5cf5db09afa99262df2dc17f1d",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "520-51-6-w5",
+      "sha256": "be7183d56b08af2f0c3c71140e3c9f64dda40b7e60ec9b05d7e26bb96f357470",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "351-33-6-w5",
+      "sha256": "1fcecdcaac79edf930515afeb2fbb16b105ec7ef911f23b42ae0ac810384960c",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "78-11-4-w5",
+      "sha256": "f74ba0327a8fb43167e7209e528c225c4ac276b9408e23c7537aca1c37327478",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "273-33-4-w5",
+      "sha256": "72fe24ed0ec436142837af67991431f2ebdaa48239ec0679678c0edeaf541866",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "312-37-4-w5",
+      "sha256": "710599a3970cf48c994bcb4349d4f5cedc570dca287634fae1eb1d38d0c6a7cb",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "351-39-4-w5",
+      "sha256": "b88ed371b28039e86ea9d01e4621bf8763c04745d803b42c5d9bea6330b310a3",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "390-45-4-w5",
+      "sha256": "8eafea4d26e6b8158393a14a2006b025b7bdb6c729a48514881451510d920900",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "429-49-4-w5",
+      "sha256": "34cf2be759882fa8e26342f6327cec9a6098725788c8ae0207c3eff1d7439efb",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "440-40-7-w6",
+      "sha256": "7d4735b3976408e45808bb5fa59a9c9116f32b4b55e220420a3d6e9eb36d5ec0",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "260-58-6-w6",
+      "sha256": "09dbc629461037db008f5efb7a0547cac01082575bee199a392717dd950452ea",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "609-197-6-w7",
+      "sha256": "5078329e96ef2acd856ee6f9356f4f99b7e091d8abcbce75c4d21f6c7d7ebcb7",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "340-74-6-w6",
+      "sha256": "1d7cbfacafea455a4ba9ceeaa9d9fa8b42338d67659a68214eb9a5841dc476f7",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "280-62-6-w6",
+      "sha256": "c3ed35442092cbd60af854dfeea16a2632ef2f0282e6b3a628fdac37c1870120",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "360-78-6-w6",
+      "sha256": "f628aff785865417bcbde5b8b54413e970ef9b9704440347d77610c7f1f812f8",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "300-66-6-w6",
+      "sha256": "b023842bc39cbb02aaa5b41d54275cc553e717c7bac2accde1bace23f47e6076",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "380-82-6-w6",
+      "sha256": "e134f934ab0210c51d3a1b1287b872de114bfa6df3ea010acd357236648f1d5c",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "320-70-6-w6",
+      "sha256": "c34d5316c8d6f21881a55beac09ae2927252a76fe086b74c4941c9b29799a6fd",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "400-86-6-w6",
+      "sha256": "dc646178dea00942a169138eabd57422f498d7cd3254bde8ace78b242bbb7d0d",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "986-314-6-w7",
+      "sha256": "6e105aece1d5a1641adaf6c362d2a566f19dc2f13e636bab4d056376c0985792",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "504-133-6-w7",
+      "sha256": "88a6b0b8e1ec4f1fa58b6457d41ecac8503ff10bc52d2cf954e4387b19a112f1",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "145-53-4-w7",
+      "sha256": "6d18a355a5125a7562f80f8059419cc65214e7e19e285894e356b6dd0ce3ce57",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "240-60-4-w6",
+      "sha256": "9d6a58e01c05edbc6b308447e8f3c423e23ce36b8ff0fad1f2c712148c8c8a6f",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "224-35-5-w6",
+      "sha256": "e5002db57e6916fc30faa5da1ce96bb9d5f48f5a0194d98a7fd40abf6fdc5dd5",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "204-81-4-w8",
+      "sha256": "e631e13f304c5662199e1e060b58a5b75f5e6f256488cac7c2419af740a87ad1",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "256-39-5-w6",
+      "sha256": "2f668661554387d103d6754e91a794b8bf1540f76dc511f901eb8832e09a263c",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "39-7-4-w5",
+      "sha256": "872def1480b239f702050167be4e17eae3f29f88f3df6c056a00cbcec066e004",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "240-106-4-w8",
+      "sha256": "ba7fa8b85b739a76b91c52b6db9acc9632cf685abfb49308b0ecdbf779899e9a",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "540-114-6-w6",
+      "sha256": "eb396767e6b2d7a1fb24c56bd94461096e6f2209b057e2e347f8dfe0d2de933f",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "560-120-6-w6",
+      "sha256": "6ebb29b2c316ad57b6b665a05dca8fdcf3ebb040bc87102b557e3161e77f1588",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "667-215-6-w7",
+      "sha256": "05579e1463c2166656d5f603d34cd95cca44af504ed0ebda7e32d95e85f88c8c",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "420-90-6-w6",
+      "sha256": "466da4b02452b86139bc9e2ba0de055a20de4814e2d4bb1923346293a777ccf6",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "440-94-6-w6",
+      "sha256": "39c2d90e5492cc0884bc031e55159b43795def3c412d649f8fcb159ee44da7f3",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "725-233-6-w7",
+      "sha256": "ba2752ce4cae992a49226570ebf32e2085e176b4a8610706f431b7a0c287afcc",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "460-98-6-w6",
+      "sha256": "5f618da426374423ed8672d1caad4d62356ecfb35d7cdd381624abdd8526c24d",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "480-102-6-w6",
+      "sha256": "b7703b62523d77e828d76e54fa0976a1e5213936c01ef4152be0945eb8d1a71a",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "580-122-6-w6",
+      "sha256": "2e3c0cc716fe20a88405a8886d31c2cfb97e473e34d11e3657dabcfb8163c4c0",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "600-128-6-w6",
+      "sha256": "1281c632c11af4af66b289eba67da4701e9f5d88e4042ff6827b61153636f8d6",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "620-130-6-w6",
+      "sha256": "dc8b99e76b67ae3909c6b0988aa191e27ee230fbafb08ff8468ae4955be3e342",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "696-224-6-w7",
+      "sha256": "4d0cdab4f048afe7efe796508144b3b1c079dbbd124878e5e803c60a7b80f341",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "500-106-6-w6",
+      "sha256": "6c4984095f12b5189bc76855ab54a826dff071b841c640bbe515edbd11aa6959",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "640-136-6-w6",
+      "sha256": "0f9d85fcf36434acd6a758f2d124c8a38c60357e137fc291fd94992780e5525d",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "520-112-6-w6",
+      "sha256": "8b8f2d0da539b236cd49e52ab54bcbbe22a4e5cdf4937d9cf28eb7bea8e43e1e",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    },
+    {
+      "id": "754-242-6-w7",
+      "sha256": "e9bb25862767b094fb5391236ec9c925c4a2c96fd76535ec7493f7649c47751c",
+      "evidence_chain": "passed",
+      "board_undominated": true,
+      "locally_nondominated": true
+    }
+  ],
+  "claim_scope": "Local official-validator and exact SAT results; upstream acceptance and wider literature novelty unverified."
+}

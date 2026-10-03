@@ -1,0 +1,44 @@
+{
+  "observed_at": "2026-10-03T01:21:07.150029+00:00",
+  "upstream_main_sha": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+  "submissions": [
+    {
+      "url": "https://github.com/unitaryfoundation/qldpc-challenge/pull/2674",
+      "state": "OPEN",
+      "code": "416-39-6",
+      "head_sha": "54993e4442a02ac72d449f7eb1664f8688864110",
+      "code_sha256": "6084fd7e8691c41488eec3520ae77e71a0d649be25c9347e2ab13bbf87fa0313",
+      "local_evidence": "exact SAT, independent reconstruction and full deep gate passed",
+      "workflow_runs": [
+        {
+          "id": 37084895628,
+          "conclusion": "action_required"
+        },
+        {
+          "id": 37084895494,
+          "conclusion": "action_required"
+        }
+      ],
+      "upstream_acceptance": "pending"
+    },
+    {
+      "url": "https://github.com/unitaryfoundation/qldpc-challenge/pull/2675",
+      "state": "OPEN",
+      "code": "260-58-6",
+      "head_sha": "ebe1a096267b2459be55ba8caf05702f674afa1d",
+      "code_sha256": "3c2f01a4a1957038e9540702842617a3ebd89d60fabc0222abba5d79704de700",
+      "local_evidence": "exact SAT, independent reconstruction and full deep gate passed",
+      "workflow_runs": [
+        {
+          "id": 37085609330,
+          "conclusion": "action_required"
+        },
+        {
+          "id": 37085609073,
+          "conclusion": "action_required"
+        }
+      ],
+      "upstream_acceptance": "pending"
+    }
+  ]
+}

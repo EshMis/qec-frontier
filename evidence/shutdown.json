@@ -1,0 +1,11 @@
+{
+  "observed_unix": 1790990348.9985776,
+  "source": "qstat -u em_shiro -xml",
+  "qec_jobs": [],
+  "agents": {
+    "bb_strategy": "completed",
+    "lp_strategy": "completed"
+  },
+  "scheduled_followup": "finish-qec-frontier-submission was deleted at user request",
+  "stop_request": "finish up for this session when threads resolve to a neat stopping point"
+}

@@ -1,9 +1,9 @@
 # Discoveries in plain English
 
-We have 47 exact-certified discoveries; 44 remain nondominated among our own
+We have 53 exact-certified discoveries; 50 remain nondominated among our own
 results. Three earlier points have been superseded by direct improvements. Every entry
 passed the official challenge validator against the checked board. Upstream
-acceptance is separate: PR #2674 remains under review.
+acceptance is separate: [PR #2674](https://github.com/unitaryfoundation/qldpc-challenge/pull/2674) and [PR #2675](https://github.com/unitaryfoundation/qldpc-challenge/pull/2675) await maintainer action.
 
 Physical qubits are the hardware used. Logical qubits are the protected qubits
 stored. A distance-d code guarantees correction of any floor((d-1)/2) physical-qubit
@@ -32,7 +32,7 @@ separate exact X and Z distances when a stored side witness is heavier than d.
 | 390 | 45 | 4 | 1 | 5 | Current local frontier | Direct improvement over 390/43: two more logical qubits with equal size, protection and checks. |
 | 429 | 49 | 4 | 1 | 5 | Current local frontier | Four more logical qubits than 390/45, using 39 additional physical qubits, with equal one-error protection. |
 | 440 | 40 | 7 | 3 | 6 | Current local frontier | Three-error protection for 40 logical qubits. Versus 455/43: 15 fewer physical qubits and one additional correctable error, costing three logical qubits and larger checks. |
-| 260 | 58 | 6 | 2 | 6 | Current local frontier | Versus 520/51: half as many physical qubits and seven more logical qubits at the same protection; checks increase from five to six. |
+| 260 | 58 | 6 | 2 | 6 | Current local frontier | Saves 24 physical qubits versus the board's 284/58/6 code at identical capacity, distance and check weight. Versus our 520/51: half the physical qubits and seven more logical qubits, with checks growing from five to six. |
 | 609 | 197 | 6 | 2 | 7 | Current local frontier | Largest verified logical capacity so far: 197 protected qubits with two-error correction, using 609 physical qubits and seven-qubit checks. |
 | 340 | 74 | 6 | 2 | 6 | Current local frontier | Four more logical qubits than the preceding 320-qubit block, using 20 more physical qubits with the same protection and checks. |
 | 280 | 62 | 6 | 2 | 6 | Current local frontier | Four more logical qubits than the preceding 260-qubit block, using 20 more physical qubits with the same protection and checks. |
@@ -60,6 +60,12 @@ separate exact X and Z distances when a stored side witness is heavier than d.
 | 480 | 102 | 6 | 2 | 6 | Current local frontier | Compared with 460/98: 4 more logical qubits for 20 more physical qubits, with equal distance and check size. |
 | 580 | 122 | 6 | 2 | 6 | Current local frontier | Compared with 560/120: 2 more logical qubits for 20 more physical qubits, with equal distance and check size. |
 | 600 | 128 | 6 | 2 | 6 | Current local frontier | Compared with 580/122: 6 more logical qubits for 20 more physical qubits, with equal distance and check size. |
+| 620 | 130 | 6 | 2 | 6 | Current local frontier | Compared with 600/128: 2 more logical qubits for 20 more physical qubits, with equal distance and check size. |
+| 696 | 224 | 6 | 2 | 7 | Current local frontier | Compared with 667/215: 9 more logical qubits for 29 more physical qubits, with equal distance and check size. |
+| 500 | 106 | 6 | 2 | 6 | Current local frontier | Compared with 480/102: 4 more logical qubits for 20 more physical qubits, with equal distance and check size. |
+| 640 | 136 | 6 | 2 | 6 | Current local frontier | Compared with 620/130: 6 more logical qubits for 20 more physical qubits, with equal distance and check size. |
+| 520 | 112 | 6 | 2 | 6 | Current local frontier | Compared with 500/106: 6 more logical qubits for 20 more physical qubits, with equal distance and check size. |
+| 754 | 242 | 6 | 2 | 7 | Current local frontier | Compared with 725/233: 9 more logical qubits for 29 more physical qubits, with equal distance and check size. |
 
 There is no single overall ranking: fewer physical qubits, more logical qubits,
 larger distance and smaller checks compete. A direct improvement is at least as
@@ -68,5 +74,4 @@ reported as tradeoffs, with the cost stated explicitly.
 
 Evidence and dominance relationships are indexed in
 [frontier-points.json](evidence/frontier-points.json). Screening survivors and
-unproved distance estimates are excluded. The user requested continuous active
-search; the scheduled follow-up was deleted.
+unproved distance estimates are excluded. The session is paused at the user-requested stopping point. Both research lanes have finished; no QEC cluster jobs remain in the scheduler. The scheduled follow-up was deleted.

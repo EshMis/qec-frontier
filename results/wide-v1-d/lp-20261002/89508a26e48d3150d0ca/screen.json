@@ -1,38 +1,38 @@
 {
   "board_needed_d": 3,
   "d_upper": 6,
-  "id": "93d95189733be05e9eb0",
-  "k": 130,
-  "n": 620,
+  "id": "89508a26e48d3150d0ca",
+  "k": 136,
+  "n": 640,
   "needed_d": 6,
   "rungs": [
     {
-      "candidate": "results/wide-v1-d/lp-20261002/93d95189733be05e9eb0/candidate-rung-0.json",
+      "candidate": "results/wide-v1-d/lp-20261002/89508a26e48d3150d0ca/candidate-rung-0.json",
       "d_upper": 6,
       "pair_depth": 24,
-      "seconds": 0.15711070783436298,
-      "seed": 1116998211,
+      "seconds": 0.16038459911942482,
+      "seed": 1116998212,
       "trials": 300
     },
     {
-      "candidate": "results/wide-v1-d/lp-20261002/93d95189733be05e9eb0/candidate-rung-1.json",
+      "candidate": "results/wide-v1-d/lp-20261002/89508a26e48d3150d0ca/candidate-rung-1.json",
       "d_upper": 6,
       "pair_depth": 24,
-      "seconds": 2.152592333033681,
-      "seed": 1117998214,
+      "seconds": 2.1735839284956455,
+      "seed": 1117998215,
       "trials": 5000
     },
     {
-      "candidate": "results/wide-v1-d/lp-20261002/93d95189733be05e9eb0/candidate-rung-2.json",
+      "candidate": "results/wide-v1-d/lp-20261002/89508a26e48d3150d0ca/candidate-rung-2.json",
       "d_upper": 6,
       "pair_depth": 24,
-      "seconds": 21.107139902189374,
-      "seed": 1118998217,
+      "seconds": 21.756704719737172,
+      "seed": 1118998218,
       "trials": 50000
     }
   ],
-  "seconds": 24.1815426889807,
-  "seed": 1115998208,
+  "seconds": 24.922232680022717,
+  "seed": 1115998209,
   "spec": {
     "base_columns": 4,
     "connectivity_condition": "coprime cyclic subgroup indices",
@@ -41,33 +41,33 @@
     "entry_type": "group-element-index (one monomial per entry)",
     "equivalence_key": [
       4,
-      31,
+      32,
       [
         0,
         1,
-        3,
-        9
+        4,
+        13
       ],
       [
         0,
-        1,
-        3,
-        21
+        2,
+        8,
+        12
       ]
     ],
     "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
     "family": "lifted-product",
     "generator": "monomial-2xc-v1",
-    "goal_id": "wide-c4-N31-g1-1-d6",
+    "goal_id": "wide-c4-N32-g1-2-d6",
     "group": {
       "action": 1,
       "element_index": "u*l2+v represents a^u b^v",
       "kind": "metacyclic",
-      "l1": 31,
+      "l1": 32,
       "l2": 1,
-      "order": 31
+      "order": 32
     },
-    "index": 22,
+    "index": 23,
     "matrix_a": [
       [
         0,
@@ -77,9 +77,9 @@
       ],
       [
         0,
-        2,
-        6,
-        11
+        13,
+        25,
+        28
       ]
     ],
     "matrix_b": [
@@ -91,9 +91,9 @@
       ],
       [
         0,
-        4,
         6,
-        19
+        10,
+        30
       ]
     ],
     "qldpc_version": "0.4.0",
@@ -102,14 +102,14 @@
     "seed_square_free_required": true,
     "seed_subgroup_indices": [
       1,
-      1
+      2
     ],
     "strategy": "cyclic-wide-sidon-v1",
     "target": {
       "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
       "d_min": 6,
-      "k": 130,
-      "n": 620,
+      "k": 136,
+      "n": 640,
       "status": "improvement_goal_not_measurement",
       "w_max": 6
     }
