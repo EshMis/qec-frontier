@@ -1,0 +1,429 @@
+{
+  "arguments": {
+    "count": 8,
+    "lane": "bb",
+    "offset": 0,
+    "run": "improve-v2-bb-a",
+    "seed": 20261002,
+    "specs": "campaigns/improve-v2/bb-specs.json",
+    "stages": "300,5000,50000",
+    "tlim": 300.0
+  },
+  "job_id": "129138133",
+  "sources": {
+    "scripts/advance.py": "124ba07221db2b90ebb81d9bdc99f5442cc4361ed6b81bda04b26f7b25cf439b",
+    "scripts/generators_bb.py": "1728b352ed7e70300dc4f4ad005788d147e0937c22074771eb8b22a689e3668f",
+    "scripts/search.py": "c7019f5ebd87b98650044eaf89be61a7ee4782be4926bc1afd3b3a3af75750a2"
+  },
+  "specifications": [
+    {
+      "algebraic_distance_upper_bound": 9,
+      "campaign": "bb-improve-v2",
+      "expected_k": 26,
+      "expected_n": 286,
+      "expected_w": 6,
+      "family": "bivariate-bicycle",
+      "id": "bb-paired-binomial-improve-0ea787cf9f7645d3",
+      "mode": "paired-binomial-improve",
+      "parameters": {
+        "a": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "b": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "orders": [
+          13,
+          11
+        ]
+      },
+      "search_goal_d": 8,
+      "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+      "source_v1_index": 33,
+      "target": {
+        "d_min": 8
+      },
+      "target_d_snapshot": 8
+    },
+    {
+      "algebraic_distance_upper_bound": 9,
+      "campaign": "bb-improve-v2",
+      "expected_k": 26,
+      "expected_n": 312,
+      "expected_w": 6,
+      "family": "bivariate-bicycle",
+      "id": "bb-paired-binomial-improve-4c369d20e595e2e0",
+      "mode": "paired-binomial-improve",
+      "parameters": {
+        "a": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "b": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "orders": [
+          13,
+          12
+        ]
+      },
+      "search_goal_d": 9,
+      "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+      "source_v1_index": 20,
+      "target": {
+        "d_min": 9
+      },
+      "target_d_snapshot": 9
+    },
+    {
+      "algebraic_distance_upper_bound": 8,
+      "campaign": "bb-improve-v2",
+      "expected_k": 26,
+      "expected_n": 260,
+      "expected_w": 6,
+      "family": "bivariate-bicycle",
+      "id": "bb-paired-binomial-improve-9c1c4283c90c6f70",
+      "mode": "paired-binomial-improve",
+      "parameters": {
+        "a": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "b": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "orders": [
+          13,
+          10
+        ]
+      },
+      "search_goal_d": 8,
+      "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+      "source_v1_index": 18,
+      "target": {
+        "d_min": 8
+      },
+      "target_d_snapshot": 8
+    },
+    {
+      "algebraic_distance_upper_bound": 8,
+      "campaign": "bb-improve-v2",
+      "expected_k": 40,
+      "expected_n": 400,
+      "expected_w": 6,
+      "family": "bivariate-bicycle",
+      "id": "bb-paired-binomial-improve-23de236e35ee5d69",
+      "mode": "paired-binomial-improve",
+      "parameters": {
+        "a": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "b": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "orders": [
+          20,
+          10
+        ]
+      },
+      "search_goal_d": 7,
+      "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+      "source_v1_index": 26,
+      "target": {
+        "d_min": 7
+      },
+      "target_d_snapshot": 7
+    },
+    {
+      "algebraic_distance_upper_bound": 9,
+      "campaign": "bb-improve-v2",
+      "expected_k": 22,
+      "expected_n": 264,
+      "expected_w": 6,
+      "family": "bivariate-bicycle",
+      "id": "bb-paired-binomial-improve-0f14ed0189e237c3",
+      "mode": "paired-binomial-improve",
+      "parameters": {
+        "a": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "b": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "orders": [
+          11,
+          12
+        ]
+      },
+      "search_goal_d": 9,
+      "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+      "source_v1_index": 72,
+      "target": {
+        "d_min": 9
+      },
+      "target_d_snapshot": 9
+    },
+    {
+      "algebraic_distance_upper_bound": 9,
+      "campaign": "bb-improve-v2",
+      "expected_k": 26,
+      "expected_n": 286,
+      "expected_w": 6,
+      "family": "bivariate-bicycle",
+      "id": "bb-paired-binomial-improve-3caa77f7667e1399",
+      "mode": "paired-binomial-improve",
+      "parameters": {
+        "a": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "b": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "orders": [
+          13,
+          11
+        ]
+      },
+      "search_goal_d": 8,
+      "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+      "source_v1_index": 100,
+      "target": {
+        "d_min": 8
+      },
+      "target_d_snapshot": 8
+    },
+    {
+      "algebraic_distance_upper_bound": 8,
+      "campaign": "bb-improve-v2",
+      "expected_k": 26,
+      "expected_n": 260,
+      "expected_w": 6,
+      "family": "bivariate-bicycle",
+      "id": "bb-paired-binomial-improve-83b9d8350c781ef8",
+      "mode": "paired-binomial-improve",
+      "parameters": {
+        "a": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            9
+          ]
+        ],
+        "b": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "orders": [
+          13,
+          10
+        ]
+      },
+      "search_goal_d": 8,
+      "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+      "source_v1_index": 85,
+      "target": {
+        "d_min": 8
+      },
+      "target_d_snapshot": 8
+    },
+    {
+      "algebraic_distance_upper_bound": 9,
+      "campaign": "bb-improve-v2",
+      "expected_k": 24,
+      "expected_n": 288,
+      "expected_w": 6,
+      "family": "bivariate-bicycle",
+      "id": "bb-paired-binomial-improve-02cf64297aec0644",
+      "mode": "paired-binomial-improve",
+      "parameters": {
+        "a": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "b": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "orders": [
+          12,
+          12
+        ]
+      },
+      "search_goal_d": 9,
+      "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+      "source_v1_index": 23,
+      "target": {
+        "d_min": 9
+      },
+      "target_d_snapshot": 9
+    }
+  ],
+  "started_unix": 1790987667.040145
+}

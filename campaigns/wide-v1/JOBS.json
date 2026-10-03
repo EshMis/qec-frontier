@@ -1,0 +1,39 @@
+{
+  "jobs": [
+    {
+      "job_id": 129139215,
+      "run": "reproduce_416",
+      "scope": "publication final JSON",
+      "preflight": "found suitable queue(s)",
+      "submitted": true
+    },
+    {
+      "job_id": 129139221,
+      "run": "deep_416",
+      "scope": "full unchanged upstream gate",
+      "preflight": "found suitable queue(s)",
+      "submitted": true
+    },
+    {
+      "job_id": 129139562,
+      "run": "wide-v1-max-profile",
+      "scope": "lp-all-specs indices46",
+      "preflight": "found suitable queue(s)",
+      "submitted": true
+    },
+    {
+      "job_id": 129139567,
+      "run": "wide-v1-a",
+      "scope": "lp-all-specs indices1..3",
+      "preflight": "found suitable queue(s)",
+      "submitted": true
+    },
+    {
+      "job_id": 129139572,
+      "run": "wide-v1-b",
+      "scope": "lp-all-specs indices5..8",
+      "preflight": "found suitable queue(s)",
+      "submitted": true
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "candidate": {
+    "d": 6,
+    "family": "lifted-product",
+    "fingerprint": "4159d85dbee1eec1",
+    "k": 133,
+    "locality_class": "unrestricted",
+    "n": 504,
+    "signature": "e8ab8893d1ad4122",
+    "weight_class": "weight-8"
+  },
+  "gates": {
+    "dedup": {
+      "exact_duplicate_of": null,
+      "wl_equivalent_of": null
+    },
+    "novelty": {
+      "advances_by": [],
+      "board": "CSS",
+      "board_advancing": true,
+      "cell": [
+        "weight-8",
+        "unrestricted"
+      ],
+      "d_only_gain": false,
+      "d_only_peers": [],
+      "dominated_by": [],
+      "literature_novelty": "unverified"
+    },
+    "refute": {
+      "detail": "no lighter logical in 8000 RIS trials (seed 1115998220)",
+      "refuted": false,
+      "seed": 1115998220
+    },
+    "verify": {
+      "failed_checks": [],
+      "locality_class": "unrestricted",
+      "ok": true,
+      "weight_class": "weight-8"
+    }
+  },
+  "labels": [
+    "advances the weight-8 x unrestricted board",
+    "literature novelty UNVERIFIED"
+  ],
+  "passed": true,
+  "validator": {
+    "seed": 1115998220,
+    "source_sha256": "d186fd6008cd7a33695fa5eec2ddc144bd1c1043f73b713de775e011cb238807"
+  }
+}

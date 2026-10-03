@@ -413,3 +413,130 @@ candidate hash. The collector's main routine was not run during this review,
 so the registry was not mutated. An AST comparison also confirmed that the
 original `candidates`, `construct`, and group-construction helper remain
 unchanged from the repository HEAD.
+
+## Wider cyclic bases: 2x4 and 2x5
+
+This is a separate construction campaign. `wide_candidates(seed,count)` emits
+`generator="monomial-2xc-v1"`, and its matrices must be built by
+`construct_wide(spec)`. The original `construct` and all three earlier recipe
+streams remain unchanged. The lead owns dispatch in the shared runner.
+
+Both bases have c columns, a first row of identity monomials, and a second row
+of distinct cyclic shifts including zero. For subgroup indices gA,gB and
+`h=gcd(gA,gB)`, the algebraic parameter predictions are
+
+```
+n = (c^2+4)N
+w = c+2
+k = (c-2)^2 N + (c-2)(gA+gB) + 2h.
+```
+
+These identities describe the proposed qLDPC construction; every instantiated
+code still needs the pipeline's independent n,k,w and connectivity readback.
+With individually connected seeds, c=4 gives `n=20N,k=4N+6,w=6`, and c=5
+gives `n=29N,k=9N+8,w=7`. This raises the logical-qubit rate while retaining
+the challenge's bounded-weight classes.
+
+### Dimension derivation and the distance-six ceiling
+
+Put `f=c-2`. The same unit/Smith cancellation reduces each base to the row
+`[sA,0,...,0]` with f zero entries, where `sA=x^gA+1`, and similarly for B.
+The reduced product has `((f+1)^2+1)N` qubits. One coupled check row has image
+ideal `(sA,sB)` of dimension `N-h`, and the f remaining independent rows each
+contribute `N-gA` or `N-gB`. Therefore
+
+```
+rank(HX_reduced) = (f+1)N - f*gA - h
+rank(HZ_reduced) = (f+1)N - f*gB - h
+k = f^2 N + f(gA+gB) + 2h.
+```
+
+This derivation applies to even N as well; it makes no semisimplicity
+assumption. Coprime gA,gB again give a connected combined incidence graph in
+the algebraic model, subject to the actual graph check.
+
+Wider bases do **not** escape the cyclic distance-six ceiling. On any three
+columns, the cofactor construction gives a kernel vector with six binary
+nonzero entries. Taken across all triples, the cofactor entries generate
+the ideal `(x^gA+1)`; the opposite base generates `(x^gB+1)`. Their product
+is nonzero because `gA+gB<=2N/c<N`. Consequently some pair of triples gives
+the nonzero boundary-annihilating pairing used in the earlier proof. There
+is a weight-six logical on each side, so `dX<=6` and `dZ<=6`. An arbitrary
+selected triple need not itself yield a nontrivial logical: the assertion is
+existence across all triples. No quantum lower bound follows from this.
+
+### Exact Sidon feasibility in the allowed size range
+
+A seed with c shifts avoids a square when all `c(c-1)` ordered nonzero
+differences are distinct. Thus its subgroup order M must satisfy
+`M>=c(c-1)+1`. For these two widths:
+
+- c=4: `{0,1,4,6}` is Sidon for every M>=13. In C13, the alternative
+  `{0,1,3,9}` is also a perfect difference set.
+- c=5: `{0,1,4,14,16}` works in C21. `{0,1,4,9,11}` works for every M>=23.
+- c=5, M=22 is impossible. Twenty directed differences would occupy all
+  nonzero residues except 11, since differences occur in opposite pairs.
+  They would therefore contain ten odd residues. If e of the five shifts
+  are even, the number of odd differences is `2e(5-e)`, which is never ten
+  for integer e. This parity proof agrees with enumeration of all 5985
+  normalized five-subsets of C22.
+
+The necessary size bound alone would incorrectly include C22. The new
+catalog explicitly excludes it and verifies the constructive templates over
+the complete modulus range it uses.
+
+### Board gaps and first recipes
+
+The upstream cap allows n<=700, or n<=1000 with w<=8 and a claimed d<=40.
+All proposed wide targets have d6 and w6 or w7, so the extended tier applies.
+The frozen catalog scans c4 group orders 13..50 and c5 orders 21..34, along
+with every unordered coprime pair of divisor indices admitting Sidon seeds.
+
+At declaration, the registry held 18 locally exact-certified points, 15
+nondominated within that registry. All 18 candidate hashes, official
+passed/advancing receipts, and global exact certificates were read back.
+These local points do not change the official board's d>=6 projection at
+w<=6 or w<=7. Pruning used all 1680 CSS records plus those 18 local points.
+
+| Width | Structurally feasible integer goals | Survive existing-point pruning | Preferred parameter goals |
+|---|---:|---:|---:|
+| c4, w6 | 57 | 50 | 34 |
+| c5, w7 | 13 | 13 | 13 |
+
+The c4 choices at N48..50 are already dominated by an official point at
+n960,k258,d>=6,w<=6. Surviving c4 goals reach n940; c5 goals reach n986.
+The catalog is exhaustive over these integer choices, not over all codes.
+Lower-priority surviving subgroup choices remain available after the preferred
+ones; unmeasured goals are never treated as certified dominators.
+
+For seed 20261002, the first eight recipes are below. First rows consist only
+of c identity indices; table entries give the full second-row shift lists.
+Every n,k,d,w entry is an **unmeasured target** at campaign declaration.
+
+| Slot | c,N | A shifts | B shifts | Target n,k,d,w |
+|---:|---|---|---|---|
+| 0 | 4,13 | 0,1,3,9 | 0,1,4,6 | 260,58,6,6 |
+| 1 | 4,14 | 0,8,9,12 | 0,2,5,6 | 280,62,6,6 |
+| 2 | 4,15 | 0,5,11,12 | 0,6,7,10 | 300,66,6,6 |
+| 3 | 4,16 | 0,1,3,12 | 0,1,10,14 | 320,70,6,6 |
+| 4 | 5,21 | 0,1,4,14,16 | 0,1,6,8,18 | 609,197,6,7 |
+| 5 | 4,17 | 0,8,12,14 | 0,11,13,16 | 340,74,6,6 |
+| 6 | 4,18 | 0,1,3,7 | 0,2,7,8 | 360,78,6,6 |
+| 7 | 4,19 | 0,1,6,17 | 0,2,13,14 | 380,82,6,6 |
+
+Slots 0 and 4 are the first separate cluster profiles. The snapshot's
+sufficient board thresholds are five at `(260,58,w6)` and three at
+`(609,197,w7)`. If the latter fails the d6 goal but has a genuine d4 or d5
+witness, it remains eligible for an explicit lower-distance frontier attempt;
+it must still pass official validation and exact certification before being
+reported as a discovery. Changing the search target is not a distance proof.
+
+Implementation checks covered all 70 catalog pruning decisions and 63
+deterministically generated recipes, one for every surviving integer goal.
+They are JSON serializable, have the specified subgroup indices, pass the
+complete directed-difference condition, stay inside the challenge's size and
+weight caps, and are distinct under the recorded monomial/permutation
+equivalences. Translation, reversal, common-unit, and base-exchange controls
+preserve their canonical keys. All frozen functions present in HEAD have
+unchanged ASTs. No local parity-check matrices or distances were computed;
+cluster construction and certificate results remain separate evidence.

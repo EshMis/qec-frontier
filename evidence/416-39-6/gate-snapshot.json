@@ -1,0 +1,7 @@
+{
+  "snapshot_base": "1fc47ee6042837a3a8d6404aad1f3921c78773db",
+  "snapshot_head": "46d374b6c18c4574e00b40c9f2f649c5b443ee26",
+  "upstream_source": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+  "candidate_sha256": "6084fd7e8691c41488eec3520ae77e71a0d649be25c9347e2ab13bbf87fa0313",
+  "note": "Fixture SHAs identify a local code-only Git fixture. Verifier source stays at the unchanged pinned upstream snapshot."
+}

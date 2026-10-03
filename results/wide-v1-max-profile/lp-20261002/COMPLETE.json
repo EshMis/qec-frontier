@@ -1,0 +1,21 @@
+{
+  "count": 1,
+  "exact_points": [
+    {
+      "aspirational_goal_met": true,
+      "candidate": "results/wide-v1-max-profile/lp-20261002/bcb3dcbc73d2736c9644/candidate.json",
+      "d": 6,
+      "evidence": "results/wide-v1-max-profile/lp-20261002/bcb3dcbc73d2736c9644/verification",
+      "exact": true,
+      "id": "bcb3dcbc73d2736c9644",
+      "k": 314,
+      "n": 986,
+      "w": 7
+    }
+  ],
+  "finished_unix": 1790988841.0277224,
+  "screened": {
+    "bcb3dcbc73d2736c9644": "needs_official_validation"
+  },
+  "status": "complete"
+}

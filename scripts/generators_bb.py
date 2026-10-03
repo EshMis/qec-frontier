@@ -487,6 +487,138 @@ def next_candidates_v2(seed: int, count: int) -> Iterator[Spec]:
         indices[lane] += 1
 
 
+def paired_strip_bounds(order: int,
+                        pairs: list[tuple[int, int]] | None = None) -> dict[str, Any]:
+    """Enumerate explicit one-strip logicals; run this on compute nodes only.
+
+    Cost is O(order**2 * 2**order), with no matrices or external imports.
+    This is a family-wide *upper* bound for l>=2, independent of c. It is
+    not an exact quantum distance. Returned witnesses use normalized
+    1<=a<=b<=floor(order/2), and C_a=(1+y**a)/(1+y).
+    Import and all candidate generators leave this exponential routine idle.
+    """
+    if type(order) is not int or not 2 <= order <= 20:
+        raise ValueError("paired strip enumeration requires integer 2<=order<=20")
+    if pairs is None:
+        normalized = [(a, b) for a in range(1, order//2+1)
+                      for b in range(a, order//2+1)]
+    else:
+        normalized_set = set()
+        for pair in pairs:
+            if len(pair) != 2 or any(type(v) is not int or not 1 <= v < order for v in pair):
+                raise ValueError("each pair must contain two exponents in 1..order-1")
+            normalized_set.add(tuple(sorted(min(v, order-v) for v in pair)))
+        normalized = sorted(normalized_set)
+    if not normalized:
+        return {"order": order, "vectors_considered": 0, "pairs": [],
+                "max_upper_bound": None, "scope": "one-strip logical upper bounds"}
+    exponents = sorted({a for pair in normalized for a in pair})
+    locations = {a: index for index, a in enumerate(exponents)}
+    pair_indices = [(locations[a], locations[b]) for a, b in normalized]
+    mask = (1 << order)-1
+    # A Gray-code bit flip changes C_a*v by one cyclic shift of C_a.
+    shifts = [[(((1 << a)-1) << shift | ((1 << a)-1) >> (order-shift)) & mask
+               for a in exponents] for shift in range(order)]
+    products = [0] * len(exponents)
+    best = [order] * len(normalized)
+    witnesses = [(0, True, False)] * len(normalized)
+    v = 0
+    for index in range(1, 1 << order):
+        shift = (index & -index).bit_length()-1
+        v ^= 1 << shift
+        for j, changed in enumerate(shifts[shift]):
+            products[j] ^= changed
+        weight_v = v.bit_count()
+        weights = [product.bit_count() for product in products]
+        for j, (ia, ib) in enumerate(pair_indices):
+            if weight_v >= best[j]:
+                continue
+            wa, wb = weights[ia], weights[ib]
+            if weight_v % 2:
+                za, zb = wa > order-wa, wb > order-wb
+                cost = weight_v + min(wa, order-wa) + min(wb, order-wb)
+            else:
+                options = ((order-wa+wb, True, False),
+                           (wa+order-wb, False, True),
+                           (2*order-wa-wb, True, True))
+                extra, za, zb = min(options)
+                cost = weight_v + extra
+            if cost < best[j]:
+                best[j] = cost
+                witnesses[j] = v, za, zb
+    records = []
+    for (a, b), distance, (v, za, zb) in zip(normalized, best, witnesses):
+        records.append({"a": a, "b": b, "d_upper": distance,
+                        "v_support": [j for j in range(order) if (v >> j) & 1],
+                        "complement_ca": za, "complement_cb": zb})
+    return {"order": order, "vectors_considered": 1 << order,
+            "scope": "one-strip logical upper bounds; not exact quantum distances",
+            "normalized_parameters": "1<=a<=b<=floor(m/2), c=0, any l>=2",
+            "max_upper_bound": max(best), "pairs": records}
+
+
+def paired_strip_witness(spec: Spec, bound: dict[str, Any]) -> dict[str, Any]:
+    """Map a strip-table record to qLDPC v0.4.0 physical X-logical support.
+
+    The BB matrix convention is H_X[row,col]=1 at col=row+(x,y), with
+    flattened group index x*m+y. Left/right qubit blocks are consecutive.
+    Independently validate the returned support against the actual matrices.
+    This function uses only small bit-polynomial operations, not a search.
+    """
+    parameters = spec["parameters"]
+    l, m = parameters["orders"]
+    if l < 2 or m < 2 or parameters["b"] != [[0, 0], [0, 1]]:
+        raise ValueError("expected the paired family with l,m>=2 and B=1+y")
+    first = sorted(y for x, y in parameters["a"] if x == 0)
+    second = sorted(y for x, y in parameters["a"] if x == 1)
+    if len(parameters["a"]) != 4 or len(first) != 2 or first[0] != 0 or len(second) != 2:
+        raise ValueError("expected A=1+y**a+x*y**c*(1+y**b)")
+    a, c, d = first[1], second[0], second[1]
+    b = (d-c) % m
+    if not 0 < a < m or not 0 < b < m:
+        raise ValueError("paired intervals must be nonzero modulo m")
+    short_a, short_b = min(a, m-a), min(b, m-b)
+    if sorted((short_a, short_b)) != [bound["a"], bound["b"]]:
+        raise ValueError("strip-table parameters do not match this code")
+    support = bound["v_support"]
+    if len(set(support)) != len(support) or any(type(j) is not int or not 0 <= j < m for j in support):
+        raise ValueError("invalid second-block strip support")
+    v = sum(1 << j for j in support)
+    odd = bool(len(support) % 2)
+    za, zb = bool(bound["complement_ca"]), bool(bound["complement_cb"])
+    if short_a > short_b:
+        za, zb = zb, za
+    # C_(m-s)=J+y**(m-s)*C_s. J*v is J for odd v, and zero for even v.
+    za ^= odd and a > m//2
+    zb ^= odd and b > m//2
+    if not odd and not (za or zb):
+        raise ValueError("even v without an added ring is a stabilizer")
+    mask = (1 << m)-1
+
+    def rotate(word: int, shift: int) -> int:
+        shift %= m
+        return ((word << shift) | (word >> (m-shift))) & mask
+
+    u0, u1 = 0, 0
+    for j in range(a):
+        u0 ^= rotate(v, j)
+    for j in range(b):
+        u1 ^= rotate(v, c+j)
+    if za:
+        u0 ^= mask
+    if zb:
+        u1 ^= mask
+    physical = ([j for j in range(m) if (u0 >> j) & 1]
+                + [m+j for j in range(m) if (u1 >> j) & 1]
+                + [l*m+j for j in support])
+    physical.sort()
+    if len(physical) != bound["d_upper"]:
+        raise RuntimeError("mapped strip witness does not reproduce the table weight")
+    return {"side": "X", "support": physical, "weight": len(physical),
+            "strip_v_parity": int(odd), "complement_first_strip": za,
+            "complement_second_strip": zb}
+
+
 @lru_cache(maxsize=1)
 def _construction_dependencies() -> tuple[Any, Any, Any]:
     if version("qldpc") != QLDPC_VERSION:

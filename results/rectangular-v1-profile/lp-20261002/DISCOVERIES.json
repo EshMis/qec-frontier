@@ -1,0 +1,15 @@
+{
+  "points": [
+    {
+      "aspirational_goal_met": true,
+      "candidate": "results/rectangular-v1-profile/lp-20261002/531f81b5f482c18e2981/candidate.json",
+      "d": 6,
+      "evidence": "results/rectangular-v1-profile/lp-20261002/531f81b5f482c18e2981/verification",
+      "exact": true,
+      "id": "531f81b5f482c18e2981",
+      "k": 133,
+      "n": 504,
+      "w": 7
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "arguments": {
+    "count": 1,
+    "lane": "bb",
+    "offset": 0,
+    "run": "improve-v2-profile-bb",
+    "seed": 20261002,
+    "specs": "campaigns/improve-v2/bb-largest.json",
+    "stages": "50000",
+    "tlim": 300.0
+  },
+  "job_id": "129137113",
+  "sources": {
+    "scripts/advance.py": "4423b94a2f5b369544ed59341fa1d73f1b404a5345d180c65ad3e72ef2201982",
+    "scripts/generators_bb.py": "1728b352ed7e70300dc4f4ad005788d147e0937c22074771eb8b22a689e3668f",
+    "scripts/search.py": "3c0b8c7f93d442c86e10259dbe228cb42814c469c45734be53b81a4e8e5f6ef8"
+  },
+  "specifications": [
+    {
+      "algebraic_distance_upper_bound": 7,
+      "campaign": "bb-improve-v2",
+      "expected_k": 40,
+      "expected_n": 440,
+      "expected_w": 6,
+      "family": "bivariate-bicycle",
+      "id": "bb-paired-binomial-improve-c60c08dc15004558",
+      "mode": "paired-binomial-improve",
+      "parameters": {
+        "a": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "b": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "orders": [
+          20,
+          11
+        ]
+      },
+      "search_goal_d": 7,
+      "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+      "source_v1_index": 12,
+      "target": {
+        "d_min": 7
+      },
+      "target_d_snapshot": 7
+    }
+  ],
+  "started_unix": 1790987197.6742063
+}

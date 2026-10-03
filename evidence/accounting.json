@@ -59,6 +59,78 @@
       "ru_wallclock": 70.972,
       "cpu": 67.252,
       "maxvmem": "1.286G"
+    },
+    "129138118": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 71.73,
+      "cpu": 29.742,
+      "maxvmem": "1.278G",
+      "stage": "wide_v1_profile"
+    },
+    "129138121": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 204.429,
+      "cpu": 143.476,
+      "maxvmem": "1.316G",
+      "stage": "wide_v1_profile"
+    },
+    "129138133": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 50.475,
+      "cpu": 5.352,
+      "maxvmem": "976.910M",
+      "stage": "bb_v2_eight_candidate_batch"
+    },
+    "129138134": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 50.272,
+      "cpu": 5.543,
+      "maxvmem": "976.902M",
+      "stage": "bb_v2_eight_candidate_batch"
+    },
+    "129139562": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 405.491,
+      "cpu": 360.845,
+      "maxvmem": "1.355G",
+      "stage": "new_shape_profile"
+    },
+    "129140216": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 98.593,
+      "cpu": 66.06,
+      "maxvmem": "1.307G",
+      "stage": "new_shape_profile"
+    },
+    "129139215": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 52.529,
+      "cpu": 13.131,
+      "maxvmem": "982.934M",
+      "stage": "416_publication"
+    },
+    "129139221": {
+      "slots": 4,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 611.17,
+      "cpu": 1595.187,
+      "maxvmem": "1.072G",
+      "stage": "416_publication"
     }
   }
 }

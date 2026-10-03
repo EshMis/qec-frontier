@@ -1,0 +1,16 @@
+{
+  "source_candidate": "results/wide-v1-c4-profile/lp-20261002/b4a4c1df90468e3e2264/candidate.json",
+  "source_evidence": "results/wide-v1-c4-profile/lp-20261002/b4a4c1df90468e3e2264/verification",
+  "source_sha256": "09dbc629461037db008f5efb7a0547cac01082575bee199a392717dd950452ea",
+  "publication_sha256": "3c2f01a4a1957038e9540702842617a3ebd89d60fabc0222abba5d79704de700",
+  "recipe": "results/wide-v1-c4-profile/lp-20261002/b4a4c1df90468e3e2264/recipe.json",
+  "unchanged": [
+    "checks",
+    "n",
+    "k",
+    "code_type",
+    "family",
+    "distance values and witnesses"
+  ],
+  "next_required": "Independent matrix reconstruction and verification of final JSON"
+}

@@ -1,0 +1,51 @@
+{
+  "algebraic_distance_upper_bound": 8,
+  "campaign": "bb-improve-v2",
+  "expected_k": 26,
+  "expected_n": 260,
+  "expected_w": 6,
+  "family": "bivariate-bicycle",
+  "id": "bb-paired-binomial-improve-83b9d8350c781ef8",
+  "mode": "paired-binomial-improve",
+  "parameters": {
+    "a": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        9
+      ]
+    ],
+    "b": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "orders": [
+      13,
+      10
+    ]
+  },
+  "search_goal_d": 8,
+  "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+  "source_v1_index": 85,
+  "target": {
+    "d_min": 8
+  },
+  "target_d_snapshot": 8
+}

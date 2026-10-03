@@ -1,0 +1,125 @@
+{
+  "board_needed_d": 3,
+  "d_upper": 6,
+  "id": "c2457e7a09d83760aa5f",
+  "k": 197,
+  "n": 609,
+  "needed_d": 6,
+  "rungs": [
+    {
+      "candidate": "results/wide-v1-c5-profile/lp-20261002/c2457e7a09d83760aa5f/candidate-rung-0.json",
+      "d_upper": 6,
+      "pair_depth": 24,
+      "seconds": 0.16583900712430477,
+      "seed": 1116998193,
+      "trials": 300
+    },
+    {
+      "candidate": "results/wide-v1-c5-profile/lp-20261002/c2457e7a09d83760aa5f/candidate-rung-1.json",
+      "d_upper": 6,
+      "pair_depth": 24,
+      "seconds": 2.190125985071063,
+      "seed": 1117998196,
+      "trials": 5000
+    },
+    {
+      "candidate": "results/wide-v1-c5-profile/lp-20261002/c2457e7a09d83760aa5f/candidate-rung-2.json",
+      "d_upper": 6,
+      "pair_depth": 24,
+      "seconds": 21.543235432356596,
+      "seed": 1118998199,
+      "trials": 50000
+    }
+  ],
+  "seconds": 74.24654164165258,
+  "seed": 1115998190,
+  "spec": {
+    "base_columns": 5,
+    "connectivity_condition": "coprime cyclic subgroup indices",
+    "distance_bound_basis": "commutative 2xc three-column cofactor logical",
+    "distance_upper_bound": 6,
+    "entry_type": "group-element-index (one monomial per entry)",
+    "equivalence_key": [
+      5,
+      21,
+      [
+        0,
+        1,
+        4,
+        14,
+        16
+      ],
+      [
+        0,
+        1,
+        4,
+        14,
+        16
+      ]
+    ],
+    "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+    "family": "lifted-product",
+    "generator": "monomial-2xc-v1",
+    "goal_id": "wide-c5-N21-g1-1-d6",
+    "group": {
+      "action": 1,
+      "element_index": "u*l2+v represents a^u b^v",
+      "kind": "metacyclic",
+      "l1": 21,
+      "l2": 1,
+      "order": 21
+    },
+    "index": 4,
+    "matrix_a": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        4,
+        14,
+        16
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        6,
+        8,
+        18
+      ]
+    ],
+    "qldpc_version": "0.4.0",
+    "schema_version": 1,
+    "seed": 20261002,
+    "seed_square_free_required": true,
+    "seed_subgroup_indices": [
+      1,
+      1
+    ],
+    "strategy": "cyclic-wide-sidon-v1",
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "d_min": 6,
+      "k": 197,
+      "n": 609,
+      "status": "improvement_goal_not_measurement",
+      "w_max": 7
+    }
+  },
+  "status": "needs_official_validation",
+  "w": 7
+}

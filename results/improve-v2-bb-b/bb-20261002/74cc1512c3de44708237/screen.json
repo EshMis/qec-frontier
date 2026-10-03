@@ -1,0 +1,73 @@
+{
+  "board_needed_d": 9,
+  "d_upper": 8,
+  "id": "74cc1512c3de44708237",
+  "k": 26,
+  "n": 312,
+  "needed_d": 9,
+  "rungs": [
+    {
+      "candidate": "results/improve-v2-bb-b/bb-20261002/74cc1512c3de44708237/candidate-rung-0.json",
+      "d_upper": 8,
+      "pair_depth": 24,
+      "seconds": 0.05198816396296024,
+      "seed": 1116998200,
+      "trials": 300
+    }
+  ],
+  "seconds": 0.21073413360863924,
+  "seed": 1115998197,
+  "spec": {
+    "algebraic_distance_upper_bound": 9,
+    "campaign": "bb-improve-v2",
+    "expected_k": 26,
+    "expected_n": 312,
+    "expected_w": 6,
+    "family": "bivariate-bicycle",
+    "id": "bb-paired-binomial-improve-a5b62728040aa6f4",
+    "mode": "paired-binomial-improve",
+    "parameters": {
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "orders": [
+        13,
+        12
+      ]
+    },
+    "search_goal_d": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "source_v1_index": 53,
+    "target": {
+      "d_min": 9
+    },
+    "target_d_snapshot": 9
+  },
+  "status": "below_board_bar",
+  "w": 6
+}

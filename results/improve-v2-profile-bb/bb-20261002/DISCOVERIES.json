@@ -1,0 +1,14 @@
+{
+  "points": [
+    {
+      "candidate": "results/improve-v2-profile-bb/bb-20261002/2651d4105a0301aea35f/candidate.json",
+      "d": 7,
+      "evidence": "results/improve-v2-profile-bb/bb-20261002/2651d4105a0301aea35f/verification",
+      "exact": true,
+      "id": "2651d4105a0301aea35f",
+      "k": 40,
+      "n": 440,
+      "w": 6
+    }
+  ]
+}

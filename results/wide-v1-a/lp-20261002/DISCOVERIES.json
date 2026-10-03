@@ -1,0 +1,37 @@
+{
+  "points": [
+    {
+      "aspirational_goal_met": true,
+      "candidate": "results/wide-v1-a/lp-20261002/1d938205635428f9c79a/candidate.json",
+      "d": 6,
+      "evidence": "results/wide-v1-a/lp-20261002/1d938205635428f9c79a/verification",
+      "exact": true,
+      "id": "1d938205635428f9c79a",
+      "k": 62,
+      "n": 280,
+      "w": 6
+    },
+    {
+      "aspirational_goal_met": true,
+      "candidate": "results/wide-v1-a/lp-20261002/031268854363d59d6577/candidate.json",
+      "d": 6,
+      "evidence": "results/wide-v1-a/lp-20261002/031268854363d59d6577/verification",
+      "exact": true,
+      "id": "031268854363d59d6577",
+      "k": 66,
+      "n": 300,
+      "w": 6
+    },
+    {
+      "aspirational_goal_met": true,
+      "candidate": "results/wide-v1-a/lp-20261002/397eb052cffb58de7346/candidate.json",
+      "d": 6,
+      "evidence": "results/wide-v1-a/lp-20261002/397eb052cffb58de7346/verification",
+      "exact": true,
+      "id": "397eb052cffb58de7346",
+      "k": 70,
+      "n": 320,
+      "w": 6
+    }
+  ]
+}

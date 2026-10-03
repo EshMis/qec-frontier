@@ -548,3 +548,516 @@ def construct(spec: Mapping[str, Any]) -> tuple[np.ndarray, np.ndarray]:
     if hx.shape != expected_shape or hz.shape != expected_shape:
         raise RuntimeError(f"Unexpected lifted-product shapes: {hx.shape}, {hz.shape}")
     return hx, hz
+
+
+# Frozen d>=6 projections of the official CSS board at BOARD_REVISION plus the
+# 18 locally certified points recorded at this campaign's declaration.  The
+# local points do not change either projection.  The runner owns live pruning.
+_WIDE_EXISTING_D6 = {
+    6: ((24, 2), (30, 4), (42, 6), (54, 8), (62, 10), (72, 12),
+        (96, 16), (140, 20), (150, 32), (284, 58), (540, 112),
+        (675, 139), (864, 146), (900, 182), (960, 258)),
+    7: ((24, 2), (30, 4), (42, 6), (48, 8), (62, 10), (72, 12),
+        (90, 16), (96, 20), (124, 22), (150, 32), (228, 34),
+        (230, 40), (249, 42), (278, 44), (284, 58), (330, 60),
+        (443, 74), (540, 112), (675, 139), (864, 146),
+        (896, 194), (960, 258)),
+}
+
+
+def _wide_sidon_possible(modulus: int, columns: int) -> bool:
+    # Four shifts: (0,1,4,6) works at every M>=13.
+    # Five shifts: (0,1,4,14,16) works at M=21; (0,1,4,9,11) at M>=23.
+    # All 5985 normalized five-subsets at M=22 were checked: none is Sidon.
+    return modulus >= 13 if columns == 4 else modulus == 21 or modulus >= 23
+
+
+def wide_goal_catalog() -> list[dict[str, Any]]:
+    """Enumerate cyclic 2xc Sidon-seed integer goals for c=4,5 under n<=1000."""
+    goals: list[dict[str, Any]] = []
+    for columns in (4, 5):
+        free = columns - 2
+        for order in range(columns * (columns - 1) + 1, 1000 // (columns**2 + 4) + 1):
+            divisors = [g for g in range(1, order + 1) if order % g == 0
+                        and _wide_sidon_possible(order // g, columns)]
+            for index_a in divisors:
+                for index_b in divisors:
+                    if index_a > index_b or math.gcd(index_a, index_b) != 1:
+                        continue
+                    n = (columns**2 + 4) * order
+                    k = free**2 * order + free * (index_a + index_b) + 2
+                    weight = columns + 2
+                    goals.append({
+                        "id": f"wide-c{columns}-N{order}-g{index_a}-{index_b}-d6",
+                        "columns": columns, "order": order,
+                        "subgroup_indices": [index_a, index_b],
+                        "n": n, "k": k, "d": 6, "w": weight,
+                        "pruned_by_existing": [list(point) for point in _WIDE_EXISTING_D6[weight]
+                                               if point[0] <= n and point[1] >= k],
+                    })
+    for goal in goals:
+        goal["preferred_parameter_target"] = not goal["pruned_by_existing"] and not any(
+            not other["pruned_by_existing"] and other["w"] <= goal["w"]
+            and other["n"] <= goal["n"] and other["k"] >= goal["k"]
+            and any(other[key] != goal[key] for key in ("n", "k", "w"))
+            for other in goals
+        )
+    return goals
+
+
+def _wide_shift_sample(
+    rng: random.Random, order: int, subgroup_index: int, columns: int,
+) -> tuple[int, ...]:
+    modulus = order // subgroup_index
+    if not _wide_sidon_possible(modulus, columns):
+        raise ValueError("No admitted Sidon seed exists for this subgroup order")
+    for _ in range(10_000):
+        tail = tuple(sorted(rng.sample(range(1, modulus), columns - 1)))
+        if math.gcd(modulus, *tail) != 1:
+            continue
+        shifts = (0, *tail)
+        if len({(a - b) % modulus for a in shifts for b in shifts if a != b}) != columns * (columns - 1):
+            continue
+        return tuple(subgroup_index * x for x in shifts)
+    raise RuntimeError("Bounded Sidon seed sampling failed")
+
+
+def _wide_equivalence_key(
+    order: int, shifts_a: tuple[int, ...], shifts_b: tuple[int, ...],
+) -> tuple[Any, ...]:
+    def normalize(shifts: tuple[int, ...], unit: int) -> tuple[int, ...]:
+        return min(tuple(sorted((sign * unit * (x - pivot)) % order for x in shifts))
+                   for pivot in shifts for sign in (1, -1))
+
+    return (len(shifts_a), order, *min(
+        tuple(sorted((normalize(shifts_a, unit), normalize(shifts_b, unit))))
+        for unit in range(1, order) if math.gcd(unit, order) == 1
+    ))
+
+
+def wide_candidates(seed: int, count: int) -> Iterator[dict[str, Any]]:
+    """Separate higher-rate campaign; construct these specs with construct_wide.
+
+    The first four recipes use c4 and orders13..16, followed by the c5/order21
+    probe.  All targets seek global distance6, which remains to be measured.
+    """
+    if count < 0:
+        raise ValueError("count must be nonnegative")
+    goals = [g for g in wide_goal_catalog() if not g["pruned_by_existing"]]
+    queues = {
+        columns: sorted((g for g in goals if g["columns"] == columns
+                         and g["preferred_parameter_target"]),
+                        key=lambda g: (g["n"], -g["k"], g["subgroup_indices"]))
+        for columns in (4, 5)
+    }
+    campaign = []
+    while queues[4] or queues[5]:
+        for _ in range(4):
+            if queues[4]:
+                campaign.append(queues[4].pop(0))
+        if queues[5]:
+            campaign.append(queues[5].pop(0))
+    campaign.extend(sorted((g for g in goals if not g["preferred_parameter_target"]),
+                           key=lambda g: (g["n"], g["w"], -g["k"], g["subgroup_indices"])))
+    rng = random.Random(seed)
+    seen: set[tuple[Any, ...]] = set()
+    for index in range(count):
+        goal = campaign[index % len(campaign)]
+        order, columns = goal["order"], goal["columns"]
+        index_a, index_b = goal["subgroup_indices"]
+        for attempt in range(10_000):
+            if index == 0 and attempt == 0:
+                shifts_a, shifts_b = (0, 1, 3, 9), (0, 1, 4, 6)
+            elif index == 4 and attempt == 0:
+                shifts_a, shifts_b = (0, 1, 4, 14, 16), (0, 1, 6, 8, 18)
+            else:
+                shifts_a = _wide_shift_sample(rng, order, index_a, columns)
+                shifts_b = _wide_shift_sample(rng, order, index_b, columns)
+            identity = _wide_equivalence_key(order, shifts_a, shifts_b)
+            if identity not in seen:
+                seen.add(identity)
+                break
+        else:
+            raise RuntimeError("Bounded sampling found no new wide recipe equivalence class")
+        yield {
+            "schema_version": 1, "family": "lifted-product",
+            "generator": "monomial-2xc-v1", "strategy": "cyclic-wide-sidon-v1",
+            "base_columns": columns, "qldpc_version": QLDPC_VERSION,
+            "seed": seed, "index": index, "goal_id": goal["id"],
+            "group": {
+                "kind": "metacyclic", "l1": order, "l2": 1, "action": 1,
+                "order": order, "element_index": "u*l2+v represents a^u b^v",
+            },
+            "entry_type": "group-element-index (one monomial per entry)",
+            "matrix_a": [[0] * columns, list(shifts_a)],
+            "matrix_b": [[0] * columns, list(shifts_b)],
+            "seed_subgroup_indices": [index_a, index_b],
+            "seed_square_free_required": True,
+            "connectivity_condition": "coprime cyclic subgroup indices",
+            "distance_upper_bound": 6,
+            "distance_bound_basis": "commutative 2xc three-column cofactor logical",
+            "equivalence_key": identity,
+            "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+            "target": {
+                "board_revision": BOARD_REVISION,
+                "n": goal["n"], "k": goal["k"], "d_min": 6, "w_max": goal["w"],
+                "status": "improvement_goal_not_measurement",
+            },
+        }
+
+
+def construct_wide(spec: Mapping[str, Any]) -> tuple[np.ndarray, np.ndarray]:
+    """Build the separate cyclic 2x4/2x5 family using qLDPC 0.4.0 LPCode."""
+    import numpy as np
+    from qldpc import abstract, codes
+
+    installed = importlib.metadata.version("qldpc")
+    if installed != QLDPC_VERSION or spec.get("qldpc_version") != QLDPC_VERSION:
+        raise RuntimeError(f"Require qLDPC {QLDPC_VERSION}; installed {installed}")
+    if spec.get("generator") != "monomial-2xc-v1":
+        raise ValueError("Unknown wide LP generator specification")
+    columns = spec.get("base_columns")
+    if columns not in (4, 5):
+        raise ValueError("Wide construction requires four or five columns")
+    group_spec = spec["group"]
+    order = int(group_spec["order"])
+    if (group_spec.get("kind") != "metacyclic" or group_spec.get("l1") != order
+            or group_spec.get("l2") != 1 or group_spec.get("action") != 1):
+        raise ValueError("This wide campaign requires a cyclic group")
+    group, members = _qldpc_group(order, 1, 1)
+    ring = abstract.GroupRing(group, field=2)
+
+    def ring_matrix(key: str) -> Any:
+        matrix = spec[key]
+        if len(matrix) != 2 or any(len(row) != columns for row in matrix):
+            raise ValueError("Wide base shape disagrees with base_columns")
+        if any(not isinstance(value, int) or not 0 <= value < order
+               for row in matrix for value in row):
+            raise ValueError("Invalid group-element index")
+        if matrix[0] != [0] * columns or matrix[1][0] != 0 or len(set(matrix[1])) != columns:
+            raise ValueError("Require normalized, distinct wide seed shifts")
+        return abstract.RingArray.build(
+            [[members[value] for value in row] for row in matrix], ring=ring
+        )
+
+    code = codes.LPCode(ring_matrix("matrix_a"), ring_matrix("matrix_b"), set_logicals=False)
+    hx = np.asarray(code.matrix_x, dtype=np.uint8).copy()
+    hz = np.asarray(code.matrix_z, dtype=np.uint8).copy()
+    expected_shape = (2 * columns * order, (columns**2 + 4) * order)
+    if hx.shape != expected_shape or hz.shape != expected_shape:
+        raise RuntimeError(f"Unexpected wide LP shapes: {hx.shape}, {hz.shape}")
+    return hx, hz
+
+
+# Frozen numeric projections after 21 local exact discoveries.  A pair is an
+# existing (n,k) at weight<=w and distance>=d.  No unmeasured target appears here.
+_RECT_EXISTING = {
+    (5, 4): ((16, 2), (18, 4), (40, 10), (78, 11), (80, 18), (150, 32),
+             (273, 33), (312, 37), (351, 39), (364, 41), (390, 45), (429, 49),
+             (520, 51), (624, 54), (660, 68), (676, 71), (900, 182)),
+    (5, 6): ((36, 4), (84, 6), (150, 32), (351, 33), (360, 38), (416, 39),
+             (455, 43), (468, 45), (520, 51), (624, 54), (660, 68), (900, 182)),
+    (6, 4): ((12, 2), (16, 4), (24, 6), (25, 7), (30, 8), (32, 10),
+             (42, 13), (50, 16), (54, 20), (60, 22), (96, 34), (119, 37),
+             (160, 40), (176, 44), (192, 48), (248, 62), (540, 112),
+             (675, 139), (680, 163), (900, 182), (960, 258)),
+    (6, 6): ((24, 2), (30, 4), (42, 6), (54, 8), (62, 10), (72, 12),
+             (96, 16), (140, 20), (150, 32), (260, 58), (540, 112),
+             (675, 139), (864, 146), (900, 182), (960, 258)),
+    (7, 4): ((12, 2), (16, 4), (24, 6), (25, 7), (26, 8), (32, 10),
+             (42, 13), (50, 16), (54, 20), (60, 22), (96, 34), (119, 37),
+             (160, 40), (176, 44), (192, 48), (234, 52), (248, 62),
+             (288, 64), (306, 68), (324, 72), (342, 76), (360, 80),
+             (378, 84), (396, 88), (414, 92), (432, 96), (450, 100),
+             (540, 112), (609, 197), (960, 258)),
+    (7, 6): ((24, 2), (30, 4), (42, 6), (48, 8), (62, 10), (72, 12),
+             (90, 16), (96, 20), (124, 22), (150, 32), (228, 34),
+             (230, 40), (249, 42), (260, 58), (330, 60), (443, 74),
+             (540, 112), (609, 197), (960, 258)),
+    (8, 4): ((12, 2), (16, 6), (24, 10), (32, 14), (48, 15), (50, 22),
+             (64, 34), (119, 37), (128, 66), (264, 70), (280, 74),
+             (288, 76), (296, 78), (336, 88), (376, 190), (609, 197),
+             (776, 198), (792, 202), (808, 206), (824, 210), (840, 214),
+             (856, 218), (872, 222), (888, 226), (904, 230), (960, 258)),
+    (8, 6): ((20, 2), (30, 4), (32, 6), (36, 8), (42, 10), (54, 12),
+             (56, 14), (64, 18), (96, 22), (104, 30), (136, 38),
+             (152, 42), (184, 50), (232, 62), (248, 66), (264, 70),
+             (280, 74), (288, 76), (296, 78), (336, 88), (376, 98),
+             (392, 102), (432, 112), (472, 122), (488, 126), (512, 132),
+             (568, 146), (584, 150), (609, 197), (776, 198), (792, 202),
+             (808, 206), (824, 210), (840, 214), (856, 218), (872, 222),
+             (888, 226), (904, 230), (960, 258)),
+}
+
+
+def _rect_sidon_template(modulus: int, columns: int) -> tuple[int, ...] | None:
+    if columns == 3 and modulus >= 7:
+        return (0, 1, 3)
+    if columns == 4 and modulus >= 13:
+        return (0, 1, 4, 6)
+    if columns == 5:
+        if modulus == 21:
+            return (0, 1, 4, 14, 16)
+        if modulus >= 23:
+            return (0, 1, 4, 9, 11)
+    if columns == 6:
+        if modulus == 31:
+            return (0, 1, 3, 8, 12, 18)
+        if modulus >= 35:
+            return (0, 1, 4, 10, 12, 17)
+    return None
+
+
+def rectangular_goal_catalog() -> list[dict[str, Any]]:
+    """New rectangular d6 goals and compact d4 goals for widths3..6.
+
+    Previously declared square d6 families are omitted.  Square3 d4 is limited
+    to the previously untested C3 case; earlier catalogs cover its larger lifts.
+    Proposed wide d6 goals affect priority only, never certified-point pruning.
+    """
+    goals: list[dict[str, Any]] = []
+    for distance in (6, 4):
+        for columns_a in range(3, 7):
+            for columns_b in range(columns_a, 7):
+                if distance == 6 and columns_a == columns_b:
+                    continue
+                max_order = 1000 // (columns_a * columns_b + 4)
+                if distance == 4 and columns_a == columns_b == 3:
+                    max_order = 3
+                for order in range(columns_b, max_order + 1):
+                    def indices(columns: int) -> list[int]:
+                        return [g for g in range(1, order // columns + 1) if order % g == 0
+                                and (distance == 4 or _rect_sidon_template(order // g, columns))]
+
+                    for index_a in indices(columns_a):
+                        for index_b in indices(columns_b):
+                            if (math.gcd(index_a, index_b) != 1
+                                    or (columns_a == columns_b and index_a > index_b)):
+                                continue
+                            n = (columns_a * columns_b + 4) * order
+                            k = ((columns_a - 2) * (columns_b - 2) * order
+                                 + (columns_b - 2) * index_a + (columns_a - 2) * index_b + 2)
+                            weight = columns_b + 2
+                            goals.append({
+                                "id": f"rect-c{columns_a}-{columns_b}-N{order}-g{index_a}-{index_b}-d{distance}",
+                                "columns": [columns_a, columns_b], "order": order,
+                                "subgroup_indices": [index_a, index_b],
+                                "n": n, "k": k, "d": distance, "w": weight,
+                                "pruned_by_existing": [list(p) for p in _RECT_EXISTING[weight, distance]
+                                                       if p[0] <= n and p[1] >= k],
+                            })
+    priority_comparators = goals + [g for g in wide_goal_catalog() if not g["pruned_by_existing"]]
+    for goal in goals:
+        goal["preferred_parameter_target"] = not goal["pruned_by_existing"] and not any(
+            not other["pruned_by_existing"] and other["n"] <= goal["n"]
+            and other["k"] >= goal["k"] and other["d"] >= goal["d"] and other["w"] <= goal["w"]
+            and any(other[key] != goal[key] for key in ("n", "k", "d", "w"))
+            for other in priority_comparators
+        )
+    return goals
+
+
+def _rect_sample_shifts(
+    rng: random.Random, order: int, subgroup_index: int, columns: int, square_free: bool,
+) -> tuple[int, ...]:
+    modulus = order // subgroup_index
+    for _ in range(512):
+        shifts = (0, *sorted(rng.sample(range(1, modulus), columns - 1)))
+        if math.gcd(modulus, *shifts) != 1:
+            continue
+        if square_free and len({(a - b) % modulus for a in shifts for b in shifts if a != b}) != columns * (columns - 1):
+            continue
+        return tuple(subgroup_index * a for a in shifts)
+    template = _rect_sidon_template(modulus, columns) if square_free else tuple(range(columns))
+    if template is None:
+        raise ValueError("No declared seed template for this shape")
+    unit = rng.choice([a for a in range(1, modulus) if math.gcd(a, modulus) == 1])
+    pivot = rng.choice(template)
+    return tuple(sorted(subgroup_index * ((unit * (a - pivot)) % modulus) for a in template))
+
+
+def _rect_equivalence_key(
+    order: int, shifts_a: tuple[int, ...], shifts_b: tuple[int, ...],
+) -> tuple[Any, ...]:
+    def normalize(shifts: tuple[int, ...], unit: int) -> tuple[int, ...]:
+        return min(tuple(sorted((sign * unit * (a - pivot)) % order for a in shifts))
+                   for pivot in shifts for sign in (1, -1))
+
+    return (tuple(sorted((len(shifts_a), len(shifts_b)))), order, *min(
+        tuple(sorted((normalize(shifts_a, unit), normalize(shifts_b, unit))))
+        for unit in range(1, order) if math.gcd(unit, order) == 1
+    ))
+
+
+def rectangular_candidates(seed: int, count: int) -> Iterator[dict[str, Any]]:
+    """First eight fixed shape probes, then prioritized rectangular/compact goals."""
+    if count < 0:
+        raise ValueError("count must be nonnegative")
+    probes = (
+        ((5, 5, 5, 1, 1, 4), ((0, 1, 2, 3, 4), (0, 1, 2, 3, 4))),
+        ((5, 6, 6, 1, 1, 4), ((0, 1, 2, 3, 4), (0, 1, 2, 3, 4, 5))),
+        ((6, 6, 6, 1, 1, 4), ((0, 1, 2, 3, 4, 5), (0, 1, 2, 3, 4, 5))),
+        ((4, 5, 21, 1, 1, 6), ((0, 1, 4, 6), (0, 1, 4, 14, 16))),
+        ((4, 4, 12, 2, 3, 4), ((0, 2, 4, 6), (0, 3, 6, 9))),
+        ((3, 4, 14, 2, 1, 6), ((0, 2, 6), (0, 1, 4, 6))),
+        ((3, 4, 16, 2, 1, 6), ((0, 2, 6), (0, 1, 4, 6))),
+        ((3, 3, 3, 1, 1, 4), ((0, 1, 2), (0, 1, 2))),
+    )
+    goals = [g for g in rectangular_goal_catalog() if not g["pruned_by_existing"]]
+    by_key = {(*g["columns"], g["order"], *g["subgroup_indices"], g["d"]): g for g in goals}
+    campaign = [by_key[key] for key, _ in probes]
+    fixed = {by_key[key]["id"]: shifts for key, shifts in probes}
+    campaign.extend(sorted((g for g in goals if g["id"] not in fixed), key=lambda g: (
+        not g["preferred_parameter_target"], g["n"], g["w"], -g["d"], -g["k"], g["id"])))
+    rng = random.Random(seed)
+    seen: set[tuple[Any, ...]] = set()
+    sampling_limited: set[str] = set()
+    cursor = 0
+    for index in range(count):
+        while True:
+            if len(sampling_limited) == len(campaign):
+                raise RuntimeError("No new rectangular recipe found within per-goal sampling limits")
+            goal = campaign[cursor % len(campaign)]
+            cursor += 1
+            if goal["id"] in sampling_limited:
+                continue
+            columns_a, columns_b = goal["columns"]
+            order = goal["order"]
+            index_a, index_b = goal["subgroup_indices"]
+            for attempt in range(256):
+                if cursor <= len(campaign) and attempt == 0 and goal["id"] in fixed:
+                    shifts_a, shifts_b = fixed[goal["id"]]
+                else:
+                    shifts_a = _rect_sample_shifts(rng, order, index_a, columns_a, goal["d"] == 6)
+                    shifts_b = _rect_sample_shifts(rng, order, index_b, columns_b, goal["d"] == 6)
+                identity = _rect_equivalence_key(order, shifts_a, shifts_b)
+                if identity not in seen:
+                    seen.add(identity)
+                    break
+            else:
+                sampling_limited.add(goal["id"])
+                continue
+            break
+        yield {
+            "schema_version": 1, "family": "lifted-product",
+            "generator": "monomial-2xcd-v1", "strategy": "cyclic-rectangular-rate-v1",
+            "base_columns": [columns_a, columns_b], "qldpc_version": QLDPC_VERSION,
+            "seed": seed, "index": index, "goal_id": goal["id"],
+            "group": {
+                "kind": "metacyclic", "l1": order, "l2": 1, "action": 1,
+                "order": order, "element_index": "u*l2+v represents a^u b^v",
+            },
+            "entry_type": "group-element-index (one monomial per entry)",
+            "matrix_a": [[0] * columns_a, list(shifts_a)],
+            "matrix_b": [[0] * columns_b, list(shifts_b)],
+            "seed_subgroup_indices": [index_a, index_b],
+            "seed_square_free_required": goal["d"] == 6,
+            "connectivity_condition": "coprime cyclic subgroup indices",
+            "distance_upper_bound": 6,
+            "distance_bound_basis": "commutative three-column cofactor logical",
+            "equivalence_key": identity,
+            "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+            "target": {
+                "board_revision": BOARD_REVISION, "n": goal["n"], "k": goal["k"],
+                "d_min": goal["d"], "w_max": goal["w"], "status": "improvement_goal_not_measurement",
+            },
+        }
+
+
+def construct_rectangular(spec: Mapping[str, Any]) -> tuple[np.ndarray, np.ndarray]:
+    """Use qLDPC 0.4.0 for unequal 2xc/2xd cyclic bases; do not compute distances."""
+    import numpy as np
+    from qldpc import abstract, codes
+
+    installed = importlib.metadata.version("qldpc")
+    if installed != QLDPC_VERSION or spec.get("qldpc_version") != QLDPC_VERSION:
+        raise RuntimeError(f"Require qLDPC {QLDPC_VERSION}; installed {installed}")
+    if spec.get("generator") != "monomial-2xcd-v1":
+        raise ValueError("Unknown rectangular LP generator specification")
+    columns = spec.get("base_columns")
+    if (not isinstance(columns, (list, tuple)) or len(columns) != 2
+            or any(not isinstance(c, int) or not 3 <= c <= 6 for c in columns)):
+        raise ValueError("Require two column counts between three and six")
+    columns_a, columns_b = columns
+    group_spec = spec["group"]
+    order = int(group_spec["order"])
+    if (group_spec.get("kind") != "metacyclic" or group_spec.get("l1") != order
+            or group_spec.get("l2") != 1 or group_spec.get("action") != 1):
+        raise ValueError("This rectangular campaign requires a cyclic group")
+    group, members = _qldpc_group(order, 1, 1)
+    ring = abstract.GroupRing(group, field=2)
+
+    def ring_matrix(key: str, width: int) -> Any:
+        matrix = spec[key]
+        if len(matrix) != 2 or any(len(row) != width for row in matrix):
+            raise ValueError("Rectangular base shape disagrees with base_columns")
+        if any(not isinstance(value, int) or not 0 <= value < order
+               for row in matrix for value in row):
+            raise ValueError("Invalid group-element index")
+        if matrix[0] != [0] * width or matrix[1][0] != 0 or len(set(matrix[1])) != width:
+            raise ValueError("Require normalized, distinct rectangular seed shifts")
+        return abstract.RingArray.build([[members[value] for value in row] for row in matrix], ring=ring)
+
+    code = codes.LPCode(ring_matrix("matrix_a", columns_a), ring_matrix("matrix_b", columns_b),
+                       set_logicals=False)
+    hx = np.asarray(code.matrix_x, dtype=np.uint8).copy()
+    hz = np.asarray(code.matrix_z, dtype=np.uint8).copy()
+    n = (columns_a * columns_b + 4) * order
+    if hx.shape != (2 * columns_b * order, n) or hz.shape != (2 * columns_a * order, n):
+        raise RuntimeError(f"Unexpected rectangular LP shapes: {hx.shape}, {hz.shape}")
+    return hx, hz
+
+
+def _rect_triple_containment(
+    order: int, shifts_a: tuple[int, ...], shifts_b: tuple[int, ...],
+) -> bool:
+    """Detect the stated mixed-sector weight-five obstruction in cyclic labels."""
+    for small, large in ((shifts_a, shifts_b), (shifts_b, shifts_a)):
+        if len(small) != 3:
+            continue
+        if any(all((sign * (value - small[0]) + pivot) % order in large for value in small)
+               for sign in (1, -1) for pivot in large):
+            return True
+    return False
+
+
+def rectangular_refinements(seed: int, count: int) -> Iterator[dict[str, Any]]:
+    """Two fixed d6 refinements; preserve all frozen rectangular-v1 recipes.
+
+    Slot0 changes the C14 seed subgroup and targets fewer logical qubits;
+    slot1 changes the C16 four-shift seed while keeping its parameter target.
+    Both remove the translated/reversed triple-containment obstruction.
+    """
+    import hashlib
+    import json
+
+    if not 0 <= count <= 2:
+        raise ValueError("This fixed refinement campaign contains exactly two probes")
+    original = list(rectangular_candidates(seed, 8))
+    refinements = (
+        (5, (0, 1, 3), (0, 1, 4, 6), (1, 1), 33),
+        (6, (0, 2, 6), (0, 1, 3, 12), (2, 1), 39),
+    )
+    for index, (source_index, shifts_a, shifts_b, subgroup_indices, target_k) in enumerate(refinements[:count]):
+        source = original[source_index]
+        canonical_source = json.dumps(source, sort_keys=True)
+        spec = json.loads(canonical_source)
+        order = spec["group"]["order"]
+        spec.update({
+            "strategy": "cyclic-rectangular-noncontainment-refinement-v1",
+            "index": index,
+            "goal_id": f"rect-refined-c3-4-N{order}-g{subgroup_indices[0]}-{subgroup_indices[1]}-d6",
+            "matrix_a": [[0, 0, 0], list(shifts_a)],
+            "matrix_b": [[0, 0, 0, 0], list(shifts_b)],
+            "seed_subgroup_indices": list(subgroup_indices),
+            "equivalence_key": _rect_equivalence_key(order, shifts_a, shifts_b),
+            "structural_filter": "no translated or reversed three-shift seed contained in the other seed",
+            "refinement_of": {
+                "campaign": "rectangular-v1", "source_index": source_index,
+                "canonical_recipe_sha256": hashlib.sha256(canonical_source.encode()).hexdigest(),
+                "reason": "remove the mixed-sector weight-five triple-containment obstruction",
+            },
+        })
+        spec["target"]["k"] = target_k
+        assert not _rect_triple_containment(order, shifts_a, shifts_b)
+        yield spec

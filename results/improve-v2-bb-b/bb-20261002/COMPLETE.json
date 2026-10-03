@@ -1,0 +1,16 @@
+{
+  "count": 8,
+  "exact_points": [],
+  "finished_unix": 1790987713.6651022,
+  "screened": {
+    "0c6c9da1ff4ac3440ea1": "below_board_bar",
+    "2651d4105a0301aea35f": "below_board_bar",
+    "4efa9e9aab0569ea20a4": "below_board_bar",
+    "722f1f1932e9c5dba83a": "below_board_bar",
+    "74cc1512c3de44708237": "below_board_bar",
+    "bc20e4ce53f3568fee75": "below_board_bar",
+    "e8dd48b21e13f9b81309": "below_board_bar",
+    "f7891aed3c42ccb6bb6b": "below_board_bar"
+  },
+  "status": "complete"
+}
