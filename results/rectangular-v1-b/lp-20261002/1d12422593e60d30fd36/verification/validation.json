@@ -1,0 +1,55 @@
+{
+  "candidate": {
+    "d": 4,
+    "family": "lifted-product",
+    "fingerprint": "174f38a262e3de62",
+    "k": 7,
+    "locality_class": "unrestricted",
+    "n": 39,
+    "signature": "9f015a7f9a1b2d40",
+    "weight_class": "weight-6"
+  },
+  "gates": {
+    "dedup": {
+      "exact_duplicate_of": null,
+      "wl_equivalent_of": null
+    },
+    "novelty": {
+      "advances_by": [
+        "k",
+        "n",
+        "w"
+      ],
+      "board": "CSS",
+      "board_advancing": true,
+      "cell": [
+        "weight-6",
+        "unrestricted"
+      ],
+      "d_only_gain": false,
+      "d_only_peers": [],
+      "dominated_by": [],
+      "literature_novelty": "unverified"
+    },
+    "refute": {
+      "detail": "no lighter logical in 4060 RIS trials (seed 1115998224)",
+      "refuted": false,
+      "seed": 1115998224
+    },
+    "verify": {
+      "failed_checks": [],
+      "locality_class": "unrestricted",
+      "ok": true,
+      "weight_class": "weight-6"
+    }
+  },
+  "labels": [
+    "advances the weight-6 x unrestricted board",
+    "literature novelty UNVERIFIED"
+  ],
+  "passed": true,
+  "validator": {
+    "seed": 1115998224,
+    "source_sha256": "d186fd6008cd7a33695fa5eec2ddc144bd1c1043f73b713de775e011cb238807"
+  }
+}

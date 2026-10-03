@@ -1,0 +1,125 @@
+{
+  "board_needed_d": 4,
+  "d_upper": 4,
+  "id": "cb1f0d09147aea9be44a",
+  "k": 60,
+  "n": 240,
+  "needed_d": 4,
+  "rungs": [
+    {
+      "candidate": "results/rectangular-v1-b/lp-20261002/cb1f0d09147aea9be44a/candidate-rung-0.json",
+      "d_upper": 4,
+      "pair_depth": 24,
+      "seconds": 0.030816471204161644,
+      "seed": 1116998193,
+      "trials": 300
+    },
+    {
+      "candidate": "results/rectangular-v1-b/lp-20261002/cb1f0d09147aea9be44a/candidate-rung-1.json",
+      "d_upper": 4,
+      "pair_depth": 24,
+      "seconds": 0.4073533322662115,
+      "seed": 1117998196,
+      "trials": 5000
+    },
+    {
+      "candidate": "results/rectangular-v1-b/lp-20261002/cb1f0d09147aea9be44a/candidate-rung-2.json",
+      "d_upper": 4,
+      "pair_depth": 24,
+      "seconds": 4.036227822303772,
+      "seed": 1118998199,
+      "trials": 50000
+    }
+  ],
+  "seconds": 29.825508372858167,
+  "seed": 1115998190,
+  "spec": {
+    "base_columns": [
+      4,
+      4
+    ],
+    "connectivity_condition": "coprime cyclic subgroup indices",
+    "distance_bound_basis": "commutative three-column cofactor logical",
+    "distance_upper_bound": 6,
+    "entry_type": "group-element-index (one monomial per entry)",
+    "equivalence_key": [
+      [
+        4,
+        4
+      ],
+      12,
+      [
+        0,
+        2,
+        4,
+        6
+      ],
+      [
+        0,
+        3,
+        6,
+        9
+      ]
+    ],
+    "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+    "family": "lifted-product",
+    "generator": "monomial-2xcd-v1",
+    "goal_id": "rect-c4-4-N12-g2-3-d4",
+    "group": {
+      "action": 1,
+      "element_index": "u*l2+v represents a^u b^v",
+      "kind": "metacyclic",
+      "l1": 12,
+      "l2": 1,
+      "order": 12
+    },
+    "index": 4,
+    "matrix_a": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        4,
+        6
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        6,
+        9
+      ]
+    ],
+    "qldpc_version": "0.4.0",
+    "schema_version": 1,
+    "seed": 20261002,
+    "seed_square_free_required": false,
+    "seed_subgroup_indices": [
+      2,
+      3
+    ],
+    "strategy": "cyclic-rectangular-rate-v1",
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "d_min": 4,
+      "k": 60,
+      "n": 240,
+      "status": "improvement_goal_not_measurement",
+      "w_max": 6
+    }
+  },
+  "status": "needs_official_validation",
+  "w": 6
+}

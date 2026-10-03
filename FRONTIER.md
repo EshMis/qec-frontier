@@ -1,6 +1,6 @@
 # Discoveries in plain English
 
-We have 30 exact-certified discoveries; 27 remain nondominated among our own
+We have 47 exact-certified discoveries; 44 remain nondominated among our own
 results. Three earlier points have been superseded by direct improvements. Every entry
 passed the official challenge validator against the checked board. Upstream
 acceptance is separate: PR #2674 remains under review.
@@ -31,21 +31,35 @@ separate exact X and Z distances when a stored side witness is heavier than d.
 | 351 | 39 | 4 | 1 | 5 | Current local frontier | Same 39-logical capacity as 416/39, saving 65 physical qubits but correcting one error instead of two. |
 | 390 | 45 | 4 | 1 | 5 | Current local frontier | Direct improvement over 390/43: two more logical qubits with equal size, protection and checks. |
 | 429 | 49 | 4 | 1 | 5 | Current local frontier | Four more logical qubits than 390/45, using 39 additional physical qubits, with equal one-error protection. |
-
 | 440 | 40 | 7 | 3 | 6 | Current local frontier | Three-error protection for 40 logical qubits. Versus 455/43: 15 fewer physical qubits and one additional correctable error, costing three logical qubits and larger checks. |
 | 260 | 58 | 6 | 2 | 6 | Current local frontier | Versus 520/51: half as many physical qubits and seven more logical qubits at the same protection; checks increase from five to six. |
 | 609 | 197 | 6 | 2 | 7 | Current local frontier | Largest verified logical capacity so far: 197 protected qubits with two-error correction, using 609 physical qubits and seven-qubit checks. |
-
-| 280 | 62 | 6 | 2 | 6 | Current local frontier | Four more logical qubits than the preceding 260-qubit block, using 20 more physical qubits with the same protection and checks. |
-| 300 | 66 | 6 | 2 | 6 | Current local frontier | Four more logical qubits than the preceding 280-qubit block, using 20 more physical qubits with the same protection and checks. |
-| 320 | 70 | 6 | 2 | 6 | Current local frontier | Four more logical qubits than the preceding 300-qubit block, using 20 more physical qubits with the same protection and checks. |
 | 340 | 74 | 6 | 2 | 6 | Current local frontier | Four more logical qubits than the preceding 320-qubit block, using 20 more physical qubits with the same protection and checks. |
+| 280 | 62 | 6 | 2 | 6 | Current local frontier | Four more logical qubits than the preceding 260-qubit block, using 20 more physical qubits with the same protection and checks. |
 | 360 | 78 | 6 | 2 | 6 | Current local frontier | Four more logical qubits than the preceding 340-qubit block, using 20 more physical qubits with the same protection and checks. |
+| 300 | 66 | 6 | 2 | 6 | Current local frontier | Four more logical qubits than the preceding 280-qubit block, using 20 more physical qubits with the same protection and checks. |
 | 380 | 82 | 6 | 2 | 6 | Current local frontier | Four more logical qubits than the preceding 360-qubit block, using 20 more physical qubits with the same protection and checks. |
-
+| 320 | 70 | 6 | 2 | 6 | Current local frontier | Four more logical qubits than the preceding 300-qubit block, using 20 more physical qubits with the same protection and checks. |
 | 400 | 86 | 6 | 2 | 6 | Current local frontier | Four more protected qubits than the 380-qubit block for 20 additional physical qubits. |
 | 986 | 314 | 6 | 2 | 7 | Current local frontier | Largest verified logical capacity: 117 more protected qubits than 609/197, using 377 additional physical qubits at equal protection and check size. |
 | 504 | 133 | 6 | 2 | 7 | Current local frontier | Smaller alternative to 609/197: saves 105 physical qubits and stores 64 fewer logical qubits at equal protection and check size. |
+| 145 | 53 | 4 | 1 | 7 | Current local frontier | Compact one-error protection for 53 logical qubits in 145 physical qubits; checks involve seven qubits. |
+| 240 | 60 | 4 | 1 | 6 | Current local frontier | Versus 260/58: saves 20 physical qubits and stores two more logical qubits, trading two-error correction for one-error correction. |
+| 224 | 35 | 5 | 2 | 6 | Current local frontier | Two-error protection for 35 logical qubits using 224 physical qubits and six-qubit checks. |
+| 204 | 81 | 4 | 1 | 8 | Current local frontier | Stores 81 logical qubits with one-error correction using 204 physical qubits; checks involve eight qubits. |
+| 256 | 39 | 5 | 2 | 6 | Current local frontier | Four more protected qubits than 224/35 for 32 additional physical qubits, with the same two-error correction and check size. |
+| 39 | 7 | 4 | 1 | 5 | Current local frontier | Smallest verified block: seven protected qubits in 39 physical qubits, correcting one error with five-qubit checks. |
+| 240 | 106 | 4 | 1 | 8 | Current local frontier | Compared with 204/81, adds 25 protected qubits for 36 physical qubits at equal distance and check size. |
+| 540 | 114 | 6 | 2 | 6 | Current local frontier | Compared with 480/102: 12 more logical qubits for 60 more physical qubits, with equal distance and check size. |
+| 560 | 120 | 6 | 2 | 6 | Current local frontier | Compared with 540/114: 6 more logical qubits for 20 more physical qubits, with equal distance and check size. |
+| 667 | 215 | 6 | 2 | 7 | Current local frontier | Compared with 609/197: 18 more logical qubits for 58 more physical qubits, with equal distance and check size. |
+| 420 | 90 | 6 | 2 | 6 | Current local frontier | Compared with 400/86: 4 more logical qubits for 20 more physical qubits, with equal distance and check size. |
+| 440 | 94 | 6 | 2 | 6 | Current local frontier | Compared with 420/90: 4 more logical qubits for 20 more physical qubits, with equal distance and check size. |
+| 725 | 233 | 6 | 2 | 7 | Current local frontier | Compared with 667/215: 18 more logical qubits for 58 more physical qubits, with equal distance and check size. |
+| 460 | 98 | 6 | 2 | 6 | Current local frontier | Compared with 440/94: 4 more logical qubits for 20 more physical qubits, with equal distance and check size. |
+| 480 | 102 | 6 | 2 | 6 | Current local frontier | Compared with 460/98: 4 more logical qubits for 20 more physical qubits, with equal distance and check size. |
+| 580 | 122 | 6 | 2 | 6 | Current local frontier | Compared with 560/120: 2 more logical qubits for 20 more physical qubits, with equal distance and check size. |
+| 600 | 128 | 6 | 2 | 6 | Current local frontier | Compared with 580/122: 6 more logical qubits for 20 more physical qubits, with equal distance and check size. |
 
 There is no single overall ranking: fewer physical qubits, more logical qubits,
 larger distance and smaller checks compete. A direct improvement is at least as

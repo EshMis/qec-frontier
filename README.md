@@ -8,11 +8,11 @@ The target is an undominated, nonduplicate, connected code under the official `(
 
 Initial upstream snapshot: `c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23` (1,815 entries, retrieved 2026-10-02). Refresh the board before declaring a frontier advance and before submitting.
 
-**Results, 2026-10-02:** 30 exact-certified discoveries, of which 27 remain nondominated after including our own improvements. Every recorded point passed the official validator and its board-advancement test. Highlights include `[[416,39,6]]` with check weight 5 (39 fewer physical qubits than our original result), `[[264,22,8]]` with weight 6 (three-error correction), `[[260,58,6]]` with weight 6, and `[[986,314,6]]` with weight 7 (our largest verified capacity).
+**Results, 2026-10-02:** 47 exact-certified discoveries, of which 44 remain nondominated after including our own improvements. Every recorded point passed the official validator and its board-advancement test. Highlights include `[[416,39,6]]` with check weight 5 (39 fewer physical qubits than our original result), `[[264,22,8]]` with weight 6 (three-error correction), `[[260,58,6]]` with weight 6, and `[[986,314,6]]` with weight 7 (our largest verified capacity).
 
 These are local solver certifications; leaderboard acceptance and the exact badge require maintainer confirmation. Wider literature novelty is unverified. The original, now superseded result is preserved in [RESULT.md](RESULT.md).
 
-The selected code is submitted in [challenge PR #2674](https://github.com/unitaryfoundation/qldpc-challenge/pull/2674). Upstream workflow execution currently awaits maintainer approval; submission is not leaderboard acceptance. The [status snapshot](evidence/submission-status.json) records the exact submitted revision and workflow runs.
+The 416-qubit improvement is submitted in [challenge PR #2674](https://github.com/unitaryfoundation/qldpc-challenge/pull/2674). Upstream workflow execution currently awaits maintainer approval; submission is not leaderboard acceptance. The [status snapshot](evidence/submission-status.json) records the exact submitted revision and workflow runs.
 
 See [FRONTIER.md](FRONTIER.md) for a plain-English comparison of every verified discovery and [the registry](evidence/frontier-points.json) for the complete evidence paths and dominance relationships. The active search continues during upstream review. The user-requested removal of the scheduled follow-up is complete.
 

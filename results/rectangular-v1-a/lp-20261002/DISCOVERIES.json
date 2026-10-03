@@ -1,0 +1,37 @@
+{
+  "points": [
+    {
+      "aspirational_goal_met": true,
+      "candidate": "results/rectangular-v1-a/lp-20261002/cb4e9b8a3638a79f8dd2/candidate.json",
+      "d": 4,
+      "evidence": "results/rectangular-v1-a/lp-20261002/cb4e9b8a3638a79f8dd2/verification",
+      "exact": true,
+      "id": "cb4e9b8a3638a79f8dd2",
+      "k": 53,
+      "n": 145,
+      "w": 7
+    },
+    {
+      "aspirational_goal_met": true,
+      "candidate": "results/rectangular-v1-a/lp-20261002/408361e4bda39a38585e/candidate.json",
+      "d": 4,
+      "evidence": "results/rectangular-v1-a/lp-20261002/408361e4bda39a38585e/verification",
+      "exact": true,
+      "id": "408361e4bda39a38585e",
+      "k": 81,
+      "n": 204,
+      "w": 8
+    },
+    {
+      "aspirational_goal_met": true,
+      "candidate": "results/rectangular-v1-a/lp-20261002/b185affc7b54c10b4eb7/candidate.json",
+      "d": 4,
+      "evidence": "results/rectangular-v1-a/lp-20261002/b185affc7b54c10b4eb7/verification",
+      "exact": true,
+      "id": "b185affc7b54c10b4eb7",
+      "k": 106,
+      "n": 240,
+      "w": 8
+    }
+  ]
+}

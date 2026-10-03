@@ -1,0 +1,290 @@
+{
+  "candidate_sha256": "3c2f01a4a1957038e9540702842617a3ebd89d60fabc0222abba5d79704de700",
+  "matrix_reproduction": "exact",
+  "recipe_sha256": "80dd1e84a203739fea6c5d06262420466d93254ec7b5f37c0bddbf7c52f136bb",
+  "verification": {
+    "checks": [
+      {
+        "check": "schema_valid",
+        "detail": "",
+        "ok": true
+      },
+      {
+        "check": "qubit_indices_in_range",
+        "detail": "max index 259, n=260",
+        "ok": true
+      },
+      {
+        "check": "no_repeated_qubits_in_a_check",
+        "detail": "rows with repeats: []",
+        "ok": true
+      },
+      {
+        "check": "tanner_connected",
+        "detail": "Tanner graph has 1 connected component(s)",
+        "ok": true
+      },
+      {
+        "check": "stabilizer_group_connected",
+        "detail": "stabilizer group splits into 1 independent block(s) on disjoint qubit sets (sizes 260)",
+        "ok": true
+      },
+      {
+        "check": "css_commutation",
+        "detail": "H_X H_Z^T = 0 over GF(2)",
+        "ok": true
+      },
+      {
+        "check": "k_matches_claim",
+        "detail": "computed k=58, claimed 58",
+        "ok": true
+      },
+      {
+        "check": "k_at_least_1",
+        "detail": "computed k=58; a submission must encode >= 1 logical qubit",
+        "ok": true
+      },
+      {
+        "check": "check_weight_is_ldpc",
+        "detail": "max check weight 6",
+        "ok": true
+      },
+      {
+        "check": "model_version_specified",
+        "detail": "GPT-6",
+        "ok": true
+      },
+      {
+        "check": "family_in_vocabulary",
+        "detail": "lifted-product",
+        "ok": true
+      },
+      {
+        "check": "novelty_in_vocabulary",
+        "detail": "unknown",
+        "ok": true
+      },
+      {
+        "check": "distance_X_witness",
+        "detail": "weight=6 (claim 6), in_ker=True, nontrivial=True",
+        "ok": true
+      },
+      {
+        "check": "distance_X_exact_flagged",
+        "detail": "exact claim accepted as upper_bound pending server certification",
+        "ok": true
+      },
+      {
+        "check": "distance_Z_witness",
+        "detail": "weight=6 (claim 6), in_ker=True, nontrivial=True",
+        "ok": true
+      },
+      {
+        "check": "distance_Z_exact_flagged",
+        "detail": "exact claim accepted as upper_bound pending server certification",
+        "ok": true
+      },
+      {
+        "check": "d_matches_min_side",
+        "detail": "min earned side = 6, claimed d = 6",
+        "ok": true
+      },
+      {
+        "check": "local_hadamard_css_images",
+        "detail": "1 local-Hadamard image(s) of this CSS code filed with it, so a Hadamard-relabelled copy collides with it whichever code_type it is submitted under",
+        "ok": true
+      },
+      {
+        "check": "distance_not_refuted",
+        "detail": "no lighter logical in 8000 RIS trials (seed 19032028)",
+        "ok": true
+      }
+    ],
+    "computed": {
+      "code_type": "CSS",
+      "diagnostics": {
+        "tanner_girth": {
+          "X": 8,
+          "Z": 8
+        },
+        "trapping_sets": {
+          "X": {
+            "complete_through_size": 3,
+            "counts": [
+              [
+                1,
+                2,
+                208
+              ],
+              [
+                1,
+                4,
+                52
+              ],
+              [
+                2,
+                2,
+                624
+              ],
+              [
+                2,
+                4,
+                832
+              ],
+              [
+                2,
+                6,
+                104
+              ],
+              [
+                3,
+                2,
+                1872
+              ],
+              [
+                3,
+                4,
+                7904
+              ],
+              [
+                3,
+                6,
+                4576
+              ],
+              [
+                3,
+                8,
+                728
+              ]
+            ]
+          },
+          "Z": {
+            "complete_through_size": 3,
+            "counts": [
+              [
+                1,
+                2,
+                208
+              ],
+              [
+                1,
+                4,
+                52
+              ],
+              [
+                2,
+                2,
+                624
+              ],
+              [
+                2,
+                4,
+                832
+              ],
+              [
+                2,
+                6,
+                104
+              ],
+              [
+                3,
+                2,
+                1872
+              ],
+              [
+                3,
+                4,
+                7904
+              ],
+              [
+                3,
+                6,
+                4576
+              ],
+              [
+                3,
+                8,
+                728
+              ]
+            ]
+          },
+          "candidate_cap": 2000000,
+          "max_size": 3
+        },
+        "weight_profile": {
+          "X": {
+            "column": {
+              "max": 4,
+              "mean": 2.4,
+              "min": 2
+            },
+            "row": {
+              "max": 6,
+              "mean": 6.0,
+              "min": 6
+            }
+          },
+          "Z": {
+            "column": {
+              "max": 4,
+              "mean": 2.4,
+              "min": 2
+            },
+            "row": {
+              "max": 6,
+              "mean": 6.0,
+              "min": 6
+            }
+          }
+        }
+      },
+      "flags": {
+        "css": true,
+        "locality_class": "unrestricted",
+        "modular": false,
+        "stabilizer": false
+      },
+      "k": 58,
+      "locality_class": "unrestricted",
+      "max_check_weight": 6,
+      "n": 260,
+      "rank_HX": 101,
+      "rank_HZ": 101,
+      "weight_class": "weight-6"
+    },
+    "css_equivalent": {
+      "enumeration_capped": false,
+      "fingerprints": [
+        "376a1fdbfee9215b"
+      ],
+      "images": 1,
+      "of": "css",
+      "signatures": [
+        "becf86b467ee8925"
+      ]
+    },
+    "earned_distance": {
+      "X": {
+        "tier": "upper_bound",
+        "value": 6
+      },
+      "Z": {
+        "tier": "upper_bound",
+        "value": 6
+      },
+      "d": {
+        "tier": "upper_bound",
+        "value": 6
+      }
+    },
+    "fingerprint": "6a639ab5cd5c8716",
+    "name": "[[260,58,6]] weight-6 cyclic lifted-product code",
+    "ok": true,
+    "signature": {
+      "d": 6,
+      "hash": "becf86b467ee8925",
+      "k": 58,
+      "n": 260
+    }
+  }
+}

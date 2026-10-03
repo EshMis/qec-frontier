@@ -1,0 +1,309 @@
+{
+  "arguments": {
+    "count": 3,
+    "lane": "lp",
+    "offset": 0,
+    "run": "rectangular-v1-a",
+    "seed": 20261002,
+    "specs": "campaigns/rectangular-v1/lp-specs.json",
+    "stages": "300,5000,50000",
+    "tlim": 300.0
+  },
+  "job_id": "129140895",
+  "sources": {
+    "scripts/advance.py": "124ba07221db2b90ebb81d9bdc99f5442cc4361ed6b81bda04b26f7b25cf439b",
+    "scripts/generators_lp.py": "609bf44197a003f6d27a74c35e0432c3c3d6baea8fe296f585042bb98f357ff5",
+    "scripts/search.py": "7c20ad63834884691201b68806ede9d6cee88b97f2f084db1c42f4205bca6760"
+  },
+  "specifications": [
+    {
+      "base_columns": [
+        5,
+        5
+      ],
+      "connectivity_condition": "coprime cyclic subgroup indices",
+      "distance_bound_basis": "commutative three-column cofactor logical",
+      "distance_upper_bound": 6,
+      "entry_type": "group-element-index (one monomial per entry)",
+      "equivalence_key": [
+        [
+          5,
+          5
+        ],
+        5,
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+      "family": "lifted-product",
+      "generator": "monomial-2xcd-v1",
+      "goal_id": "rect-c5-5-N5-g1-1-d4",
+      "group": {
+        "action": 1,
+        "element_index": "u*l2+v represents a^u b^v",
+        "kind": "metacyclic",
+        "l1": 5,
+        "l2": 1,
+        "order": 5
+      },
+      "index": 0,
+      "matrix_a": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "matrix_b": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "qldpc_version": "0.4.0",
+      "schema_version": 1,
+      "seed": 20261002,
+      "seed_square_free_required": false,
+      "seed_subgroup_indices": [
+        1,
+        1
+      ],
+      "strategy": "cyclic-rectangular-rate-v1",
+      "target": {
+        "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+        "d_min": 4,
+        "k": 53,
+        "n": 145,
+        "status": "improvement_goal_not_measurement",
+        "w_max": 7
+      }
+    },
+    {
+      "base_columns": [
+        5,
+        6
+      ],
+      "connectivity_condition": "coprime cyclic subgroup indices",
+      "distance_bound_basis": "commutative three-column cofactor logical",
+      "distance_upper_bound": 6,
+      "entry_type": "group-element-index (one monomial per entry)",
+      "equivalence_key": [
+        [
+          5,
+          6
+        ],
+        6,
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+      "family": "lifted-product",
+      "generator": "monomial-2xcd-v1",
+      "goal_id": "rect-c5-6-N6-g1-1-d4",
+      "group": {
+        "action": 1,
+        "element_index": "u*l2+v represents a^u b^v",
+        "kind": "metacyclic",
+        "l1": 6,
+        "l2": 1,
+        "order": 6
+      },
+      "index": 1,
+      "matrix_a": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "matrix_b": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "qldpc_version": "0.4.0",
+      "schema_version": 1,
+      "seed": 20261002,
+      "seed_square_free_required": false,
+      "seed_subgroup_indices": [
+        1,
+        1
+      ],
+      "strategy": "cyclic-rectangular-rate-v1",
+      "target": {
+        "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+        "d_min": 4,
+        "k": 81,
+        "n": 204,
+        "status": "improvement_goal_not_measurement",
+        "w_max": 8
+      }
+    },
+    {
+      "base_columns": [
+        6,
+        6
+      ],
+      "connectivity_condition": "coprime cyclic subgroup indices",
+      "distance_bound_basis": "commutative three-column cofactor logical",
+      "distance_upper_bound": 6,
+      "entry_type": "group-element-index (one monomial per entry)",
+      "equivalence_key": [
+        [
+          6,
+          6
+        ],
+        6,
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+      "family": "lifted-product",
+      "generator": "monomial-2xcd-v1",
+      "goal_id": "rect-c6-6-N6-g1-1-d4",
+      "group": {
+        "action": 1,
+        "element_index": "u*l2+v represents a^u b^v",
+        "kind": "metacyclic",
+        "l1": 6,
+        "l2": 1,
+        "order": 6
+      },
+      "index": 2,
+      "matrix_a": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "matrix_b": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "qldpc_version": "0.4.0",
+      "schema_version": 1,
+      "seed": 20261002,
+      "seed_square_free_required": false,
+      "seed_subgroup_indices": [
+        1,
+        1
+      ],
+      "strategy": "cyclic-rectangular-rate-v1",
+      "target": {
+        "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+        "d_min": 4,
+        "k": 106,
+        "n": 240,
+        "status": "improvement_goal_not_measurement",
+        "w_max": 8
+      }
+    }
+  ],
+  "started_unix": 1790989322.5856605
+}

@@ -1,24 +1,25 @@
 {
-  "observed_at": "2026-10-02T23:52:21.828135+00:00",
+  "observed_at": "2026-10-03T01:10:46.720363+00:00",
   "upstream_repository": "https://github.com/unitaryfoundation/qldpc-challenge",
   "upstream_main_sha": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
   "pull_request": "https://github.com/unitaryfoundation/qldpc-challenge/pull/2674",
   "pull_request_state": "OPEN",
-  "submitted_head_sha": "e81369a9799f740799cf58b2788351e69d5f2914",
-  "submitted_code_sha256": "a0d5094357b32b5a76bf315d90ced030155f9dd72a3a9165fecad8e919992471",
+  "submitted_head_sha": "54993e4442a02ac72d449f7eb1664f8688864110",
+  "submitted_code_sha256": "6084fd7e8691c41488eec3520ae77e71a0d649be25c9347e2ab13bbf87fa0313",
   "upstream_workflows": [
     {
       "name": "verify",
-      "run_id": 37079105648,
+      "run_id": 37084895628,
       "conclusion": "action_required"
     },
     {
-      "name": "Prose gate",
-      "run_id": 37079105671,
+      "name": "prose",
+      "run_id": 37084895494,
       "conclusion": "action_required"
     }
   ],
-  "workflow_page_message": "This workflow is awaiting approval from a maintainer in #2674",
+  "workflow_page_message": "Current workflow API reports action_required; the prior head explicitly required maintainer approval.",
   "local_verification": "Solver-certified exact distance 6, official board-advancing verdict, exact reconstruction, and full deep gate passed with all 8,000,000 accelerated trials completed.",
-  "leaderboard_acceptance": "pending; no upstream merge or exact badge claimed"
+  "leaderboard_acceptance": "pending; no upstream merge or exact badge claimed",
+  "submitted_code": "416-39-6.json"
 }

@@ -131,6 +131,30 @@
       "cpu": 1595.187,
       "maxvmem": "1.072G",
       "stage": "416_publication"
+    },
+    "129140478": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 0.721,
+      "cpu": 0.716,
+      "maxvmem": "0.000"
+    },
+    "129140480": {
+      "slots": 1,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 51.174,
+      "cpu": 13.111,
+      "maxvmem": "982.895M"
+    },
+    "129140479": {
+      "slots": 4,
+      "failed": 0,
+      "exit_status": 0,
+      "ru_wallclock": 410.677,
+      "cpu": 909.041,
+      "maxvmem": "1.140G"
     }
   }
 }

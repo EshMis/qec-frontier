@@ -1,0 +1,422 @@
+{
+  "order": 16,
+  "vectors_considered": 65536,
+  "scope": "one-strip logical upper bounds; not exact quantum distances",
+  "normalized_parameters": "1<=a<=b<=floor(m/2), c=0, any l>=2",
+  "max_upper_bound": 9,
+  "pairs": [
+    {
+      "a": 1,
+      "b": 1,
+      "d_upper": 3,
+      "v_support": [
+        0
+      ],
+      "complement_ca": false,
+      "complement_cb": false
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "d_upper": 4,
+      "v_support": [
+        0
+      ],
+      "complement_ca": false,
+      "complement_cb": false
+    },
+    {
+      "a": 1,
+      "b": 3,
+      "d_upper": 5,
+      "v_support": [
+        0
+      ],
+      "complement_ca": false,
+      "complement_cb": false
+    },
+    {
+      "a": 1,
+      "b": 4,
+      "d_upper": 6,
+      "v_support": [
+        0
+      ],
+      "complement_ca": false,
+      "complement_cb": false
+    },
+    {
+      "a": 1,
+      "b": 5,
+      "d_upper": 7,
+      "v_support": [
+        0
+      ],
+      "complement_ca": false,
+      "complement_cb": false
+    },
+    {
+      "a": 1,
+      "b": 6,
+      "d_upper": 8,
+      "v_support": [
+        0
+      ],
+      "complement_ca": false,
+      "complement_cb": false
+    },
+    {
+      "a": 1,
+      "b": 7,
+      "d_upper": 6,
+      "v_support": [
+        0,
+        7
+      ],
+      "complement_ca": false,
+      "complement_cb": true
+    },
+    {
+      "a": 1,
+      "b": 8,
+      "d_upper": 4,
+      "v_support": [
+        0,
+        8
+      ],
+      "complement_ca": false,
+      "complement_cb": true
+    },
+    {
+      "a": 2,
+      "b": 2,
+      "d_upper": 5,
+      "v_support": [
+        0
+      ],
+      "complement_ca": false,
+      "complement_cb": false
+    },
+    {
+      "a": 2,
+      "b": 3,
+      "d_upper": 6,
+      "v_support": [
+        0
+      ],
+      "complement_ca": false,
+      "complement_cb": false
+    },
+    {
+      "a": 2,
+      "b": 4,
+      "d_upper": 7,
+      "v_support": [
+        0
+      ],
+      "complement_ca": false,
+      "complement_cb": false
+    },
+    {
+      "a": 2,
+      "b": 5,
+      "d_upper": 8,
+      "v_support": [
+        0
+      ],
+      "complement_ca": false,
+      "complement_cb": false
+    },
+    {
+      "a": 2,
+      "b": 6,
+      "d_upper": 8,
+      "v_support": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "complement_ca": true,
+      "complement_cb": true
+    },
+    {
+      "a": 2,
+      "b": 7,
+      "d_upper": 8,
+      "v_support": [
+        0,
+        7
+      ],
+      "complement_ca": false,
+      "complement_cb": true
+    },
+    {
+      "a": 2,
+      "b": 8,
+      "d_upper": 6,
+      "v_support": [
+        0,
+        8
+      ],
+      "complement_ca": false,
+      "complement_cb": true
+    },
+    {
+      "a": 3,
+      "b": 3,
+      "d_upper": 7,
+      "v_support": [
+        0
+      ],
+      "complement_ca": false,
+      "complement_cb": false
+    },
+    {
+      "a": 3,
+      "b": 4,
+      "d_upper": 8,
+      "v_support": [
+        0
+      ],
+      "complement_ca": false,
+      "complement_cb": false
+    },
+    {
+      "a": 3,
+      "b": 5,
+      "d_upper": 9,
+      "v_support": [
+        0
+      ],
+      "complement_ca": false,
+      "complement_cb": false
+    },
+    {
+      "a": 3,
+      "b": 6,
+      "d_upper": 8,
+      "v_support": [
+        0,
+        3,
+        6,
+        9,
+        12
+      ],
+      "complement_ca": true,
+      "complement_cb": false
+    },
+    {
+      "a": 3,
+      "b": 7,
+      "d_upper": 9,
+      "v_support": [
+        0,
+        3,
+        6,
+        9,
+        12
+      ],
+      "complement_ca": true,
+      "complement_cb": false
+    },
+    {
+      "a": 3,
+      "b": 8,
+      "d_upper": 8,
+      "v_support": [
+        0,
+        8
+      ],
+      "complement_ca": false,
+      "complement_cb": true
+    },
+    {
+      "a": 4,
+      "b": 4,
+      "d_upper": 4,
+      "v_support": [
+        0,
+        4,
+        8,
+        12
+      ],
+      "complement_ca": true,
+      "complement_cb": true
+    },
+    {
+      "a": 4,
+      "b": 5,
+      "d_upper": 8,
+      "v_support": [
+        0,
+        5,
+        10
+      ],
+      "complement_ca": true,
+      "complement_cb": true
+    },
+    {
+      "a": 4,
+      "b": 6,
+      "d_upper": 8,
+      "v_support": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "complement_ca": false,
+      "complement_cb": true
+    },
+    {
+      "a": 4,
+      "b": 7,
+      "d_upper": 8,
+      "v_support": [
+        0,
+        4,
+        8,
+        12
+      ],
+      "complement_ca": true,
+      "complement_cb": false
+    },
+    {
+      "a": 4,
+      "b": 8,
+      "d_upper": 4,
+      "v_support": [
+        0,
+        4,
+        8,
+        12
+      ],
+      "complement_ca": true,
+      "complement_cb": false
+    },
+    {
+      "a": 5,
+      "b": 5,
+      "d_upper": 5,
+      "v_support": [
+        0,
+        5,
+        10
+      ],
+      "complement_ca": true,
+      "complement_cb": true
+    },
+    {
+      "a": 5,
+      "b": 6,
+      "d_upper": 6,
+      "v_support": [
+        0,
+        5,
+        10
+      ],
+      "complement_ca": true,
+      "complement_cb": true
+    },
+    {
+      "a": 5,
+      "b": 7,
+      "d_upper": 9,
+      "v_support": [
+        0,
+        5,
+        10
+      ],
+      "complement_ca": true,
+      "complement_cb": true
+    },
+    {
+      "a": 5,
+      "b": 8,
+      "d_upper": 8,
+      "v_support": [
+        0,
+        8
+      ],
+      "complement_ca": true,
+      "complement_cb": true
+    },
+    {
+      "a": 6,
+      "b": 6,
+      "d_upper": 7,
+      "v_support": [
+        0,
+        6,
+        10
+      ],
+      "complement_ca": true,
+      "complement_cb": true
+    },
+    {
+      "a": 6,
+      "b": 7,
+      "d_upper": 8,
+      "v_support": [
+        0,
+        7
+      ],
+      "complement_ca": true,
+      "complement_cb": true
+    },
+    {
+      "a": 6,
+      "b": 8,
+      "d_upper": 6,
+      "v_support": [
+        0,
+        8
+      ],
+      "complement_ca": true,
+      "complement_cb": true
+    },
+    {
+      "a": 7,
+      "b": 7,
+      "d_upper": 6,
+      "v_support": [
+        0,
+        7
+      ],
+      "complement_ca": true,
+      "complement_cb": true
+    },
+    {
+      "a": 7,
+      "b": 8,
+      "d_upper": 4,
+      "v_support": [
+        0,
+        8
+      ],
+      "complement_ca": true,
+      "complement_cb": true
+    },
+    {
+      "a": 8,
+      "b": 8,
+      "d_upper": 2,
+      "v_support": [
+        0,
+        8
+      ],
+      "complement_ca": true,
+      "complement_cb": true
+    }
+  ],
+  "elapsed_seconds": 0.2459406852722168
+}

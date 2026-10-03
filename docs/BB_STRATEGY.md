@@ -342,6 +342,133 @@ small GF(2) bit-polynomial arithmetic for all 579 frozen proposals;
 the two-site weight identity was checked for all 343 paired proposals.
 This check constructed no matrices and performed no distance search.
 
+## Session checkpoint: strip enumeration and an untested 3+3 recipe
+
+The independent profile of v2 source index 12 produced exact-certified
+**[[440,40,7]], w6**; its receipt is in
+`results/improve-v2-profile-bb/bb-20261002/2651d4105a0301aea35f/verification/`.
+The subsequent sixteen v2 screens in `improve-v2-bb-a` and
+`improve-v2-bb-b` produced no additional point: the observed upper bounds
+were at most 6, 7, and 8 for m=10, 11, and 12 respectively. The new
+440-qubit point raises its own future threshold to eight. Frozen v2
+metadata is historical; the runner's live board check takes precedence.
+
+These observations alone do **not** prove a general m-4 ceiling. A new
+additive diagnostic, `paired_strip_bounds(m, pairs=None)`, enumerates a
+well-defined class of nontrivial logicals. It returns upper bounds, not
+exact quantum distances. It is pure standard-library code and is never
+called by imports or candidate generators. Its exponential cost is
+bounded by an explicit m<=20 guard; run it on a compute node.
+
+For `C_a=1+y+...+y^(a-1)` and `C_b=1+y+...+y^(b-1)`, let v be a bit
+vector in one right-block x strip, p its parity, and
+`w_a=wt(C_a v), w_b=wt(C_b v)`. The routine minimizes these valid logical
+weights over every v:
+
+```
+p odd:  wt(v) + min(w_a,m-w_a) + min(w_b,m-w_b)
+p even: wt(v) + min(m-w_a+w_b, w_a+m-w_b, 2m-w_a-w_b).
+```
+
+The even case includes v=0 with one added full ring, giving the baseline
+bound m. A Gray-code traversal updates the two interval products using
+XOR; no matrices or randomized distance estimates enter this enumeration.
+Replacing an exponent a by m-a preserves the bound because
+`C_(m-a)=J+y^(m-a)C_a`, where J is the full ring. Consequently, unordered
+pairs `1<=a<=b<=floor(m/2)` cover all original paired exponents. The
+bound is independent of l>=2 and of c, the relative shift between strips.
+
+### Physical witness mapping and nontriviality
+
+`paired_strip_witness(spec, bound_record)` converts one table record back
+to the original spec, including swapped and complemented exponent
+normalizations. qLDPC 0.4.0 uses qubit index `x*m+y` within each block and
+orders the left block before the right block. Its stored BB matrices have
+positive polynomial exponents in H_X row zero. Thus place:
+
+- v in the right block at x=0, indices `l*m+y`;
+- `C_a v`, optionally XOR a full ring, in the left block at x=0;
+- `y^c C_b v`, optionally XOR a full ring, in the left block at x=1.
+
+This produces `(C^T V+Z,V)` in the matrix convention, with Z consisting
+of zero, one, or two full rings. Since B is `1+y`, `B^T Z=0`, so the
+operator commutes. Every X stabilizer has the form `(C^T t,t)` with
+`t in im(B^T)`. For odd v, V is outside that image, whose vectors have
+even parity on every x strip. For even v, V lies in the image, but the
+enumerator requires Z nonzero; the first block then differs from
+`C^T V`, so the operator is not a stabilizer. This is the derivation to
+be checked against the actual qLDPC matrices before using the table to
+cancel distance work.
+
+For the certified m=12,a=10,b=7 code, the normalized `(2,5)` record with
+`v={0}` maps to the weight-eight support
+`[10,11,19,20,21,22,23,156]` at l=13. For m=12,a=9,b=7, the even record
+`v={0,3,6,9}` with its first ring complemented maps to
+`[12,15,18,21,156,159,162,165]`. Both supports were checked for zero
+syndrome against their preserved sparse Z-check rows. Independent
+non-stabilizer checks at l=2 and a larger l remain assigned to the lead's
+compute-node verification; that check is stronger than this local
+commutation check.
+
+The cluster profile `results/strip-profile16/m16.json` records a maximum
+one-strip upper bound of **9** over all 36 normalized exponent pairs and
+65,536 v vectors. Pairs `(3,5)`, `(3,7)`, and `(5,7)` attain that maximum.
+The receipt records 0.249 seconds for job 129140478. Its stated scope is
+pending independent witness replay, so this numerical result is not yet
+used here to close an entire code regime.
+
+Exact compute-node invocation for the diagnostic:
+
+```bash
+PYTHONPATH=scripts .venv/bin/python -c 'import json; from generators_bb import paired_strip_bounds; print(json.dumps([paired_strip_bounds(m) for m in range(10,17)]))'
+```
+
+To replay a table row on a compute node:
+
+```python
+from generators_bb import construct, paired_strip_witness
+from search import validate_logical  # imports the unmodified upstream function
+
+hx, hz = construct(spec)
+witness = paired_strip_witness(spec, table_record)
+ok, reason = validate_logical(hx, hz, "X", witness["weight"], witness["support"])
+assert ok, reason
+```
+
+### Deferred choices, with no new wave launched
+
+The upstream [cyclic 3+3 census note](https://github.com/unitaryfoundation/qldpc-challenge/blob/c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23/notes/438-22-10.md)
+reports all eligible cyclic trinomial pairs for orders 135 through 310,
+and 3,235 paired-family trials at m=17 without a result above nine. Those
+reported searches are reasons to avoid blind repeats, not independent
+verification of every prior negative result.
+
+One distinct **untested** 3+3 bivariate recipe was prepared before the
+owner requested a neat session stop:
+
+```
+l=m=15
+A = 1+x+y
+B = 1+x*y^3+x^10*y^14
+predicted n=450, k=20, w=6; current target d>=11
+```
+
+The predicted k is algebraic, not a measured qLDPC rank: over F16 there
+are fourteen nonzero pairs with y=x+1, and B vanishes at ten of them.
+Since the odd-order group algebra is semisimple, each common zero adds
+two to k. A small finite-field calculation found those ten zeros.
+No matrices, logical witnesses, distance screen, or official validator
+were run for this recipe. It is not part of a queued campaign.
+
+If work resumes, first finish the independent strip-witness replay and
+use validated tables to decide whether any unmeasured v2 exponent pairs
+can reach their updated bars. Then compare a single 3+3 profile against
+larger-m paired proposals selected from the same analytic tables. No
+v3 candidate generator or further search wave was started at this stop.
+
+Source for the BB block/lift convention:
+[qLDPC v0.4.0 quantum constructors](https://github.com/qLDPCOrg/qLDPC/blob/v0.4.0/src/qldpc/codes/quantum.py).
+
 ## Implementation and confirmation
 
 `scripts/generators_bb.py` exposes `candidates(seed,count)`, the frozen

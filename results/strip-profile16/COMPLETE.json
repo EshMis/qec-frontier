@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "job_id": "129140478",
+  "source_sha256": "b13a2f90af72b7a182656b0826712ea8844d21034b6c015fb897076636f5e7b6",
+  "elapsed_seconds": 0.24886798858642578,
+  "records": [
+    {
+      "order": 16,
+      "max_upper_bound": 9,
+      "elapsed_seconds": 0.2459406852722168
+    }
+  ],
+  "scope": "Explicit logical upper bounds, pending independent witness replay; not exact distances"
+}

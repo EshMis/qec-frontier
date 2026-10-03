@@ -1,0 +1,26 @@
+{
+  "d": 6,
+  "d_exact": true,
+  "encoding": "selector",
+  "logical_classes": 122,
+  "name": "[[580,122,6]] QEC frontier candidate",
+  "sides": {
+    "X": {
+      "exact": true,
+      "note": "no logical < 6 exists",
+      "secs": 11.8,
+      "status": "UNSAT",
+      "value": 6
+    },
+    "Z": {
+      "exact": true,
+      "note": "no logical < 6 exists",
+      "secs": 26.0,
+      "status": "UNSAT",
+      "value": 6
+    }
+  },
+  "solver": "CryptoMiniSat 5.14 SAT",
+  "symmetry": false,
+  "tlim_per_solve": 300.0
+}

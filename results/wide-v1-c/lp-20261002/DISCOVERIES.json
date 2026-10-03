@@ -1,0 +1,59 @@
+{
+  "points": [
+    {
+      "aspirational_goal_met": true,
+      "candidate": "results/wide-v1-c/lp-20261002/0fcfe2748c3bb5704329/candidate.json",
+      "d": 6,
+      "evidence": "results/wide-v1-c/lp-20261002/0fcfe2748c3bb5704329/verification",
+      "exact": true,
+      "id": "0fcfe2748c3bb5704329",
+      "k": 215,
+      "n": 667,
+      "w": 7
+    },
+    {
+      "aspirational_goal_met": true,
+      "candidate": "results/wide-v1-c/lp-20261002/3218c377eb62a5cd3605/candidate.json",
+      "d": 6,
+      "evidence": "results/wide-v1-c/lp-20261002/3218c377eb62a5cd3605/verification",
+      "exact": true,
+      "id": "3218c377eb62a5cd3605",
+      "k": 90,
+      "n": 420,
+      "w": 6
+    },
+    {
+      "aspirational_goal_met": true,
+      "candidate": "results/wide-v1-c/lp-20261002/4ff65ae327f172620efd/candidate.json",
+      "d": 6,
+      "evidence": "results/wide-v1-c/lp-20261002/4ff65ae327f172620efd/verification",
+      "exact": true,
+      "id": "4ff65ae327f172620efd",
+      "k": 94,
+      "n": 440,
+      "w": 6
+    },
+    {
+      "aspirational_goal_met": true,
+      "candidate": "results/wide-v1-c/lp-20261002/7dd6898b5b1a300b88e6/candidate.json",
+      "d": 6,
+      "evidence": "results/wide-v1-c/lp-20261002/7dd6898b5b1a300b88e6/verification",
+      "exact": true,
+      "id": "7dd6898b5b1a300b88e6",
+      "k": 98,
+      "n": 460,
+      "w": 6
+    },
+    {
+      "aspirational_goal_met": true,
+      "candidate": "results/wide-v1-c/lp-20261002/e512367262d1d6033fa2/candidate.json",
+      "d": 6,
+      "evidence": "results/wide-v1-c/lp-20261002/e512367262d1d6033fa2/verification",
+      "exact": true,
+      "id": "e512367262d1d6033fa2",
+      "k": 102,
+      "n": 480,
+      "w": 6
+    }
+  ]
+}

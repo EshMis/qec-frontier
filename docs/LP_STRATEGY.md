@@ -540,3 +540,149 @@ equivalences. Translation, reversal, common-unit, and base-exchange controls
 preserve their canonical keys. All frozen functions present in HEAD have
 unchanged ASTs. No local parity-check matrices or distances were computed;
 cluster construction and certificate results remain separate evidence.
+
+## Rectangular bases and compact higher-rate probes
+
+The first wide profiles were read back as exact, officially advancing points:
+`[[260,58,6]],w6` and `[[609,197,6]],w7`. The rectangular campaign's frozen
+numeric snapshot contains 21 locally certified points. It extends the base
+shapes while preserving every earlier callable and recorded recipe.
+
+The new interfaces are `rectangular_candidates(seed,count)` and
+`construct_rectangular(spec)`. Their tag is `monomial-2xcd-v1`, with
+`base_columns=[c,d]`. Each seed still has two rows, but A has c columns and B
+has d. The qLDPC constructor consequently produces different check counts:
+
+```
+HX.shape = (2dN, (cd+4)N)
+HZ.shape = (2cN, (cd+4)N).
+```
+
+The formulas, including arbitrary cyclic subgroup indices, are
+
+```
+n = (cd+4)N
+wX = c+2,  wZ = d+2,  w = max(c,d)+2
+k = (c-2)(d-2)N + (d-2)gA + (c-2)gB + 2gcd(gA,gB).
+```
+
+For a direct derivation, put `fA=c-2`, `fB=d-2`, and `h=gcd(gA,gB)`.
+After the same unit/Smith cancellation, there are
+`((fA+1)(fB+1)+1)N` qubits. The X rank is
+`(fB+1)N-fB*gA-h`; the Z rank is `(fA+1)N-fA*gB-h`.
+Subtracting these ranks gives the stated k. In particular, the subgroup-index
+coefficients are crossed: gA multiplies d-2, not c-2. Actual constructor/rank
+readback remains mandatory.
+
+For c,d>=3, the earlier cofactor argument still gives `dX,dZ<=6`.
+The two cofactor ideals have a nonzero product because
+`gA+gB<=N/c+N/d<N`. Rectangular geometry therefore opens size/rate gaps, not
+a route above distance six within this cyclic two-row family.
+
+### Six-shift Sidon feasibility
+
+Check weight at most eight allows widths through six. The additional
+six-shift templates are `{0,1,3,8,12,18}` in C31 and
+`{0,1,4,10,12,17}` in every C_M with M>=35. Orders 32, 33, and 34 admit no
+six-shift Sidon set. A complete small label scan established this as follows:
+each hypothetical set would use 30 distinct nonzero differences. There are
+only 15, 12, and 17 nonzero nonunits in those three groups, respectively, so
+some difference is a unit. Translation and multiplication by its inverse
+normalize the set to contain 0 and 1. Exhaustively checking all remaining
+four-mark choices found no witness:
+
+| M | Normalized subsets checked | Sidon witnesses |
+|---:|---:|---:|
+| 32 | 27,405 | 0 |
+| 33 | 31,465 | 0 |
+| 34 | 35,960 | 0 |
+
+This is a finite group-label enumeration, not a matrix or distance computation.
+Together with the templates and the counting lower bound, it resolves the
+six-shift feasibility question over the group orders used by this campaign.
+
+### Frozen first eight and the weight-five correction
+
+The first eight recipes are frozen in `campaigns/rectangular-v1/lp-specs.json`.
+Both first rows contain identity indices. Their declared targets were:
+
+| Slot | c,d,N | A shifts | B shifts | Original target n,k,d,w |
+|---:|---|---|---|---|
+| 0 | 5,5,5 | 0,1,2,3,4 | 0,1,2,3,4 | 145,53,4,7 |
+| 1 | 5,6,6 | 0,1,2,3,4 | 0,1,2,3,4,5 | 204,81,4,8 |
+| 2 | 6,6,6 | 0,1,2,3,4,5 | 0,1,2,3,4,5 | 240,106,4,8 |
+| 3 | 4,5,21 | 0,1,4,6 | 0,1,4,14,16 | 504,133,6,7 |
+| 4 | 4,4,12 | 0,2,4,6 | 0,3,6,9 | 240,60,4,6 |
+| 5 | 3,4,14 | 0,2,6 | 0,1,4,6 | 224,35,6,6 |
+| 6 | 3,4,16 | 0,2,6 | 0,1,4,6 | 256,39,6,6 |
+| 7 | 3,3,3 | 0,1,2 | 0,1,2 | 39,7,4,5 |
+
+These are original search aspirations, not a table of certified distances.
+The largest first-eight instance is n504, below the already profiled n609
+block. The first three points need only d3 to advance the frozen board;
+their goal is d4. The n39 point needs d4.
+
+After freezing, a stronger obstruction was found for slots 5 and 6:
+`-{0,2,6}+6={0,4,6}` is contained in the opposite four-shift seed. This
+produces a weight-five logical even though both seeds are Sidon. Thus these
+two recipes cannot attain their original d6 goal. Both numeric tuples can
+still advance the snapshot at d5, subject to official validation and an exact
+certificate. Their recipes remain unchanged so the missed aspiration and any
+fallback result retain honest provenance.
+
+The weight-five construction uses two second-sector qubits of different
+base-check row types and one first-sector edge in each of the three layers.
+The required edge labels exist precisely for the translated/reversed
+three-shift inclusion. The three edges occupy distinct base columns.
+Multiplication by the opposite cofactor vector therefore leaves a nonzero
+entry, proving that the commuting operator is not a stabilizer.
+
+This was also checked at the label level across the small seed spaces:
+
+| Geometry | Seed pairs checked | Pairs avoiding triple containment |
+|---|---:|---:|
+| C14, c3/d4, indices2/1 | 48 | 0 |
+| C14, c3/d4, indices1/1 | 288 | 144 |
+| C16, c3/d4, indices2/1 | 288 | 96 |
+
+The frozen integer catalog contains 300 d6 targets and 1419 d4 targets;
+58 and 520, respectively, survive existing-point pruning. Its priority
+comparison also considers previously declared wide targets, but these
+unmeasured proposals affect ordering only. The catalog's Sidon test alone
+does not establish feasibility at d6 when a width is three, as the above
+correction demonstrates. A broad continuation should apply the additional
+noncontainment test rather than blindly running all d6 targets.
+
+### Separate, provenance-preserving refinements
+
+`rectangular_refinements(seed,count)` is deliberately bounded to two fixed
+probes (`0<=count<=2`). It preserves the original constructor and generator
+tag, and records each source slot plus the SHA256 of its canonical original
+recipe. The revised targets are:
+
+| New slot | Source slot | c,d,N | A shifts | B shifts | Target n,k,d,w |
+|---:|---:|---|---|---|---|
+| 0 | 5 | 3,4,14 | 0,1,3 | 0,1,4,6 | 224,33,6,6 |
+| 1 | 6 | 3,4,16 | 0,2,6 | 0,1,3,12 | 256,39,6,6 |
+
+The C14 refinement uses individually connected seeds and accepts two fewer
+predicted logical qubits to remove the obstruction. The C16 refinement changes
+only the four-shift seed and retains its parameter target. Both pass Sidon and
+noncontainment checks; they remain search targets until officially certified.
+
+A possible stronger lower-bound lemma was derived for lead review: distinct
+shifts in these two-row bases exclude nonzero check-kernel vectors of weight
+at most three. When both seeds are Sidon and both widths are at least four,
+layer parity/counting also excludes weights four and five. Combined with the
+cofactor upper bound this would characterize those wider Sidon instances at
+distance six. This structural argument does not replace the project's required
+official SAT certificates. The width-three mixed-sector exception is precisely
+why merely assuming a seed-girth lower bound would have been unsafe.
+
+Implementation checks: all 1719 frozen pruning decisions agree with the full
+1680-entry CSS snapshot plus the first 21 certified local points. Sixty-four
+generated rectangular specs passed deterministic JSON, subgroup/dimension,
+required Sidon, cap, and equivalence checks. The frozen original eight reproduce
+exactly; source hashes for both refinement recipes match the frozen file.
+No local matrices or distances, scheduler jobs, Git operations, or shared-driver
+edits were performed in this expansion.
