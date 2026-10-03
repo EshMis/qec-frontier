@@ -1,0 +1,922 @@
+[
+  {
+    "schema_version": 1,
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "strategy": "cyclic-catalog-v2",
+    "qldpc_version": "0.4.0",
+    "seed": 20261002,
+    "index": 0,
+    "goal_id": "cyclic-N27-g1-3-d6",
+    "group": {
+      "kind": "metacyclic",
+      "l1": 27,
+      "l2": 1,
+      "action": 1,
+      "order": 27,
+      "element_index": "u*l2+v represents a^u b^v"
+    },
+    "entry_type": "group-element-index (one monomial per entry)",
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        8
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        9
+      ]
+    ],
+    "seed_subgroup_indices": [
+      1,
+      3
+    ],
+    "seed_square_free_required": true,
+    "connectivity_condition": "coprime cyclic subgroup indices",
+    "distance_upper_bound": 6,
+    "distance_bound_basis": "commutative 2x3 cofactor logical",
+    "equivalence_key": [
+      27,
+      [
+        1,
+        4
+      ],
+      [
+        3,
+        9
+      ]
+    ],
+    "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "local_certified_points_snapshot": [
+        [
+          455,
+          39,
+          6,
+          5
+        ],
+        [
+          468,
+          40,
+          4,
+          5
+        ],
+        [
+          416,
+          39,
+          6,
+          5
+        ],
+        [
+          455,
+          43,
+          6,
+          5
+        ],
+        [
+          468,
+          45,
+          6,
+          5
+        ],
+        [
+          390,
+          43,
+          4,
+          5
+        ],
+        [
+          364,
+          41,
+          4,
+          5
+        ]
+      ],
+      "n": 351,
+      "k": 33,
+      "d_min": 6,
+      "w_max": 5,
+      "status": "improvement_goal_not_measurement"
+    }
+  },
+  {
+    "schema_version": 1,
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "strategy": "cyclic-catalog-v2",
+    "qldpc_version": "0.4.0",
+    "seed": 20261002,
+    "index": 1,
+    "goal_id": "cyclic-N6-g1-2-d4",
+    "group": {
+      "kind": "metacyclic",
+      "l1": 6,
+      "l2": 1,
+      "action": 1,
+      "order": 6,
+      "element_index": "u*l2+v represents a^u b^v"
+    },
+    "entry_type": "group-element-index (one monomial per entry)",
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        5
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        4
+      ]
+    ],
+    "seed_subgroup_indices": [
+      1,
+      2
+    ],
+    "seed_square_free_required": false,
+    "connectivity_condition": "coprime cyclic subgroup indices",
+    "distance_upper_bound": 6,
+    "distance_bound_basis": "commutative 2x3 cofactor logical",
+    "equivalence_key": [
+      6,
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "local_certified_points_snapshot": [
+        [
+          455,
+          39,
+          6,
+          5
+        ],
+        [
+          468,
+          40,
+          4,
+          5
+        ],
+        [
+          416,
+          39,
+          6,
+          5
+        ],
+        [
+          455,
+          43,
+          6,
+          5
+        ],
+        [
+          468,
+          45,
+          6,
+          5
+        ],
+        [
+          390,
+          43,
+          4,
+          5
+        ],
+        [
+          364,
+          41,
+          4,
+          5
+        ]
+      ],
+      "n": 78,
+      "k": 11,
+      "d_min": 4,
+      "w_max": 5,
+      "status": "improvement_goal_not_measurement"
+    }
+  },
+  {
+    "schema_version": 1,
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "strategy": "cyclic-catalog-v2",
+    "qldpc_version": "0.4.0",
+    "seed": 20261002,
+    "index": 2,
+    "goal_id": "cyclic-N21-g3-7-d4",
+    "group": {
+      "kind": "metacyclic",
+      "l1": 21,
+      "l2": 1,
+      "action": 1,
+      "order": 21,
+      "element_index": "u*l2+v represents a^u b^v"
+    },
+    "entry_type": "group-element-index (one monomial per entry)",
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        12
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        7,
+        14
+      ]
+    ],
+    "seed_subgroup_indices": [
+      3,
+      7
+    ],
+    "seed_square_free_required": false,
+    "connectivity_condition": "coprime cyclic subgroup indices",
+    "distance_upper_bound": 6,
+    "distance_bound_basis": "commutative 2x3 cofactor logical",
+    "equivalence_key": [
+      21,
+      [
+        3,
+        6
+      ],
+      [
+        7,
+        14
+      ]
+    ],
+    "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "local_certified_points_snapshot": [
+        [
+          455,
+          39,
+          6,
+          5
+        ],
+        [
+          468,
+          40,
+          4,
+          5
+        ],
+        [
+          416,
+          39,
+          6,
+          5
+        ],
+        [
+          455,
+          43,
+          6,
+          5
+        ],
+        [
+          468,
+          45,
+          6,
+          5
+        ],
+        [
+          390,
+          43,
+          4,
+          5
+        ],
+        [
+          364,
+          41,
+          4,
+          5
+        ]
+      ],
+      "n": 273,
+      "k": 33,
+      "d_min": 4,
+      "w_max": 5,
+      "status": "improvement_goal_not_measurement"
+    }
+  },
+  {
+    "schema_version": 1,
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "strategy": "cyclic-catalog-v2",
+    "qldpc_version": "0.4.0",
+    "seed": 20261002,
+    "index": 3,
+    "goal_id": "cyclic-N24-g3-8-d4",
+    "group": {
+      "kind": "metacyclic",
+      "l1": 24,
+      "l2": 1,
+      "action": 1,
+      "order": 24,
+      "element_index": "u*l2+v represents a^u b^v"
+    },
+    "entry_type": "group-element-index (one monomial per entry)",
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        12
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        16
+      ]
+    ],
+    "seed_subgroup_indices": [
+      3,
+      8
+    ],
+    "seed_square_free_required": false,
+    "connectivity_condition": "coprime cyclic subgroup indices",
+    "distance_upper_bound": 6,
+    "distance_bound_basis": "commutative 2x3 cofactor logical",
+    "equivalence_key": [
+      24,
+      [
+        3,
+        12
+      ],
+      [
+        8,
+        16
+      ]
+    ],
+    "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "local_certified_points_snapshot": [
+        [
+          455,
+          39,
+          6,
+          5
+        ],
+        [
+          468,
+          40,
+          4,
+          5
+        ],
+        [
+          416,
+          39,
+          6,
+          5
+        ],
+        [
+          455,
+          43,
+          6,
+          5
+        ],
+        [
+          468,
+          45,
+          6,
+          5
+        ],
+        [
+          390,
+          43,
+          4,
+          5
+        ],
+        [
+          364,
+          41,
+          4,
+          5
+        ]
+      ],
+      "n": 312,
+      "k": 37,
+      "d_min": 4,
+      "w_max": 5,
+      "status": "improvement_goal_not_measurement"
+    }
+  },
+  {
+    "schema_version": 1,
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "strategy": "cyclic-catalog-v2",
+    "qldpc_version": "0.4.0",
+    "seed": 20261002,
+    "index": 4,
+    "goal_id": "cyclic-N40-g4-5-d6",
+    "group": {
+      "kind": "metacyclic",
+      "l1": 40,
+      "l2": 1,
+      "action": 1,
+      "order": 40,
+      "element_index": "u*l2+v represents a^u b^v"
+    },
+    "entry_type": "group-element-index (one monomial per entry)",
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        36
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        15
+      ]
+    ],
+    "seed_subgroup_indices": [
+      4,
+      5
+    ],
+    "seed_square_free_required": true,
+    "connectivity_condition": "coprime cyclic subgroup indices",
+    "distance_upper_bound": 6,
+    "distance_bound_basis": "commutative 2x3 cofactor logical",
+    "equivalence_key": [
+      40,
+      [
+        4,
+        12
+      ],
+      [
+        5,
+        15
+      ]
+    ],
+    "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "local_certified_points_snapshot": [
+        [
+          455,
+          39,
+          6,
+          5
+        ],
+        [
+          468,
+          40,
+          4,
+          5
+        ],
+        [
+          416,
+          39,
+          6,
+          5
+        ],
+        [
+          455,
+          43,
+          6,
+          5
+        ],
+        [
+          468,
+          45,
+          6,
+          5
+        ],
+        [
+          390,
+          43,
+          4,
+          5
+        ],
+        [
+          364,
+          41,
+          4,
+          5
+        ]
+      ],
+      "n": 520,
+      "k": 51,
+      "d_min": 6,
+      "w_max": 5,
+      "status": "improvement_goal_not_measurement"
+    }
+  },
+  {
+    "schema_version": 1,
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "strategy": "cyclic-catalog-v2",
+    "qldpc_version": "0.4.0",
+    "seed": 20261002,
+    "index": 5,
+    "goal_id": "cyclic-N27-g1-9-d4",
+    "group": {
+      "kind": "metacyclic",
+      "l1": 27,
+      "l2": 1,
+      "action": 1,
+      "order": 27,
+      "element_index": "u*l2+v represents a^u b^v"
+    },
+    "entry_type": "group-element-index (one monomial per entry)",
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        15,
+        26
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        9,
+        18
+      ]
+    ],
+    "seed_subgroup_indices": [
+      1,
+      9
+    ],
+    "seed_square_free_required": false,
+    "connectivity_condition": "coprime cyclic subgroup indices",
+    "distance_upper_bound": 6,
+    "distance_bound_basis": "commutative 2x3 cofactor logical",
+    "equivalence_key": [
+      27,
+      [
+        1,
+        6
+      ],
+      [
+        9,
+        18
+      ]
+    ],
+    "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "local_certified_points_snapshot": [
+        [
+          455,
+          39,
+          6,
+          5
+        ],
+        [
+          468,
+          40,
+          4,
+          5
+        ],
+        [
+          416,
+          39,
+          6,
+          5
+        ],
+        [
+          455,
+          43,
+          6,
+          5
+        ],
+        [
+          468,
+          45,
+          6,
+          5
+        ],
+        [
+          390,
+          43,
+          4,
+          5
+        ],
+        [
+          364,
+          41,
+          4,
+          5
+        ]
+      ],
+      "n": 351,
+      "k": 39,
+      "d_min": 4,
+      "w_max": 5,
+      "status": "improvement_goal_not_measurement"
+    }
+  },
+  {
+    "schema_version": 1,
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "strategy": "cyclic-catalog-v2",
+    "qldpc_version": "0.4.0",
+    "seed": 20261002,
+    "index": 6,
+    "goal_id": "cyclic-N30-g3-10-d4",
+    "group": {
+      "kind": "metacyclic",
+      "l1": 30,
+      "l2": 1,
+      "action": 1,
+      "order": 30,
+      "element_index": "u*l2+v represents a^u b^v"
+    },
+    "entry_type": "group-element-index (one monomial per entry)",
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        6
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        20
+      ]
+    ],
+    "seed_subgroup_indices": [
+      3,
+      10
+    ],
+    "seed_square_free_required": false,
+    "connectivity_condition": "coprime cyclic subgroup indices",
+    "distance_upper_bound": 6,
+    "distance_bound_basis": "commutative 2x3 cofactor logical",
+    "equivalence_key": [
+      30,
+      [
+        3,
+        6
+      ],
+      [
+        10,
+        20
+      ]
+    ],
+    "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "local_certified_points_snapshot": [
+        [
+          455,
+          39,
+          6,
+          5
+        ],
+        [
+          468,
+          40,
+          4,
+          5
+        ],
+        [
+          416,
+          39,
+          6,
+          5
+        ],
+        [
+          455,
+          43,
+          6,
+          5
+        ],
+        [
+          468,
+          45,
+          6,
+          5
+        ],
+        [
+          390,
+          43,
+          4,
+          5
+        ],
+        [
+          364,
+          41,
+          4,
+          5
+        ]
+      ],
+      "n": 390,
+      "k": 45,
+      "d_min": 4,
+      "w_max": 5,
+      "status": "improvement_goal_not_measurement"
+    }
+  },
+  {
+    "schema_version": 1,
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "strategy": "cyclic-catalog-v2",
+    "qldpc_version": "0.4.0",
+    "seed": 20261002,
+    "index": 7,
+    "goal_id": "cyclic-N33-g3-11-d4",
+    "group": {
+      "kind": "metacyclic",
+      "l1": 33,
+      "l2": 1,
+      "action": 1,
+      "order": 33,
+      "element_index": "u*l2+v represents a^u b^v"
+    },
+    "entry_type": "group-element-index (one monomial per entry)",
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        21
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        11,
+        22
+      ]
+    ],
+    "seed_subgroup_indices": [
+      3,
+      11
+    ],
+    "seed_square_free_required": false,
+    "connectivity_condition": "coprime cyclic subgroup indices",
+    "distance_upper_bound": 6,
+    "distance_bound_basis": "commutative 2x3 cofactor logical",
+    "equivalence_key": [
+      33,
+      [
+        3,
+        9
+      ],
+      [
+        11,
+        22
+      ]
+    ],
+    "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "local_certified_points_snapshot": [
+        [
+          455,
+          39,
+          6,
+          5
+        ],
+        [
+          468,
+          40,
+          4,
+          5
+        ],
+        [
+          416,
+          39,
+          6,
+          5
+        ],
+        [
+          455,
+          43,
+          6,
+          5
+        ],
+        [
+          468,
+          45,
+          6,
+          5
+        ],
+        [
+          390,
+          43,
+          4,
+          5
+        ],
+        [
+          364,
+          41,
+          4,
+          5
+        ]
+      ],
+      "n": 429,
+      "k": 49,
+      "d_min": 4,
+      "w_max": 5,
+      "status": "improvement_goal_not_measurement"
+    }
+  }
+]

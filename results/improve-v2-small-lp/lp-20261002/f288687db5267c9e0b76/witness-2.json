@@ -1,0 +1,11 @@
+{
+  "rejected": "",
+  "side": "X",
+  "support": [
+    16,
+    24,
+    48,
+    64
+  ],
+  "weight": 4
+}

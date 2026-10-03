@@ -1,0 +1,84 @@
+{
+  "d_upper": 8,
+  "id": "64fa3696093921271395",
+  "k": 24,
+  "n": 288,
+  "needed_d": 8,
+  "rungs": [
+    {
+      "candidate": "results/improve-v1-bb/bb-20261002/64fa3696093921271395/candidate-rung-0.json",
+      "d_upper": 8,
+      "pair_depth": 24,
+      "seconds": 0.04200267978012562,
+      "seed": 1116998195,
+      "trials": 300
+    },
+    {
+      "candidate": "results/improve-v1-bb/bb-20261002/64fa3696093921271395/candidate-rung-1.json",
+      "d_upper": 8,
+      "pair_depth": 24,
+      "seconds": 0.5818354282528162,
+      "seed": 1117998198,
+      "trials": 5000
+    },
+    {
+      "candidate": "results/improve-v1-bb/bb-20261002/64fa3696093921271395/candidate-rung-2.json",
+      "d_upper": 8,
+      "pair_depth": 24,
+      "seconds": 5.58736396022141,
+      "seed": 1118998201,
+      "trials": 50000
+    }
+  ],
+  "seconds": 6.354973616078496,
+  "seed": 1115998192,
+  "spec": {
+    "algebraic_distance_upper_bound": 8,
+    "campaign": "bb-improve-v1",
+    "expected_k": 24,
+    "expected_n": 288,
+    "expected_w": 6,
+    "family": "bivariate-bicycle",
+    "id": "bb-paired-binomial-improve-71106e945ca63faa",
+    "mode": "paired-binomial-improve",
+    "parameters": {
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "orders": [
+        12,
+        12
+      ]
+    },
+    "search_goal_d": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "target_d_snapshot": 8
+  },
+  "status": "needs_official_validation",
+  "w": 6
+}

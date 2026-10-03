@@ -1,0 +1,37 @@
+{
+  "submitted_at": "2026-10-03T00:08:49.223710+00:00",
+  "jobs": [
+    {
+      "job_id": "129135034",
+      "lane": "lp",
+      "run": "improve-v1-lp",
+      "specs": "campaigns/improve-v1/lp-specs.json",
+      "count": 8,
+      "state": "submitted",
+      "seed": 20261002,
+      "slots": 1,
+      "memory_per_slot": "4G",
+      "wall_time_limit_seconds": 7200,
+      "sat_limit_per_side_seconds": 300,
+      "specs_sha256": "57fa4372adaa5a1f6357a573575efa240d0b2238e0a85a2798e0f3d6d18a7519",
+      "script_sha256": "574e493abbebcbe65fd6d44d4dbd25bfc9798fa10059b885dfe2d7b473361935",
+      "results": "results/improve-v1-lp/lp-20261002"
+    },
+    {
+      "job_id": "129135038",
+      "lane": "bb",
+      "run": "improve-v1-bb",
+      "specs": "campaigns/improve-v1/bb-specs.json",
+      "count": 8,
+      "state": "submitted",
+      "seed": 20261002,
+      "slots": 1,
+      "memory_per_slot": "4G",
+      "wall_time_limit_seconds": 7200,
+      "sat_limit_per_side_seconds": 300,
+      "specs_sha256": "329ffb568e8324149a92b4f84853d1c95a0ee5799b25eba1215a83de6afe8a52",
+      "script_sha256": "574e493abbebcbe65fd6d44d4dbd25bfc9798fa10059b885dfe2d7b473361935",
+      "results": "results/improve-v1-bb/bb-20261002"
+    }
+  ]
+}

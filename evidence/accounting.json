@@ -41,6 +41,24 @@
       "maxvmem": "836.703M",
       "start_time_jst": "2026-10-03 08:55:28.268",
       "end_time_jst": "2026-10-03 08:56:05.696"
+    },
+    "129135034": {
+      "stage": "improve_v1_lp",
+      "failed": 0,
+      "exit_status": 0,
+      "slots": 1,
+      "ru_wallclock": 195.932,
+      "cpu": 144.017,
+      "maxvmem": "1.292G"
+    },
+    "129135038": {
+      "stage": "improve_v1_bb",
+      "failed": 0,
+      "exit_status": 0,
+      "slots": 1,
+      "ru_wallclock": 70.972,
+      "cpu": 67.252,
+      "maxvmem": "1.286G"
     }
   }
 }

@@ -1,0 +1,14 @@
+{
+  "points": [
+    {
+      "candidate": "results/improve-v2-profile-lp/lp-20261002/a4843309d8fc5c1b8916/candidate.json",
+      "d": 6,
+      "evidence": "results/improve-v2-profile-lp/lp-20261002/a4843309d8fc5c1b8916/verification",
+      "exact": true,
+      "id": "a4843309d8fc5c1b8916",
+      "k": 51,
+      "n": 520,
+      "w": 5
+    }
+  ]
+}

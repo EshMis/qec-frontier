@@ -1,0 +1,72 @@
+{
+  "d_upper": 4,
+  "id": "68033625fbc84bb43b01",
+  "k": 44,
+  "n": 264,
+  "needed_d": 5,
+  "rungs": [
+    {
+      "candidate": "results/improve-v1-bb/bb-20261002/68033625fbc84bb43b01/candidate-rung-0.json",
+      "d_upper": 4,
+      "pair_depth": 24,
+      "seconds": 0.0338195376098156,
+      "seed": 1116998193,
+      "trials": 300
+    }
+  ],
+  "seconds": 0.16026455909013748,
+  "seed": 1115998190,
+  "spec": {
+    "algebraic_distance_upper_bound": 7,
+    "campaign": "bb-improve-v1",
+    "expected_k": 44,
+    "expected_n": 264,
+    "expected_w": 7,
+    "family": "bivariate-bicycle",
+    "id": "bb-shared-trinomial-b7b6fa5b5b9114c2",
+    "mode": "shared-trinomial",
+    "parameters": {
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "orders": [
+        11,
+        12
+      ]
+    },
+    "search_goal_d": 6,
+    "seed_reference": "docs/BB_STRATEGY.md",
+    "target_d_snapshot": 5
+  },
+  "status": "below_board_bar",
+  "w": 7
+}

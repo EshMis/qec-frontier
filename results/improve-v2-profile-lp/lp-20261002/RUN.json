@@ -1,0 +1,136 @@
+{
+  "arguments": {
+    "count": 1,
+    "lane": "lp",
+    "offset": 4,
+    "run": "improve-v2-profile-lp",
+    "seed": 20261002,
+    "specs": "campaigns/improve-v2/lp-specs.json",
+    "stages": "300,5000,50000",
+    "tlim": 300.0
+  },
+  "job_id": "129136119",
+  "sources": {
+    "scripts/advance.py": "4423b94a2f5b369544ed59341fa1d73f1b404a5345d180c65ad3e72ef2201982",
+    "scripts/generators_lp.py": "dbe24c5c3e062f9b6a98114686b15b8a2c05615ee142c5cdc9c4b7d0e141b45b",
+    "scripts/search.py": "3c0b8c7f93d442c86e10259dbe228cb42814c469c45734be53b81a4e8e5f6ef8"
+  },
+  "specifications": [
+    {
+      "connectivity_condition": "coprime cyclic subgroup indices",
+      "distance_bound_basis": "commutative 2x3 cofactor logical",
+      "distance_upper_bound": 6,
+      "entry_type": "group-element-index (one monomial per entry)",
+      "equivalence_key": [
+        40,
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          15
+        ]
+      ],
+      "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+      "family": "lifted-product",
+      "generator": "monomial-2x3-v1",
+      "goal_id": "cyclic-N40-g4-5-d6",
+      "group": {
+        "action": 1,
+        "element_index": "u*l2+v represents a^u b^v",
+        "kind": "metacyclic",
+        "l1": 40,
+        "l2": 1,
+        "order": 40
+      },
+      "index": 4,
+      "matrix_a": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          36
+        ]
+      ],
+      "matrix_b": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          15
+        ]
+      ],
+      "qldpc_version": "0.4.0",
+      "schema_version": 1,
+      "seed": 20261002,
+      "seed_square_free_required": true,
+      "seed_subgroup_indices": [
+        4,
+        5
+      ],
+      "strategy": "cyclic-catalog-v2",
+      "target": {
+        "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+        "d_min": 6,
+        "k": 51,
+        "local_certified_points_snapshot": [
+          [
+            455,
+            39,
+            6,
+            5
+          ],
+          [
+            468,
+            40,
+            4,
+            5
+          ],
+          [
+            416,
+            39,
+            6,
+            5
+          ],
+          [
+            455,
+            43,
+            6,
+            5
+          ],
+          [
+            468,
+            45,
+            6,
+            5
+          ],
+          [
+            390,
+            43,
+            4,
+            5
+          ],
+          [
+            364,
+            41,
+            4,
+            5
+          ]
+        ],
+        "n": 520,
+        "status": "improvement_goal_not_measurement",
+        "w_max": 5
+      }
+    }
+  ],
+  "started_unix": 1790986750.3446207
+}

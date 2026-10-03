@@ -1,0 +1,67 @@
+{
+  "count": 8,
+  "exact_points": [
+    {
+      "candidate": "results/improve-v1-lp/lp-20261002/bcce21b7a73ea6147989/candidate.json",
+      "d": 6,
+      "evidence": "results/improve-v1-lp/lp-20261002/bcce21b7a73ea6147989/verification",
+      "exact": true,
+      "id": "bcce21b7a73ea6147989",
+      "k": 39,
+      "n": 416,
+      "w": 5
+    },
+    {
+      "candidate": "results/improve-v1-lp/lp-20261002/0678051aa40ffaa745b7/candidate.json",
+      "d": 6,
+      "evidence": "results/improve-v1-lp/lp-20261002/0678051aa40ffaa745b7/verification",
+      "exact": true,
+      "id": "0678051aa40ffaa745b7",
+      "k": 43,
+      "n": 455,
+      "w": 5
+    },
+    {
+      "candidate": "results/improve-v1-lp/lp-20261002/5db1b1a696ac317e8a79/candidate.json",
+      "d": 6,
+      "evidence": "results/improve-v1-lp/lp-20261002/5db1b1a696ac317e8a79/verification",
+      "exact": true,
+      "id": "5db1b1a696ac317e8a79",
+      "k": 45,
+      "n": 468,
+      "w": 5
+    },
+    {
+      "candidate": "results/improve-v1-lp/lp-20261002/35a49ad3ca2ccda3b4a4/candidate.json",
+      "d": 4,
+      "evidence": "results/improve-v1-lp/lp-20261002/35a49ad3ca2ccda3b4a4/verification",
+      "exact": true,
+      "id": "35a49ad3ca2ccda3b4a4",
+      "k": 43,
+      "n": 390,
+      "w": 5
+    },
+    {
+      "candidate": "results/improve-v1-lp/lp-20261002/ec210287d143255de24d/candidate.json",
+      "d": 4,
+      "evidence": "results/improve-v1-lp/lp-20261002/ec210287d143255de24d/verification",
+      "exact": true,
+      "id": "ec210287d143255de24d",
+      "k": 41,
+      "n": 364,
+      "w": 5
+    }
+  ],
+  "finished_unix": 1790986276.4705162,
+  "screened": {
+    "0678051aa40ffaa745b7": "needs_official_validation",
+    "224b258556ccb8ad4b23": "below_board_bar",
+    "35a49ad3ca2ccda3b4a4": "needs_official_validation",
+    "5db1b1a696ac317e8a79": "needs_official_validation",
+    "abdab30cd54591bec76f": "below_board_bar",
+    "bcce21b7a73ea6147989": "needs_official_validation",
+    "cfac63867c63be8f987c": "below_board_bar",
+    "ec210287d143255de24d": "needs_official_validation"
+  },
+  "status": "complete"
+}

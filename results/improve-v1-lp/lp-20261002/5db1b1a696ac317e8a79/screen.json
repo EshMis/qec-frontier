@@ -1,0 +1,94 @@
+{
+  "d_upper": 6,
+  "id": "5db1b1a696ac317e8a79",
+  "k": 45,
+  "n": 468,
+  "needed_d": 6,
+  "rungs": [
+    {
+      "candidate": "results/improve-v1-lp/lp-20261002/5db1b1a696ac317e8a79/candidate-rung-0.json",
+      "d_upper": 6,
+      "pair_depth": 24,
+      "seconds": 0.13291887566447258,
+      "seed": 1116998192,
+      "trials": 300
+    },
+    {
+      "candidate": "results/improve-v1-lp/lp-20261002/5db1b1a696ac317e8a79/candidate-rung-1.json",
+      "d_upper": 6,
+      "pair_depth": 24,
+      "seconds": 1.0232813265174627,
+      "seed": 1117998195,
+      "trials": 5000
+    },
+    {
+      "candidate": "results/improve-v1-lp/lp-20261002/5db1b1a696ac317e8a79/candidate-rung-2.json",
+      "d_upper": 6,
+      "pair_depth": 24,
+      "seconds": 10.11085064522922,
+      "seed": 1118998198,
+      "trials": 50000
+    }
+  ],
+  "seconds": 11.56401463598013,
+  "seed": 1115998189,
+  "spec": {
+    "connectivity_condition": "coprime cyclic subgroup indices",
+    "distance_bound_basis": "commutative 2x3 cofactor logical",
+    "distance_upper_bound": 6,
+    "entry_type": "group-element-index (one monomial per entry)",
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "group": {
+      "action": 1,
+      "element_index": "u*l2+v represents a^u b^v",
+      "kind": "metacyclic",
+      "l1": 36,
+      "l2": 1,
+      "order": 36
+    },
+    "index": 3,
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        12,
+        32
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        9,
+        30
+      ]
+    ],
+    "qldpc_version": "0.4.0",
+    "schema_version": 1,
+    "seed": 20261002,
+    "seed_subgroup_indices": [
+      4,
+      3
+    ],
+    "strategy": "cyclic-subgroup-improvement",
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "d_min": 6,
+      "k": 45,
+      "n": 468,
+      "status": "improvement_goal_not_measurement",
+      "w_max": 5
+    }
+  },
+  "status": "needs_official_validation",
+  "w": 5
+}

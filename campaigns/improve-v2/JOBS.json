@@ -1,0 +1,19 @@
+{
+  "jobs": [
+    {
+      "id": "129136119",
+      "role": "LP largest profile and certification",
+      "result": "results/improve-v2-profile-lp/lp-20261002"
+    },
+    {
+      "id": "129136125",
+      "role": "LP seven smaller candidates and certification",
+      "result": "results/improve-v2-small-lp/lp-20261002"
+    },
+    {
+      "id": "129137113",
+      "role": "BB largest profile",
+      "result": "results/improve-v2-profile-bb/bb-20261002"
+    }
+  ]
+}

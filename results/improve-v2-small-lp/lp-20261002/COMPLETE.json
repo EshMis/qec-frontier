@@ -1,0 +1,86 @@
+{
+  "count": 7,
+  "exact_points": [
+    {
+      "candidate": "results/improve-v2-small-lp/lp-20261002/9cac431f82f64a2106f1/candidate.json",
+      "d": 6,
+      "evidence": "results/improve-v2-small-lp/lp-20261002/9cac431f82f64a2106f1/verification",
+      "exact": true,
+      "id": "9cac431f82f64a2106f1",
+      "k": 33,
+      "n": 351,
+      "w": 5
+    },
+    {
+      "candidate": "results/improve-v2-small-lp/lp-20261002/c86d848f21f62548e2fe/candidate.json",
+      "d": 4,
+      "evidence": "results/improve-v2-small-lp/lp-20261002/c86d848f21f62548e2fe/verification",
+      "exact": true,
+      "id": "c86d848f21f62548e2fe",
+      "k": 11,
+      "n": 78,
+      "w": 5
+    },
+    {
+      "candidate": "results/improve-v2-small-lp/lp-20261002/1ff205367e884a004092/candidate.json",
+      "d": 4,
+      "evidence": "results/improve-v2-small-lp/lp-20261002/1ff205367e884a004092/verification",
+      "exact": true,
+      "id": "1ff205367e884a004092",
+      "k": 33,
+      "n": 273,
+      "w": 5
+    },
+    {
+      "candidate": "results/improve-v2-small-lp/lp-20261002/f288687db5267c9e0b76/candidate.json",
+      "d": 4,
+      "evidence": "results/improve-v2-small-lp/lp-20261002/f288687db5267c9e0b76/verification",
+      "exact": true,
+      "id": "f288687db5267c9e0b76",
+      "k": 37,
+      "n": 312,
+      "w": 5
+    },
+    {
+      "candidate": "results/improve-v2-small-lp/lp-20261002/2ff0d65200fc0b0d8e45/candidate.json",
+      "d": 4,
+      "evidence": "results/improve-v2-small-lp/lp-20261002/2ff0d65200fc0b0d8e45/verification",
+      "exact": true,
+      "id": "2ff0d65200fc0b0d8e45",
+      "k": 39,
+      "n": 351,
+      "w": 5
+    },
+    {
+      "candidate": "results/improve-v2-small-lp/lp-20261002/94b8aa2c5167b8d352ff/candidate.json",
+      "d": 4,
+      "evidence": "results/improve-v2-small-lp/lp-20261002/94b8aa2c5167b8d352ff/verification",
+      "exact": true,
+      "id": "94b8aa2c5167b8d352ff",
+      "k": 45,
+      "n": 390,
+      "w": 5
+    },
+    {
+      "candidate": "results/improve-v2-small-lp/lp-20261002/94421b3ee1ee7b3f63de/candidate.json",
+      "d": 4,
+      "evidence": "results/improve-v2-small-lp/lp-20261002/94421b3ee1ee7b3f63de/verification",
+      "exact": true,
+      "id": "94421b3ee1ee7b3f63de",
+      "k": 49,
+      "n": 429,
+      "w": 5
+    }
+  ],
+  "finished_unix": 1790986945.114457,
+  "screened": {
+    "1ff205367e884a004092": "needs_official_validation",
+    "2ff0d65200fc0b0d8e45": "needs_official_validation",
+    "94421b3ee1ee7b3f63de": "needs_official_validation",
+    "94b8aa2c5167b8d352ff": "needs_official_validation",
+    "9cac431f82f64a2106f1": "needs_official_validation",
+    "c86d848f21f62548e2fe": "needs_official_validation",
+    "f288687db5267c9e0b76": "needs_official_validation"
+  },
+  "status": "complete"
+}

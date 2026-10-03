@@ -1,0 +1,24 @@
+{
+  "points": [
+    {
+      "candidate": "results/improve-v1-bb/bb-20261002/fd7e894a716c72d15fe4/candidate.json",
+      "d": 8,
+      "evidence": "results/improve-v1-bb/bb-20261002/fd7e894a716c72d15fe4/verification",
+      "exact": true,
+      "id": "fd7e894a716c72d15fe4",
+      "k": 22,
+      "n": 264,
+      "w": 6
+    },
+    {
+      "candidate": "results/improve-v1-bb/bb-20261002/64fa3696093921271395/candidate.json",
+      "d": 8,
+      "evidence": "results/improve-v1-bb/bb-20261002/64fa3696093921271395/verification",
+      "exact": true,
+      "id": "64fa3696093921271395",
+      "k": 24,
+      "n": 288,
+      "w": 6
+    }
+  ]
+}

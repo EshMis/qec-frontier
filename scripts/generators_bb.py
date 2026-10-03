@@ -5,9 +5,10 @@ JSON-serializable descriptions, without constructing matrices or searching
 distance. ``construct(spec)`` returns binary NumPy arrays. The search runner
 owns ranks, distance witnesses, board comparison, and trusted validation.
 
-The proposal mix favors a fixed-dimension, weight-six family, with smaller
-UB and asymmetric BB lanes. See docs/BB_STRATEGY.md for the board snapshot
-and the distinction between a target distance and a measured distance.
+The original proposal mix favors a fixed-dimension, weight-six family,
+with smaller UB and asymmetric BB lanes. ``next_candidates`` is the
+bounded, pilot-informed campaign. See docs/BB_STRATEGY.md for the board
+snapshot and the distinction between a target and a measured distance.
 """
 
 from __future__ import annotations
@@ -225,6 +226,265 @@ def candidates(seed: int, count: int) -> Iterator[Spec]:
         seen.add(key)
         yielded += 1
         yield spec
+
+
+# (l, m, current board threshold, search goal). The threshold includes the
+# pinned CSS board and locally certified (455,39,6,5), (468,40,4,5), and
+# (312,26,8,6). The common driver must still recompute the live frontier bar.
+_NEXT_PAIRED_TARGETS = (
+    (13, 11, 8, 8),  # shrink the certified 312-qubit point
+    (13, 10, 8, 8),
+    (13, 12, 9, 9),  # improve its distance at the same n, k, w
+    (11, 12, 8, 8),
+    (12, 12, 8, 8),
+    (14, 12, 8, 8),
+    (20, 10, 7, 7),
+    (20, 11, 7, 7),
+    (20, 12, 7, 7),
+    (21, 12, 7, 7),
+)
+
+# Shared factor B=1+y+...+y**(width-1), with width dividing m.
+# n=2*l*m, k=2*l*(width-1), w=4+width are exact construction invariants.
+_NEXT_TRINOMIAL_TARGETS = (
+    (9, 12, 5, 6),
+    (11, 12, 5, 6),
+    (13, 12, 7, 7),
+    (14, 12, 7, 7),
+    (7, 15, 7, 7),
+    (8, 15, 7, 7),
+    (10, 15, 9, 9),
+    (13, 15, 7, 7),
+    (6, 18, 9, 9),
+    (8, 18, 9, 9),
+    (9, 18, 9, 9),
+    (12, 18, 7, 7),
+)
+_NEXT_QUARTIC_TARGETS = (
+    (3, 24, 11, 11),
+    (5, 28, 13, 13),
+    (6, 28, 13, 13),
+    (4, 32, 15, 15),
+    (5, 32, 13, 13),
+    (6, 32, 13, 13),
+)
+
+# Frozen measured pilot inputs: (l,m,a,c,d) in
+# A=1+y**a+x*(y**c+y**d), B=1+y. The last is now certified and is an
+# incumbent, not another proposal. Exclude their known symmetry orbits.
+_PILOT_PAIRED = (
+    (11, 12, 1, 2, 8),
+    (11, 12, 9, 1, 10),
+    (14, 12, 9, 5, 6),
+    (13, 10, 1, 3, 7),
+    (11, 14, 9, 1, 8),
+    (13, 12, 10, 0, 7),
+)
+
+
+def _two_strip_key(l: int, m: int, width: int,
+                   a: int, c: int, d: int) -> tuple[Any, ...]:
+    """A safe partial equivalence key, not a complete code isomorphism test.
+
+    Quotient by exchanging x strips, reflecting y, multiplying A by a y
+    monomial, and valid x -> x*y**t shears. Reflection changes B only by
+    a monomial. All of these preserve the code's n, k, d, and w.
+    """
+    representations = []
+    shears = range(0, m, m // math.gcd(l, m))
+    for left, right in (((0, a), (c, d)), ((c, d), (0, a))):
+        for sign in (-1, 1):
+            for anchor in left:
+                normalized_left = tuple(sorted(sign * (v-anchor) % m for v in left))
+                for shear in shears:
+                    normalized_right = tuple(sorted(
+                        (sign * (v-anchor) + shear) % m for v in right
+                    ))
+                    representations.append((normalized_left, normalized_right))
+    return l, m, width, *min(representations)
+
+
+def _round_robin_buckets(buckets: list[list[Spec]]) -> list[Spec]:
+    """Give each geometry an early trial before revisiting a geometry."""
+    return [bucket[index]
+            for index in range(max(map(len, buckets), default=0))
+            for bucket in buckets if index < len(bucket)]
+
+
+def _improvement_pool(rng: random.Random, width: int,
+                      targets: tuple[tuple[int, int, int, int], ...]) -> list[Spec]:
+    """Finite, dimension-preserving proposals with algebraic ceiling pruning."""
+    excluded = {
+        _two_strip_key(l, m, 2, a, c, d)
+        for l, m, a, c, d in _PILOT_PAIRED
+    }
+    buckets: list[list[Spec]] = []
+    for l, m, target, goal in targets:
+        # Width two retains arbitrary interval lengths. Wider B divides
+        # 1+y**width, so each interval length must be a multiple of width.
+        step = 1 if width == 2 else width
+        q = m // step
+        best: dict[tuple[Any, ...], tuple[tuple[Any, ...], Spec]] = {}
+        for first in range(1, q):
+            for second in range(1, q):
+                short_first = min(first, q-first)
+                short_second = min(second, q-second)
+                ceiling = min(
+                    m if width == 2 else 2*m // width,
+                    1 + (1 if width == 2 else 2) * (short_first + short_second),
+                )
+                if ceiling < goal:
+                    continue
+                a = step * first
+                for c in range(m):
+                    d = (c + step*second) % m
+                    key = _two_strip_key(l, m, width, a, c, d)
+                    if key in excluded:
+                        continue
+                    mode = ("paired-binomial-improve" if width == 2 else
+                            "shared-trinomial" if width == 3 else "shared-quartic")
+                    spec = _spec(
+                        "bivariate-bicycle", mode, (l, m),
+                        [[0, 0], [0, a], [1, c], [1, d]],
+                        [[0, j] for j in range(width)],
+                        expected_k=2*l*(width-1), target_d=target,
+                        reference=("results/profile-bb/bb-20261002/b04f3fb55828b690c522"
+                                   if width == 2 else "docs/BB_STRATEGY.md"),
+                    )
+                    spec.update({
+                        "campaign": "bb-improve-v1",
+                        "search_goal_d": goal,
+                        "algebraic_distance_upper_bound": ceiling,
+                    })
+                    if width == 2:
+                        # Relative offsets of the measured survivor, scaled
+                        # to the new circumference. The ceiling may require
+                        # a departure from these offsets on smaller tori.
+                        seed_a, seed_b = round(10*m/12), round(7*m/12)
+                        score = (min((a-seed_a) % m, (seed_a-a) % m)
+                                 + min((second-seed_b) % m, (seed_b-second) % m)
+                                 + min(c, m-c))
+                        priority = (score, rng.random())
+                    else:
+                        # Prefer unequal interval lengths and useful ceilings;
+                        # these are search heuristics, not distance estimates.
+                        priority = (short_first == short_second, -ceiling, rng.random())
+                    if key not in best or priority < best[key][0]:
+                        best[key] = priority, spec
+        ranked = list(best.values())
+        ranked.sort(key=lambda item: item[0])
+        buckets.append([spec for _, spec in ranked])
+    return _round_robin_buckets(buckets)
+
+
+def next_candidates(seed: int, count: int) -> Iterator[Spec]:
+    """Yield a bounded next campaign, without repeating measured pilot orbits.
+
+    Nominal mix per 20 proposals: 12 paired-binomial, 7 shared-trinomial,
+    1 exploratory shared-quartic. Exhausted subpools use another subpool.
+    A request larger than the complete finite pool raises before yielding.
+    No rank computation, matrix construction, or distance search runs here.
+    """
+    if not isinstance(count, int) or isinstance(count, bool) or count < 0:
+        raise ValueError("count must be a nonnegative integer")
+    if count == 0:
+        return
+    rng = random.Random(seed)
+    pools = [
+        _improvement_pool(rng, 2, _NEXT_PAIRED_TARGETS),
+        _improvement_pool(rng, 3, _NEXT_TRINOMIAL_TARGETS),
+        _improvement_pool(rng, 4, _NEXT_QUARTIC_TARGETS),
+    ]
+    available = sum(map(len, pools))
+    if count > available:
+        raise ValueError(f"next campaign has {available} symmetry-distinct proposals; "
+                         f"requested {count}")
+    schedule = (0, 0, 1, 0, 1, 0, 0, 1, 0, 2, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1)
+    indices = [0, 0, 0]
+    for index in range(count):
+        preferred = schedule[index % len(schedule)]
+        lane = next(lane for lane in (preferred, 0, 1, 2)
+                    if indices[lane] < len(pools[lane]))
+        yield pools[lane][indices[lane]]
+        indices[lane] += 1
+
+
+def next_candidates_v2(seed: int, count: int) -> Iterator[Spec]:
+    """Select viable paired proposals from frozen v1 after its first wave.
+
+    This separate callable leaves v1 enumeration and construction untouched.
+    It removes shared-factor modes with a proved sub-threshold logical,
+    strengthens paired ceilings, and targets compression or distance > 8.
+    The nominal mix is 50% compression, 30% distance, 20% higher rate.
+    """
+    if not isinstance(count, int) or isinstance(count, bool) or count < 0:
+        raise ValueError("count must be a nonnegative integer")
+    if count == 0:
+        return
+    completed = (
+        (13, 11, 9, 0, 6),
+        (13, 10, 8, 0, 5),
+        (13, 12, 10, 0, 6),
+        (11, 12, 10, 0, 7),
+        (12, 12, 10, 0, 7),
+    )
+    excluded = {_two_strip_key(l, m, 2, a, c, d)
+                for l, m, a, c, d in completed}
+    shapes = (
+        ((13, 11), (13, 10)),  # same k, fewer qubits than the 312-qubit point
+        ((13, 12), (11, 12), (12, 12)),  # improve locally certified d=8
+        ((20, 10), (20, 11)),  # n/k=10 or 11, rather than the measured 12
+    )
+    buckets: dict[tuple[int, int], list[Spec]] = {
+        shape: [] for lane in shapes for shape in lane
+    }
+    for source_index, original in enumerate(next_candidates(seed, 579)):
+        if original["mode"] != "paired-binomial-improve":
+            continue
+        parameters = original["parameters"]
+        l, m = parameters["orders"]
+        if (l, m) not in buckets:
+            continue
+        a = next(y for x, y in parameters["a"] if x == 0 and y)
+        c, d = sorted(y for x, y in parameters["a"] if x == 1)
+        b = (d-c) % m
+        if _two_strip_key(l, m, 2, a, c, d) in excluded:
+            continue
+        short_a, short_b = min(a, m-a), min(b, m-b)
+        ceiling = min(
+            original["algebraic_distance_upper_bound"],
+            m // math.gcd(m, a, b),
+            m + 2 - 2*abs(short_a-short_b),
+        )
+        # The two additional exact d=8 points raise the 264/288 bars to 9.
+        # No generic n=12*k, d=8 scaling proposals enter this campaign.
+        target = 9 if m == 12 else original["target_d_snapshot"]
+        goal = max(target, original["search_goal_d"])
+        if ceiling < goal:
+            continue
+        spec = dict(original)
+        spec.update({
+            "campaign": "bb-improve-v2",
+            "source_v1_index": source_index,
+            "target_d_snapshot": target,
+            "search_goal_d": goal,
+            "target": {"d_min": goal},
+            "algebraic_distance_upper_bound": ceiling,
+        })
+        buckets[(l, m)].append(spec)
+    pools = [_round_robin_buckets([buckets[shape] for shape in lane])
+             for lane in shapes]
+    available = sum(map(len, pools))
+    if count > available:
+        raise ValueError(f"v2 campaign has {available} viable proposals; requested {count}")
+    schedule = (0, 1, 0, 2, 1, 0, 0, 1, 0, 2)
+    indices = [0, 0, 0]
+    for index in range(count):
+        preferred = schedule[index % len(schedule)]
+        lane = next(lane for lane in (preferred, 0, 1, 2)
+                    if indices[lane] < len(pools[lane]))
+        yield pools[lane][indices[lane]]
+        indices[lane] += 1
 
 
 @lru_cache(maxsize=1)

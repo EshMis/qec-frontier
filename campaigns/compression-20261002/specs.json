@@ -1,0 +1,410 @@
+[
+  {
+    "entry_type": "group-element-index (one monomial per entry)",
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "group": {
+      "action": 1,
+      "element_index": "u*l2+v represents a^u b^v",
+      "kind": "metacyclic",
+      "l1": 36,
+      "l2": 1,
+      "order": 36
+    },
+    "index": 0,
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        20
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        15
+      ]
+    ],
+    "qldpc_version": "0.4.0",
+    "schema_version": 1,
+    "seed": 20261003,
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "d_min": 6,
+      "k": 45,
+      "n": 468,
+      "status": "search_target_not_measurement",
+      "w_max": 5
+    },
+    "campaign": "compression-profile",
+    "hypothesis": "proper seed subgroups; combined connected"
+  },
+  {
+    "entry_type": "group-element-index (one monomial per entry)",
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "group": {
+      "action": 1,
+      "element_index": "u*l2+v represents a^u b^v",
+      "kind": "metacyclic",
+      "l1": 35,
+      "l2": 1,
+      "order": 35
+    },
+    "index": 1,
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        15
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        24,
+        26
+      ]
+    ],
+    "qldpc_version": "0.4.0",
+    "schema_version": 1,
+    "seed": 20261003,
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "d_min": 6,
+      "k": 43,
+      "n": 455,
+      "status": "search_target_not_measurement",
+      "w_max": 5
+    },
+    "campaign": "compression-profile",
+    "hypothesis": "proper seed subgroups; combined connected"
+  },
+  {
+    "entry_type": "group-element-index (one monomial per entry)",
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "group": {
+      "action": 1,
+      "element_index": "u*l2+v represents a^u b^v",
+      "kind": "metacyclic",
+      "l1": 32,
+      "l2": 1,
+      "order": 32
+    },
+    "index": 2,
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        12
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        11
+      ]
+    ],
+    "qldpc_version": "0.4.0",
+    "schema_version": 1,
+    "seed": 20261003,
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "d_min": 6,
+      "k": 39,
+      "n": 416,
+      "status": "search_target_not_measurement",
+      "w_max": 5
+    },
+    "campaign": "compression-profile",
+    "hypothesis": "proper seed subgroups; combined connected"
+  },
+  {
+    "entry_type": "group-element-index (one monomial per entry)",
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "group": {
+      "action": 1,
+      "element_index": "u*l2+v represents a^u b^v",
+      "kind": "metacyclic",
+      "l1": 33,
+      "l2": 1,
+      "order": 33
+    },
+    "index": 3,
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        12
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        7,
+        11
+      ]
+    ],
+    "qldpc_version": "0.4.0",
+    "schema_version": 1,
+    "seed": 20261003,
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "d_min": 6,
+      "k": 39,
+      "n": 429,
+      "status": "search_target_not_measurement",
+      "w_max": 5
+    },
+    "campaign": "compression-profile",
+    "hypothesis": "proper seed subgroups; combined connected"
+  },
+  {
+    "entry_type": "group-element-index (one monomial per entry)",
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "group": {
+      "action": 1,
+      "element_index": "u*l2+v represents a^u b^v",
+      "kind": "metacyclic",
+      "l1": 30,
+      "l2": 1,
+      "order": 30
+    },
+    "index": 4,
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        10
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        18
+      ]
+    ],
+    "qldpc_version": "0.4.0",
+    "schema_version": 1,
+    "seed": 20261003,
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "d_min": 6,
+      "k": 43,
+      "n": 390,
+      "status": "search_target_not_measurement",
+      "w_max": 5
+    },
+    "campaign": "compression-profile",
+    "hypothesis": "proper seed subgroups; combined connected"
+  },
+  {
+    "entry_type": "group-element-index (one monomial per entry)",
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "group": {
+      "action": 1,
+      "element_index": "u*l2+v represents a^u b^v",
+      "kind": "metacyclic",
+      "l1": 35,
+      "l2": 1,
+      "order": 35
+    },
+    "index": 5,
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        20
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        11,
+        23
+      ]
+    ],
+    "qldpc_version": "0.4.0",
+    "schema_version": 1,
+    "seed": 20261003,
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "d_min": 6,
+      "k": 43,
+      "n": 455,
+      "status": "search_target_not_measurement",
+      "w_max": 5
+    },
+    "campaign": "compression-profile",
+    "hypothesis": "proper seed subgroups; combined connected"
+  },
+  {
+    "entry_type": "group-element-index (one monomial per entry)",
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "group": {
+      "action": 1,
+      "element_index": "u*l2+v represents a^u b^v",
+      "kind": "metacyclic",
+      "l1": 32,
+      "l2": 1,
+      "order": 32
+    },
+    "index": 6,
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        20
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        7,
+        15
+      ]
+    ],
+    "qldpc_version": "0.4.0",
+    "schema_version": 1,
+    "seed": 20261003,
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "d_min": 6,
+      "k": 39,
+      "n": 416,
+      "status": "search_target_not_measurement",
+      "w_max": 5
+    },
+    "campaign": "compression-profile",
+    "hypothesis": "proper seed subgroups; combined connected"
+  },
+  {
+    "entry_type": "group-element-index (one monomial per entry)",
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "group": {
+      "action": 1,
+      "element_index": "u*l2+v represents a^u b^v",
+      "kind": "metacyclic",
+      "l1": 36,
+      "l2": 1,
+      "order": 36
+    },
+    "index": 7,
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        8
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        15
+      ]
+    ],
+    "qldpc_version": "0.4.0",
+    "schema_version": 1,
+    "seed": 20261003,
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "d_min": 6,
+      "k": 45,
+      "n": 468,
+      "status": "search_target_not_measurement",
+      "w_max": 5
+    },
+    "campaign": "compression-profile",
+    "hypothesis": "proper seed subgroups; combined connected"
+  }
+]

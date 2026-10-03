@@ -1,0 +1,78 @@
+{
+  "d_upper": 6,
+  "id": "cfac63867c63be8f987c",
+  "k": 39,
+  "n": 429,
+  "needed_d": 7,
+  "rungs": [
+    {
+      "candidate": "results/improve-v1-lp/lp-20261002/cfac63867c63be8f987c/candidate-rung-0.json",
+      "d_upper": 6,
+      "pair_depth": 24,
+      "seconds": 0.06968516670167446,
+      "seed": 1116998190,
+      "trials": 300
+    }
+  ],
+  "seconds": 0.3106321096420288,
+  "seed": 1115998187,
+  "spec": {
+    "connectivity_condition": "coprime cyclic subgroup indices",
+    "distance_bound_basis": "commutative 2x3 cofactor logical",
+    "distance_upper_bound": 6,
+    "entry_type": "group-element-index (one monomial per entry)",
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "group": {
+      "action": 1,
+      "element_index": "u*l2+v represents a^u b^v",
+      "kind": "metacyclic",
+      "l1": 33,
+      "l2": 1,
+      "order": 33
+    },
+    "index": 1,
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        24
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        25
+      ]
+    ],
+    "qldpc_version": "0.4.0",
+    "schema_version": 1,
+    "seed": 20261002,
+    "seed_subgroup_indices": [
+      3,
+      1
+    ],
+    "strategy": "cyclic-subgroup-improvement",
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "d_min": 6,
+      "k": 39,
+      "n": 429,
+      "status": "improvement_goal_not_measurement",
+      "w_max": 5
+    }
+  },
+  "status": "below_board_bar",
+  "w": 5
+}

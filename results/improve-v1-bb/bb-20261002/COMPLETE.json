@@ -1,0 +1,37 @@
+{
+  "count": 8,
+  "exact_points": [
+    {
+      "candidate": "results/improve-v1-bb/bb-20261002/fd7e894a716c72d15fe4/candidate.json",
+      "d": 8,
+      "evidence": "results/improve-v1-bb/bb-20261002/fd7e894a716c72d15fe4/verification",
+      "exact": true,
+      "id": "fd7e894a716c72d15fe4",
+      "k": 22,
+      "n": 264,
+      "w": 6
+    },
+    {
+      "candidate": "results/improve-v1-bb/bb-20261002/64fa3696093921271395/candidate.json",
+      "d": 8,
+      "evidence": "results/improve-v1-bb/bb-20261002/64fa3696093921271395/verification",
+      "exact": true,
+      "id": "64fa3696093921271395",
+      "k": 24,
+      "n": 288,
+      "w": 6
+    }
+  ],
+  "finished_unix": 1790986152.9262707,
+  "screened": {
+    "2cb1116d5301ed07193d": "below_board_bar",
+    "3a13af85928a8767526e": "below_board_bar",
+    "403bd52d557fac8e50c7": "below_board_bar",
+    "5246f7af39d4d3876a2d": "below_board_bar",
+    "64fa3696093921271395": "needs_official_validation",
+    "68033625fbc84bb43b01": "below_board_bar",
+    "74dfa9601b47b26dd616": "below_board_bar",
+    "fd7e894a716c72d15fe4": "needs_official_validation"
+  },
+  "status": "complete"
+}

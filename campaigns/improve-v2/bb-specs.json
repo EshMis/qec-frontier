@@ -1,0 +1,7295 @@
+[
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-0ea787cf9f7645d3",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 33,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-4c369d20e595e2e0",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 20,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-9c1c4283c90c6f70",
+    "parameters": {
+      "orders": [
+        13,
+        10
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 260,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 18,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-23de236e35ee5d69",
+    "parameters": {
+      "orders": [
+        20,
+        10
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 400,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 26,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-0f14ed0189e237c3",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 72,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-3caa77f7667e1399",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 100,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-83b9d8350c781ef8",
+    "parameters": {
+      "orders": [
+        13,
+        10
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 260,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 85,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-02cf64297aec0644",
+    "parameters": {
+      "orders": [
+        12,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 288,
+    "expected_w": 6,
+    "expected_k": 24,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 23,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-d719f4e110dccfcf",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 116,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-c60c08dc15004558",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 12,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-b6db4200483bb4f7",
+    "parameters": {
+      "orders": [
+        13,
+        10
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 260,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 101,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-a5b62728040aa6f4",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 53,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-e6e9fafc6e34dc70",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 133,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-eca11835ea58cafd",
+    "parameters": {
+      "orders": [
+        20,
+        10
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 400,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 76,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-67d4db5ee7597b6a",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 105,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-c95b54e6a9ab1931",
+    "parameters": {
+      "orders": [
+        13,
+        10
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 260,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 135,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-2e4efcdd042e6f3d",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 150,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-a436c1780e7ce3e7",
+    "parameters": {
+      "orders": [
+        12,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 288,
+    "expected_w": 6,
+    "expected_k": 24,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 106,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-f19e56d3d8bf5cd9",
+    "parameters": {
+      "orders": [
+        13,
+        10
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 260,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 152,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-dcafaebfd7c69cd7",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 28,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-581cb263971bafdd",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 165,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-93a0d4050772f115",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 86,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-249cfb905a02535c",
+    "parameters": {
+      "orders": [
+        13,
+        10
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 260,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 166,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-819c9c4c5ec747ab",
+    "parameters": {
+      "orders": [
+        20,
+        10
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 400,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 93,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-cec9eab698b6ec78",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 185,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-52c15da32ca17330",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 180,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-b70aba30f089b651",
+    "parameters": {
+      "orders": [
+        13,
+        10
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 260,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 181,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-b6a5c4d082933a64",
+    "parameters": {
+      "orders": [
+        12,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 288,
+    "expected_w": 6,
+    "expected_k": 24,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 123,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-57488d2b464a0bd0",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 195,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-3089b61b4dc87d07",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 45,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-4270c49dff28028b",
+    "parameters": {
+      "orders": [
+        13,
+        10
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 260,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 196,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-37153a6bf0c61e0a",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 120,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-0155da57ff202466",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 208,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-5505765b4e9ae9cf",
+    "parameters": {
+      "orders": [
+        20,
+        10
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 400,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 126,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-bf57ef5d973bea2d",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 213,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-998d6f122f5f1670",
+    "parameters": {
+      "orders": [
+        13,
+        10
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 260,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 210,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-9e653361d1dcf2da",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 235,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-6a9971865741ac61",
+    "parameters": {
+      "orders": [
+        12,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 288,
+    "expected_w": 6,
+    "expected_k": 24,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 12,
+    "source_v1_index": 172,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-c02a0b4f623f3fe1",
+    "parameters": {
+      "orders": [
+        13,
+        10
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 260,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 236,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-e4becdc492e5691b",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 61,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-93433d5043f4ddac",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 248,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-9e20730af6737cc8",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 183,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-32a43c05cbb21a5b",
+    "parameters": {
+      "orders": [
+        13,
+        10
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 260,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 303,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-75680931ce962083",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 78,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-6cc4a632d5ae37b4",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 240,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-8ef23e1aea83ab53",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 261,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-3a8a04983fe37034",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 275,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-029241d55327e5cb",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 212,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-3256652a33e2c25e",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 288,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-408b672fe21324f2",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 112,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-b06ff941a43a6d47",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 301,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-a4e032265252bfd5",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 266,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-5df674665873b5b9",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 315,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-f58733f4f312e281",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 128,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-a857e5219598749e",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 238,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-1a49c2a21719274f",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 328,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-87aaeba3ee3d63e8",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 339,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-f97d999a119922bf",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 293,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-dd218edce2a749b7",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 346,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-ca75a4c2b84e8dc9",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 145,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-5350c63277890fba",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 354,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-49e2df0f8053028f",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 252,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-844f721af0054a55",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 361,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-16f8560e6b369423",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 175,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-ac2e879cf00476c2",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 348,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-2f90a3d541ddb942",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 368,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-e4ee2aef70c23e3e",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 376,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-ba6744341069a49d",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 265,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-4a6c21841b82c683",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 383,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-4145334b44af0c22",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 190,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-ab29457789a72539",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 391,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-0b82b18b723f44c4",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 371,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-3d14827895f79faf",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 397,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-de8fb2aef6fbf7c4",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 203,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-038f3d8ce2a243c9",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 278,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-24e9a6d94d987a54",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 403,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-211dfd5f97c7b8c6",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 410,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-5302032314a39b8a",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 12,
+    "source_v1_index": 378,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-7c11d7102b6b53b1",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 415,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-b82322f64b35e430",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 216,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-eed5ca78b904eb91",
+    "parameters": {
+      "orders": [
+        13,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 286,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 8,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 8,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 420,
+    "target": {
+      "d_min": 8
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-2bbdd85faf683e85",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 305,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-8944ec8a23dc5330",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 405,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-e35d05151c748e8c",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 243,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-46be639cea5e3ad7",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 12,
+    "source_v1_index": 332,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-d6a1725b136b3cdd",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 417,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-35e6c71c2b1942ff",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 347,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-2fcdc47fb0f5d6c9",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 422,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-af86a08af0b485ec",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 355,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-582b4dc3362b8d6b",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 256,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-95b72a7292d1545d",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 439,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-ecad53d29d8ebb5e",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 12,
+    "source_v1_index": 362,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-f5b7fbc22f8fcdfe",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 12,
+    "source_v1_index": 447,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-42f4369d88ddfe6d",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 270,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-e271371f3d2b1c7b",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 370,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-3699c60a4557e0d9",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 452,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-b25267da281955d4",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 384,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-6078a8d0c15fd6a9",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 460,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-1dbce65093627dbc",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 398,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-df6a32c2345e23ee",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 283,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-7a35d2aa240ade23",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 462,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-d8d498d9a14f6da7",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 404,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-cc17678ef53786ff",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 464,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-555eafd605b55f67",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 296,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-0413e1acd80257ca",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 421,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-3e6c125a19f6cad2",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 466,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-039b0fb835693b2f",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 425,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-4d84872ed885e340",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 473,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-b7112577d9cce18c",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 430,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-ce9e2c4f5ec9b168",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 310,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-fd16a85e96e8c995",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 12,
+    "source_v1_index": 477,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-836ddfdbe70050f5",
+    "parameters": {
+      "orders": [
+        13,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 312,
+    "expected_w": 6,
+    "expected_k": 26,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 12,
+    "source_v1_index": 434,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-d39a7bbf9ff6c7e8",
+    "parameters": {
+      "orders": [
+        11,
+        12
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 264,
+    "expected_w": 6,
+    "expected_k": 22,
+    "target_d_snapshot": 9,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 9,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 479,
+    "target": {
+      "d_min": 9
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-3f6177d393ab9404",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 336,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-6c2a6bb5ee87e4bc",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 343,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-bacfde05741fec59",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 351,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-481f7689fb975aa5",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 358,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-987e97df50907012",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 365,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-d37b47f2d4b49659",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 380,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-37c56dd3a9626c61",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 387,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-4bfefc7c2130862f",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 395,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-f1cc10dc222189e2",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 401,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-39a0a2923a3c30e2",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 407,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-1cc4b1d3ef762172",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 419,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-8c9aa24dac13fffa",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 424,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-31a0a8c66db9a2a6",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 428,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-1b1581f1e5f3415d",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 433,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-93cc799b8023b178",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 437,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-e2dc2a4f82a32679",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 441,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-fbbd18e06385d5ab",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 445,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-124f153a14cfdba3",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 450,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-62b75c1d596eb796",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 453,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-b352134ca1bfc1b9",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 10,
+    "source_v1_index": 456,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-5d8f368e3047a16b",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 459,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-79824bec878b783d",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 461,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-8ee559e5663eaf46",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 463,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-496dec95f98dd710",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 8,
+    "source_v1_index": 465,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-0a5d59fbca45f099",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 467,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-6f476d678f730cb9",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 470,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-f06e9333add562c1",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 472,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-72546b76732d93e1",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 9,
+    "source_v1_index": 474,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-ccdb95b86ec0b9d0",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 7,
+    "source_v1_index": 476,
+    "target": {
+      "d_min": 7
+    }
+  },
+  {
+    "family": "bivariate-bicycle",
+    "mode": "paired-binomial-improve",
+    "id": "bb-paired-binomial-improve-1d9d645f84b4d059",
+    "parameters": {
+      "orders": [
+        20,
+        11
+      ],
+      "a": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "expected_n": 440,
+    "expected_w": 6,
+    "expected_k": 40,
+    "target_d_snapshot": 7,
+    "seed_reference": "results/profile-bb/bb-20261002/b04f3fb55828b690c522",
+    "campaign": "bb-improve-v2",
+    "search_goal_d": 7,
+    "algebraic_distance_upper_bound": 11,
+    "source_v1_index": 478,
+    "target": {
+      "d_min": 7
+    }
+  }
+]

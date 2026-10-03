@@ -1,0 +1,78 @@
+{
+  "d_upper": 5,
+  "id": "abdab30cd54591bec76f",
+  "k": 24,
+  "n": 260,
+  "needed_d": 7,
+  "rungs": [
+    {
+      "candidate": "results/improve-v1-lp/lp-20261002/abdab30cd54591bec76f/candidate-rung-0.json",
+      "d_upper": 5,
+      "pair_depth": 24,
+      "seconds": 0.03182660602033138,
+      "seed": 1116998196,
+      "trials": 300
+    }
+  ],
+  "seconds": 0.13552801869809628,
+  "seed": 1115998193,
+  "spec": {
+    "connectivity_condition": "both seed pairs generate G",
+    "distance_bound_basis": "no quantum bound asserted",
+    "distance_upper_bound": null,
+    "entry_type": "group-element-index (one monomial per entry)",
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "group": {
+      "action": 4,
+      "element_index": "u*l2+v represents a^u b^v",
+      "kind": "metacyclic",
+      "l1": 5,
+      "l2": 4,
+      "order": 20
+    },
+    "index": 7,
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        9
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        13
+      ]
+    ],
+    "qldpc_version": "0.4.0",
+    "schema_version": 1,
+    "seed": 20261002,
+    "seed_subgroup_indices": [
+      null,
+      null
+    ],
+    "strategy": "nonabelian-distance-improvement",
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "d_min": 7,
+      "k": 24,
+      "n": 260,
+      "status": "improvement_goal_not_measurement",
+      "w_max": 5
+    }
+  },
+  "status": "below_board_bar",
+  "w": 5
+}

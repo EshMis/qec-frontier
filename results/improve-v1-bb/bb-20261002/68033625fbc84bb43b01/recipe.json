@@ -1,0 +1,51 @@
+{
+  "algebraic_distance_upper_bound": 7,
+  "campaign": "bb-improve-v1",
+  "expected_k": 44,
+  "expected_n": 264,
+  "expected_w": 7,
+  "family": "bivariate-bicycle",
+  "id": "bb-shared-trinomial-b7b6fa5b5b9114c2",
+  "mode": "shared-trinomial",
+  "parameters": {
+    "a": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        11
+      ]
+    ],
+    "b": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "orders": [
+      11,
+      12
+    ]
+  },
+  "search_goal_d": 6,
+  "seed_reference": "docs/BB_STRATEGY.md",
+  "target_d_snapshot": 5
+}

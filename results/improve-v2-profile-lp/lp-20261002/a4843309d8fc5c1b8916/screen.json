@@ -1,0 +1,152 @@
+{
+  "d_upper": 6,
+  "id": "a4843309d8fc5c1b8916",
+  "k": 51,
+  "n": 520,
+  "needed_d": 6,
+  "rungs": [
+    {
+      "candidate": "results/improve-v2-profile-lp/lp-20261002/a4843309d8fc5c1b8916/candidate-rung-0.json",
+      "d_upper": 6,
+      "pair_depth": 24,
+      "seconds": 0.08842484280467033,
+      "seed": 1116998193,
+      "trials": 300
+    },
+    {
+      "candidate": "results/improve-v2-profile-lp/lp-20261002/a4843309d8fc5c1b8916/candidate-rung-1.json",
+      "d_upper": 6,
+      "pair_depth": 24,
+      "seconds": 1.2190101463347673,
+      "seed": 1117998196,
+      "trials": 5000
+    },
+    {
+      "candidate": "results/improve-v2-profile-lp/lp-20261002/a4843309d8fc5c1b8916/candidate-rung-2.json",
+      "d_upper": 6,
+      "pair_depth": 24,
+      "seconds": 11.980476705357432,
+      "seed": 1118998199,
+      "trials": 50000
+    }
+  ],
+  "seconds": 48.63813478499651,
+  "seed": 1115998190,
+  "spec": {
+    "connectivity_condition": "coprime cyclic subgroup indices",
+    "distance_bound_basis": "commutative 2x3 cofactor logical",
+    "distance_upper_bound": 6,
+    "entry_type": "group-element-index (one monomial per entry)",
+    "equivalence_key": [
+      40,
+      [
+        4,
+        12
+      ],
+      [
+        5,
+        15
+      ]
+    ],
+    "equivalence_scope": "seed translations/reversals, common cyclic unit, base exchange",
+    "family": "lifted-product",
+    "generator": "monomial-2x3-v1",
+    "goal_id": "cyclic-N40-g4-5-d6",
+    "group": {
+      "action": 1,
+      "element_index": "u*l2+v represents a^u b^v",
+      "kind": "metacyclic",
+      "l1": 40,
+      "l2": 1,
+      "order": 40
+    },
+    "index": 4,
+    "matrix_a": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        36
+      ]
+    ],
+    "matrix_b": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        15
+      ]
+    ],
+    "qldpc_version": "0.4.0",
+    "schema_version": 1,
+    "seed": 20261002,
+    "seed_square_free_required": true,
+    "seed_subgroup_indices": [
+      4,
+      5
+    ],
+    "strategy": "cyclic-catalog-v2",
+    "target": {
+      "board_revision": "c2ebca1713c89277dbd6ddf3ee587cbf7f1a9d23",
+      "d_min": 6,
+      "k": 51,
+      "local_certified_points_snapshot": [
+        [
+          455,
+          39,
+          6,
+          5
+        ],
+        [
+          468,
+          40,
+          4,
+          5
+        ],
+        [
+          416,
+          39,
+          6,
+          5
+        ],
+        [
+          455,
+          43,
+          6,
+          5
+        ],
+        [
+          468,
+          45,
+          6,
+          5
+        ],
+        [
+          390,
+          43,
+          4,
+          5
+        ],
+        [
+          364,
+          41,
+          4,
+          5
+        ]
+      ],
+      "n": 520,
+      "status": "improvement_goal_not_measurement",
+      "w_max": 5
+    }
+  },
+  "status": "needs_official_validation",
+  "w": 5
+}
